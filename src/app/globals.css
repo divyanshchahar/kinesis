@@ -246,3 +246,17 @@
         --color-border: var(--color-white-transparent-2);
     }
 }
+
+/*##################*/
+/*# GLOBAL STYLING #*/
+/*##################*/
+
+a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    all: unset;
+}
