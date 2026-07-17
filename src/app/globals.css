@@ -1,5 +1,162 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    /*##############*/
+    /*# PRIMITIVES #*/
+    /*##############*/
+
+    /*DIMENSION*/
+    --dimension-0: 0px;
+    --dimension-1: 8px;
+    --dimension-2: 16px;
+    --dimension-3: 24px;
+    --dimension-4: 32px;
+    --dimension-5: 40px;
+    --dimension-6: 48px;
+    --dimension-7: 56px;
+    --dimension-8: 64px;
+    --dimension-9: 72px;
+    --dimension-10: 80px;
+    --dimension-11: 88px;
+    --dimension-12: 96px;
+    --dimension-13: 104px;
+    --dimension-14: 112px;
+    --dimension-15: 120px;
+    --dimension-16: 128px;
+    --dimension-17: 136px;
+    --dimension-18: 144px;
+    --dimension-19: 152px;
+    --dimension-20: 160px;
+
+    --color-blue-1: rgba(22, 32, 58, 1);
+    --color-blue-2: rgba(22, 32, 58, 1);
+    --color-blue-3: rgba(30, 58, 138, 1);
+    --color-blue-4: rgba(7, 15, 36, 1);
+    --color-blue-5: rgba(10, 22, 51, 1);
+    --color-blue-6: rgba(30, 58, 138, 1);
+    --color-blue-transparent-1: rgba(30, 58, 138, 0.25);
+    --color-blue-transparent-2: rgba(30, 58, 138, 0.08);
+
+    --color-grey-1: rgba(90, 100, 120, 1);
+    --color-grey-2: rgba(90, 100, 120, 1);
+    --color-grey-3: rgba(154, 163, 178, 1);
+    --color-grey-4: rgba(213, 217, 224, 1);
+
+    --color-saffron-1: rgba(255, 153, 51, 1);
+    --color-saffron-2: rgba(179, 92, 0, 1);
+    --color-saffron-transparent-1: rgba(179, 92, 0, 0.3);
+    --color-saffron-transparent-2: rgba(179, 92, 0, 0.08);
+
+    --color-white-1: rgba(255, 255, 255, 1);
+    --color-white-2: rgba(246, 247, 249, 1);
+    --color-white-3: rgba(228, 231, 236, 1);
+    --color-white-4: rgba(238, 241, 245, 1);
+    --color-white-5: rgba(234, 241, 251, 1);
+    --color-white-transparent-1: rgba(255, 255, 255, 0.5);
+    --color-white-transparent-2: rgba(255, 255, 255, 0.12);
+    --color-white-transparent-3: rgba(255, 255, 255, 0.08);
+    --color-white-transparent-4: rgba(255, 255, 255, 0.78);
+    --color-white-transparent-5: rgba(255, 255, 255, 0.45);
+    --color-white-transparent-6: rgba(255, 255, 255, 0.03);
+
+    --color-green-1: rgba(19, 136, 8, 1);
+    --color-green-transparent-1: rgba(19, 136, 8, 0.3);
+    --color-green-transparent-2: rgba(19, 136, 8, 0.08);
+
+    --color-red-1: rgba(255, 0, 0, 1);
+
+    --radius-1: 4px;
+    --radius-2: 8px;
+    --radius-3: 12px;
+
+    /*######################*/
+    /*# SPACING AND SIZING #*/
+    /*######################*/
+
+    --max-width-xxl: 1280px;
+    --max-width-60ch: 60ch;
+    --max-width-xl: 1024px;
+    --max-width-l: 768px;
+    --max-width-m: 560px;
+    --max-width-s: 480px;
+    --max-width-xs: 400px;
+    --max-width-xxs: 320px;
+
+    --padding-section-l: var(--dimension-10);
+    --padding-section-m: var(--dimension-8);
+    --padding-section-s: var(--dimension-4);
+    --padding-global: var(--dimension-3);
+
+    @media screen and (min-width: 480px) {
+        * {
+            --padding-section-l: var(--dimension-20);
+            --padding-section-m: var(--dimension-16);
+            --padding-section-s: var(--dimension-8);
+            --padding-global: var(--dimension-6);
+        }
+
+        /*###############*/
+        /*# TYPOGRAPHY #*/
+        /*###############*/
+        --font-size-h1: 2.027rem;
+        --font-size-h2: 1.802rem;
+        --font-size-h3: 1.602rem;
+        --font-size-h4: 1.424rem;
+        --font-size-h5: 1.266rem;
+        --font-size-h6: 1.125rem;
+        --font-size-m: 1rem;
+        --font-size-s: 0.8rem;
+
+        @media screen and (min-width: 480px) {
+            --font-size-h1: 3.815rem;
+            --font-size-h2: 3.052rem;
+            --font-size-h3: 2.441rem;
+            --font-size-h4: 1.953;
+            --font-size-h5: 1.563rem;
+            --font-size-h6: 1.25rem;
+        }
+
+        --font-weight-light: 200;
+        --font-weight-normal: 400;
+        --font-weight-bold: 600;
+
+        --line-height-h: 1.2;
+        --line-height-n: 1.6;
+    }
+    /*################*/
+    /*# COLORSCHEMES #*/
+    /*################*/
+
+    .colorScheme1 {
+        --color-background: var(--color-white-1);
+        --color-foreground: var(--color-white-2);
+        --color-cta: var(--color-saffron-1);
+        --color-text-primary: var(--color-grey-2);
+        --color-text-secondary: var(--color-grey-4);
+        --color-heading: var(--color-blue-1);
+        --color-border: var(--color-white-3);
+    }
+
+    .colorScheme2 {
+        --color-background: var(--color-white-2);
+        --color-foreground: var(--color-white-1);
+        --color-cta: var(--color-saffron-1);
+        --color-text-primary: var(--color-grey-2);
+        --color-text-secondary: var(--color-grey-4);
+        --color-heading: var(--color-blue-1);
+        --color-border: var(--color-white-3);
+    }
+
+    .colorScheme3 {
+        --color-background: var(--color-blue-1);
+        --color-foreground: var(--color-white-transparent-6);
+        --color-cta: var(--color-saffron-1);
+        --color-text-primary: var(--color-white-transparent-4);
+        --color-text-secondary: var(--color-white-transparent-5);
+        --color-heading: var(--color-white-1);
+        --color-border: var(--color-white-transparent-2);
+    }
+
 }
