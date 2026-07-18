@@ -1,0 +1,13 @@
+.container {
+    background-color: var(--color-cta);
+    color: var(--color-heading);
+    border-radius: var(--radius-2);
+}
+
+.smallPAdding {
+    padding: var(--dimension-1) var(--dimension-2);
+}
+
+.largePadding {
+    padding: var(--dimension-2) var(--dimension-4);
+}
