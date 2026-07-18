@@ -1,0 +1,27 @@
+.label {
+    color: var(--color-text-primary);
+    display: block;
+    margin-bottom: var(--dimension-1);
+}
+
+.input {
+    padding: var(--dimension-1);
+    border: 1px solid var(--color-border);
+    background-color: var(--color-white-1);
+    border-radius: var(--radius-2);
+    color: var(--text-primary)
+    display: block;
+}
+
+.input::placeholder {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-normal);
+    font-family: var(--font-family-p) sans-serif;
+}
+
+.asterisk::after {
+    content: " *";
+    color: red;
+}
+
