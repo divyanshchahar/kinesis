@@ -180,36 +180,42 @@
             font-size: var(--font-size-h1);
             font-family: var(--font-family-h), sans-serif;
             font-weight: var(--font-weight-normal);
+            color: var(--color-heading);
         }
 
         .h2 {
             font-size: var(--font-size-h2);
             font-family: var(--font-family-h), sans-serif;
             font-weight: var(--font-weight-normal);
+            color: var(--color-heading);
         }
 
         .h3 {
             font-size: var(--font-size-h3);
             font-family: var(--font-family-h), sans-serif;
             font-weight: var(--font-weight-normal);
+            color: var(--color-heading);
         }
 
         .h4 {
             font-size: var(--font-size-h4);
             font-family: var(--font-family-h), sans-serif;
             font-weight: var(--font-weight-normal);
+            color: var(--color-heading);
         }
 
         .h5 {
             font-size: var(--font-size-h5);
             font-family: var(--font-family-h), sans-serif;
             font-weight: var(--font-weight-normal);
+            color: var(--color-heading);
         }
 
         .h6 {
             font-size: var(--font-size-h6);
             font-family: var(--font-family-h), sans-serif;
             font-weight: var(--font-weight-normal);
+            color: var(--color-heading);
         }
     }
     /*################*/
