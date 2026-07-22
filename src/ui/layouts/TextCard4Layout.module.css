@@ -1,0 +1,38 @@
+.container {
+    padding: var(--dimension-3);
+    color: var(--color-text-primary);
+    background-color: var(--color-foreground);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-3);
+
+    p {
+        margin-bottom: var(--dimension-1);
+    }
+}
+
+.leftPadding {
+    margin-left: var(--dimension-2);
+}
+
+.gap {
+    li {
+        margin-bottom: var(--dimension-2);
+    }
+
+    li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.saffron {
+    color: var(--color-saffron-1);
+}
+
+.blue {
+    color: var(--color-blue-1);
+}
+
+.green {
+    color: var(--color-green-1);
+}
