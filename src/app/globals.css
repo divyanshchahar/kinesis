@@ -122,7 +122,7 @@
         --font-weight-normal: 400;
         --font-weight-bold: 600;
 
-        --line-height-h: 1.2;
+        --line-height-h: 120%;
         --line-height-n: 160%;
 
         --font-family-p: "Manrope";
