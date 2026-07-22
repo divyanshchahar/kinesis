@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimension-2);
+    padding: var(--dimension-3);
+    align-items: center;
+
+    background-color: var(--color-foreground);
+    border-radius: var(--radius-3);
+}
+
+.heading {
+    color: var(--color-heading);
+}
+
+.bottom {
+    width: 100%;
+}
+
+.image {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.saffron {
+    color: var(--color-saffron-1)
+}
+
+.blue {
+    color: var(--color-blue-3)
+}
+
+.green {
+    color: var(--color-green-1)
+}
