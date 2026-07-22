@@ -1,0 +1,51 @@
+.container {
+    background-color: var(--color-foreground);
+    color: var(--color-text-primary);
+
+    padding: var(--dimension-3);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimension-2);
+
+    border-radius: var(--radius-3);
+
+    hr {
+        width: var(--dimension-5);
+        border-radius: 2px;
+    }
+}
+
+
+.heading {
+    color: var(--color-heading);
+}
+
+
+.link::after {
+    content: "\2003 \2192";
+}
+
+.saffronLink {
+    color: var(--color-saffron-1);
+}
+
+.blueLink {
+    color: var(--color-blue-3);
+}
+
+.greenLink {
+    color: var(--color-green-1);
+}
+
+.saffronLine {
+    border: 2px solid var(--color-saffron-1);
+}
+
+.blueLine {
+    border: 2px solid var(--color-blue-3);
+}
+
+.greenLine {
+    border: 2px solid var(--color-green-1);
+}
