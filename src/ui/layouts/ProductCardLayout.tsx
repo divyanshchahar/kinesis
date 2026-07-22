@@ -49,7 +49,7 @@ export default function ServiceCardLayout({
             <hr className={lineColor}/>
 
 
-            <p className={`boldNormal ${styles.heading}`}>{headingText}</p>
+            <p className={`h6 ${styles.heading}`}>{headingText}</p>
 
             <p className={`lightNormal`}>{bodyText}</p>
 
