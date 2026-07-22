@@ -1,0 +1,24 @@
+.container {
+    color: var(--color-text-primary);
+
+
+    p {
+        margin-bottom: var(--dimension-2);
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.green {
+    color: var(--color-green-1);
+}
+
+.saffron {
+    color: var(--color-saffron-1);
+}
+
+.blue {
+    color: var(--color-blue-3);
+}
