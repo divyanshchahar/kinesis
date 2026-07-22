@@ -1,6 +1,6 @@
-import styles from "./DetailsCard.module.css"
+import styles from "./NumberedCardLayout.module.css"
 
-export interface DetailsCardLayoutPropTypes {
+export interface NumberedCardLayoutPropTypes {
     headingText: string,
     bodyText: string,
     number: string,
@@ -8,7 +8,7 @@ export interface DetailsCardLayoutPropTypes {
     addedStyle?: string,
 }
 
-export default function DetailsCardLayout(
+export default function NumberedCardLayout(
     {
         headingText,
         bodyText,
@@ -17,7 +17,7 @@ export default function DetailsCardLayout(
         addedStyle
     }
     :
-    DetailsCardLayoutPropTypes) {
+    NumberedCardLayoutPropTypes) {
 
     return <div className={`${styles.container} ${colorScheme} ${addedStyle}`}>
         <div className={`${styles.number}`}>
