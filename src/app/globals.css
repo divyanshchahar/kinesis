@@ -268,7 +268,7 @@ button {
 }
 
 .paddedContainer {
-    padding: var(--padding-section-l) var(--padding-page);
+    padding: var(--padding-section-l) var(--padding-global);
 
     background-color: var(--color-background);
     color: var(--color-text-primary);
