@@ -1,0 +1,25 @@
+.container {
+
+
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimension-3);
+    width: 100%;
+    max-width: var(--max-width-60ch);
+    margin: auto;
+    text-align: center;
+}
+
+.heading {
+    color: var(--color-heading);
+}
+
+.fitted {
+    width: fit-content;
+    margin: auto;
+}
