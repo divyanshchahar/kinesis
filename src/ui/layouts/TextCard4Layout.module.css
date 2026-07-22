@@ -1,7 +1,6 @@
 .container {
     padding: var(--dimension-3);
     color: var(--color-text-primary);
-    background-color: var(--color-foreground);
 
     border: 1px solid var(--color-border);
     border-radius: var(--radius-3);
@@ -35,4 +34,12 @@
 
 .green {
     color: var(--color-green-1);
+}
+
+.normalBackground {
+    background-color: var(--color-foreground);
+}
+
+.accentedBackground{
+    background-color: var(--color-background);
 }
