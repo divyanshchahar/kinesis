@@ -1,35 +1,51 @@
-import styles from "./DetailsCard.module.css"
+import UnorderedListComponent from "@/ui/componenets/UnorderedListComponent";
+import styles from "./TextCard4Layout.module.css"
 
 export interface DetailsCardLayoutPropTypes {
-    headingText: string,
-    bodyText: string,
-    number: string,
     colorScheme: string,
-    addedStyle?: string,
+    version: "green" | "saffron" | "blue" | "accented",
+    headingText: string,
+    bulletPoints: string[],
 }
 
-export default function DetailsCardLayout(
-    {
-        headingText,
-        bodyText,
-        number,
-        colorScheme,
-        addedStyle
+export default function DetailsCardLayout({
+                                              colorScheme,
+                                              version,
+                                              headingText,
+                                              bulletPoints
+                                          }: DetailsCardLayoutPropTypes) {
+
+    let selectedColor = ""
+    let selectedBackground = ""
+
+    switch (version) {
+        case "green":
+            selectedColor = styles.green
+            selectedBackground = styles.normalBackground
+            break;
+
+        case "blue":
+            selectedColor = styles.blue
+            selectedBackground = styles.normalBackground
+            break;
+
+        case "saffron":
+            selectedColor = styles.saffron
+            selectedBackground = styles.normalBackground
+            break;
+
+        case "accented":
+            selectedColor = styles.green
+            selectedBackground = styles.accentedBackground
+            version = "green"
+
     }
-    :
-    DetailsCardLayoutPropTypes) {
+    return <div className={`${styles.container} ${colorScheme} ${selectedBackground}`}>
+        <p className={`h6 ${selectedColor}`}>{headingText}</p>
 
-    return <div className={`${styles.container} ${colorScheme} ${addedStyle}`}>
-        <div className={`${styles.number}`}>
-            <p>{number}</p>
+        <div>
+            <UnorderedListComponent listType={"arrow"} listColor={version} listItems={bulletPoints}
+                                    colorScheme={colorScheme} addedStyles={`${styles.leftPadding} ${styles.gap}`}/>
         </div>
-
-        <p className={`h6`}>{headingText}</p>
-
-        <p className={`lightNormal`}>{bodyText}</p>
     </div>
-
-}
-
-// TODO
-// 1 . inspect heading color
+};

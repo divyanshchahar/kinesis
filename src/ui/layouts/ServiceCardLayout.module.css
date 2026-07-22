@@ -1,0 +1,67 @@
+.container {
+    background-color: var(--color-foreground);
+    color: var(--color-text-primary);
+
+    padding: var(--dimension-3);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimension-3);
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimension-2);
+}
+
+.capsule {
+    padding: var(--dimension-1) var(--dimension-2);
+    border-radius: 9999px;
+    width: fit-content;
+}
+
+.heading {
+    color: var(--color-heading);
+}
+
+
+.link::after {
+    content: "\2003 \2192";
+}
+
+.saffronCapsule {
+    color: var(--color-saffron-1);
+    background-color: var(--color-saffron-transparent-2);
+    border: 1px solid var(--color-saffron-transparent-1);
+}
+
+.blueCapsule {
+    color: var(--color-blue-3);
+    background-color: var(--color-blue-transparent-2);
+    border: 1px solid var(--color-blue-transparent-1);
+}
+
+.greenCapsule {
+    color: var(--color-green-1);
+    background-color: var(--color-green-transparent-2);
+    border: 1px solid var(--color-green-transparent-1);
+}
+
+.saffronLink {
+    color: var(--color-saffron-1);
+}
+
+.blueLink {
+    color: var(--color-blue-3);
+}
+
+.greenLink {
+    color: var(--color-green-1);
+}
