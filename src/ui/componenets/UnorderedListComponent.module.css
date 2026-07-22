@@ -1,0 +1,35 @@
+.container {
+    list-style-position: outside;
+    list-style-type: ">  ";
+    margin-left: var(--font-size-m);
+    color: var(--color-text-primary);
+
+    li {
+        padding-left: var(--font-size-m);
+    }
+}
+
+.container li::marker {
+    color: red;
+    font-weight: var(--font-weight-bold);
+}
+
+.saffron li::marker {
+    color: var(--color-saffron-1)
+}
+
+.blue li::marker {
+    color: var(--color-blue-3)
+}
+
+.green li::marker {
+    color: var(--color-green-1);
+}
+
+.arrow {
+    list-style-type: ">";
+}
+
+.checkmark {
+    list-style-type: "\2713";
+}
