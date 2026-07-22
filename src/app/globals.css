@@ -113,7 +113,7 @@
             --font-size-h1: 3.815rem;
             --font-size-h2: 3.052rem;
             --font-size-h3: 2.441rem;
-            --font-size-h4: 1.953;
+            --font-size-h4: 1.953rem;
             --font-size-h5: 1.563rem;
             --font-size-h6: 1.25rem;
         }
@@ -176,46 +176,36 @@
             line-height: var(--line-height-n);
         }
 
+        .h1 .h2 .h3 .h4 .h5 .h6 {
+            font-family: var(--font-family-h) sans-serif;
+            font-style: normal;
+            font-weight: var(--font-weight-bold);
+            line-height: 120%;
+            letter-spacing: -1.12px;
+        }
+
         .h1 {
             font-size: var(--font-size-h1);
-            font-family: var(--font-family-h), sans-serif;
-            font-weight: var(--font-weight-normal);
-            color: var(--color-heading);
         }
 
         .h2 {
             font-size: var(--font-size-h2);
-            font-family: var(--font-family-h), sans-serif;
-            font-weight: var(--font-weight-normal);
-            color: var(--color-heading);
         }
 
         .h3 {
             font-size: var(--font-size-h3);
-            font-family: var(--font-family-h), sans-serif;
-            font-weight: var(--font-weight-normal);
-            color: var(--color-heading);
         }
 
         .h4 {
             font-size: var(--font-size-h4);
-            font-family: var(--font-family-h), sans-serif;
-            font-weight: var(--font-weight-normal);
-            color: var(--color-heading);
         }
 
         .h5 {
             font-size: var(--font-size-h5);
-            font-family: var(--font-family-h), sans-serif;
-            font-weight: var(--font-weight-normal);
-            color: var(--color-heading);
         }
 
         .h6 {
             font-size: var(--font-size-h6);
-            font-family: var(--font-family-h), sans-serif;
-            font-weight: var(--font-weight-normal);
-            color: var(--color-heading);
         }
     }
     /*################*/
