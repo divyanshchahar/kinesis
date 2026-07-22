@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--dimension-2);
+
+    background-color: transparent;
+}
+
+.squareContainer {
+    height: var(--font-size-h2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sqaure {
+    height: var(--font-size-m);
+    width: var(--font-size-m);
+    border-radius: var(--radius-1);
+}
+
+.saffron {
+    background-color: var(--color-saffron-1);
+}
+
+.blue {
+    background-color: var(--color-blue-3);
+}
+
+.green {
+    background-color: var(--color-green-1);
+}
