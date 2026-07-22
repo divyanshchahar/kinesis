@@ -3,7 +3,7 @@ import styles from "./TextCard4Layout.module.css"
 
 export interface TextCard4LayoutPropTypes {
     colorScheme: string,
-    version: "green" | "saffron" | "blue",
+    version: "green" | "saffron" | "blue" | "accented",
     headingText: string,
     bulletPoints: string[],
 }
@@ -11,20 +11,31 @@ export interface TextCard4LayoutPropTypes {
 export default function TextCard4Layout({colorScheme, version, headingText, bulletPoints}: TextCard4LayoutPropTypes) {
 
     let selectedColor = ""
+    let selectedBackground = ""
 
     switch (version) {
         case "green":
             selectedColor = styles.green
-            break;
-        case "blue":
-            selectedColor = styles.blue
-            break;
-        case "saffron":
-            selectedColor = styles.saffron
+            selectedBackground = styles.normalBackground
             break;
 
+        case "blue":
+            selectedColor = styles.blue
+            selectedBackground = styles.normalBackground
+            break;
+
+        case "saffron":
+            selectedColor = styles.saffron
+            selectedBackground = styles.normalBackground
+            break;
+
+        case "accented":
+            selectedColor = styles.green
+            selectedBackground = styles.accentedBackground
+            version = "green"
+
     }
-    return <div className={`${styles.container} ${colorScheme}`}>
+    return <div className={`${styles.container} ${colorScheme} ${selectedBackground}`}>
         <p className={`h6 ${selectedColor}`}>{headingText}</p>
 
         <div>
