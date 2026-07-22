@@ -40,7 +40,7 @@ export default function UnorderedListComponent({
     }
 
     return (
-        <ul className={`${styles.container} ${selectedListColor} ${colorScheme} ${selectedListType} regularNormal`}>
+        <ul className={`${styles.container} ${selectedListColor} ${colorScheme} ${selectedListType} ${addedStyles} regularNormal`}>
             {
                 listItems.map((listItem, i) => {
                     return <li key={i}>{listItem}</li>
