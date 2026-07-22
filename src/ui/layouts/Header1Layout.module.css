@@ -1,0 +1,21 @@
+.container {
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+
+    p {
+        max-width: var(--max-width-60ch);
+        margin-bottom: var(--dimension-2)
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.heading {
+    color: var(--color-heading);
+}
+
+.saffron {
+    color: var(--color-saffron-1);
+}
