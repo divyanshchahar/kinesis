@@ -17,9 +17,11 @@ export default function Header1Layout({
                                       }: Header1LayoutPropTypes) {
     return (
         <div className={`${styles.container} ${colorScheme} ${addedStyle} paddedContainer`}>
-            <p className={`boldNormal ${styles.saffron}`}>{smallText}</p>
-            <p className={`h1 ${styles.heading}`}>{headingText}</p>
-            <p className={`regularNormal`}>{bodyText}</p>
+            <div className={`maxWidthContainer`}>
+                <p className={`boldNormal ${styles.saffron}`}>{smallText}</p>
+                <p className={`h1 ${styles.heading}`}>{headingText}</p>
+                <p className={`regularNormal`}>{bodyText}</p>
+            </div>
         </div>
     )
 }
