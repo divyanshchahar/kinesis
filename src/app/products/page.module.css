@@ -1,0 +1,9 @@
+.productCard {
+    max-width: var(--max-width-s);
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-section-s);
+}
