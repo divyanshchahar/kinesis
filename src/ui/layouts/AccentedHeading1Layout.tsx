@@ -36,7 +36,7 @@ export default function AccentedHeading1Layout({
             <div className={`${styles.squareContainer}`}>
                 <div className={`${selectedColor} ${styles.sqaure}`}></div>
             </div>
-            <p className={`h2`}>{headingText}</p>
+            <p className={`h2 ${styles.heading}`}>{headingText}</p>
         </div>
     </div>
 }
