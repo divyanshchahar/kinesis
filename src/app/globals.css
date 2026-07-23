@@ -76,7 +76,7 @@
     /*######################*/
 
     --max-width-xxl: 1280px;
-    --max-width-60ch: 60ch;
+    --max-width-60ch: 653px;
     --max-width-xl: 1024px;
     --max-width-l: 768px;
     --max-width-m: 560px;
@@ -96,20 +96,22 @@
             --padding-section-s: var(--dimension-8);
             --padding-global: var(--dimension-6);
         }
+    }
 
-        /*###############*/
-        /*# TYPOGRAPHY #*/
-        /*###############*/
-        --font-size-h1: 2.027rem;
-        --font-size-h2: 1.802rem;
-        --font-size-h3: 1.602rem;
-        --font-size-h4: 1.424rem;
-        --font-size-h5: 1.266rem;
-        --font-size-h6: 1.125rem;
-        --font-size-m: 1rem;
-        --font-size-s: 0.8rem;
+    /*###############*/
+    /*# TYPOGRAPHY #*/
+    /*###############*/
+    --font-size-h1: 2.027rem;
+    --font-size-h2: 1.802rem;
+    --font-size-h3: 1.602rem;
+    --font-size-h4: 1.424rem;
+    --font-size-h5: 1.266rem;
+    --font-size-h6: 1.125rem;
+    --font-size-m: 1rem;
+    --font-size-s: 0.8rem;
 
-        @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px) {
+        * {
             --font-size-h1: 3.815rem;
             --font-size-h2: 3.052rem;
             --font-size-h3: 2.441rem;
@@ -117,120 +119,120 @@
             --font-size-h5: 1.563rem;
             --font-size-h6: 1.25rem;
         }
-
-        --font-weight-light: 200;
-        --font-weight-normal: 400;
-        --font-weight-bold: 600;
-
-        --line-height-h: 120%;
-        --line-height-n: 160%;
-
-        --font-family-p: "Manrope";
-        --font-family-h: "Space Grotesk";
-
-        .lightSmall {
-            font-family: var(--font-family-p), sans-serif;
-            font-size: var(--font-size-s);
-            font-style: normal;
-            font-weight: var(--font-weight-light);
-            line-height: var(--line-height-n);
-        }
-
-        .lightNormal {
-            font-family: var(--font-family-p), sans-serif;
-            font-size: var(--font-size-m);
-            font-style: normal;
-            font-weight: var(--font-weight-light);
-            line-height: var(--line-height-n);
-        }
-
-        .regularSmall {
-            font-family: var(--font-family-p), sans-serif;
-            font-size: var(--font-size-s);
-            font-style: normal;
-            font-weight: var(--font-weight-normal);
-            line-height: var(--line-height-n);
-        }
-
-        .regularNormal {
-            font-family: var(--font-family-p), sans-serif;
-            font-size: var(--font-size-m);
-            font-style: normal;
-            font-weight: var(--font-weight-normal);
-            line-height: var(--line-height-n);
-        }
-
-        .boldSmall {
-            font-family: var(--font-family-p), sans-serif;
-            font-size: var(--font-size-s);
-            font-style: normal;
-            font-weight: var(--font-weight-bold);
-            line-height: var(--line-height-n);
-        }
-
-        .boldNormal {
-            font-family: var(--font-family-p), sans-serif;
-            font-size: var(--font-size-m);
-            font-style: normal;
-            font-weight: var(--font-weight-bold);
-            line-height: var(--line-height-n);
-        }
-
-        .h1 {
-            font-size: var(--font-size-h1);
-            font-family: var(--font-family-h), sans-serif;
-            font-style: normal;
-            font-weight: var(--font-weight-bold);
-            line-height: 120%;
-            letter-spacing: -1.12px;
-        }
-
-        .h2 {
-            font-size: var(--font-size-h2);
-            font-family: var(--font-family-h), sans-serif;
-            font-style: normal;
-            font-weight: var(--font-weight-bold);
-            line-height: 120%;
-            letter-spacing: -1.12px;
-        }
-
-        .h3 {
-            font-size: var(--font-size-h3);
-            font-family: var(--font-family-h), sans-serif;
-            font-style: normal;
-            font-weight: var(--font-weight-bold);
-            line-height: 120%;
-            letter-spacing: -1.12px;
-        }
-
-        .h4 {
-            font-size: var(--font-size-h4);
-            font-family: var(--font-family-h), sans-serif;
-            font-style: normal;
-            font-weight: var(--font-weight-bold);
-            line-height: 120%;
-            letter-spacing: -1.12px;
-        }
-
-        .h5 {
-            font-size: var(--font-size-h5);
-            font-family: var(--font-family-h), sans-serif;
-            font-style: normal;
-            font-weight: var(--font-weight-bold);
-            line-height: 120%;
-            letter-spacing: -1.12px;
-        }
-
-        .h6 {
-            font-size: var(--font-size-h6);
-            font-family: var(--font-family-h), sans-serif;
-            font-style: normal;
-            font-weight: var(--font-weight-bold);
-            line-height: 120%;
-            letter-spacing: -1.12px;
-        }
-
     }
+
+    --font-weight-light: 200;
+    --font-weight-normal: 400;
+    --font-weight-bold: 600;
+
+    --line-height-h: 120%;
+    --line-height-n: 160%;
+
+    --font-family-p: "Manrope";
+    --font-family-h: "Space Grotesk";
+
+    .lightSmall {
+        font-family: var(--font-family-p), sans-serif;
+        font-size: var(--font-size-s);
+        font-style: normal;
+        font-weight: var(--font-weight-light);
+        line-height: var(--line-height-n);
+    }
+
+    .lightNormal {
+        font-family: var(--font-family-p), sans-serif;
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: var(--font-weight-light);
+        line-height: var(--line-height-n);
+    }
+
+    .regularSmall {
+        font-family: var(--font-family-p), sans-serif;
+        font-size: var(--font-size-s);
+        font-style: normal;
+        font-weight: var(--font-weight-normal);
+        line-height: var(--line-height-n);
+    }
+
+    .regularNormal {
+        font-family: var(--font-family-p), sans-serif;
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: var(--font-weight-normal);
+        line-height: var(--line-height-n);
+    }
+
+    .boldSmall {
+        font-family: var(--font-family-p), sans-serif;
+        font-size: var(--font-size-s);
+        font-style: normal;
+        font-weight: var(--font-weight-bold);
+        line-height: var(--line-height-n);
+    }
+
+    .boldNormal {
+        font-family: var(--font-family-p), sans-serif;
+        font-size: var(--font-size-m);
+        font-style: normal;
+        font-weight: var(--font-weight-bold);
+        line-height: var(--line-height-n);
+    }
+
+    .h1 {
+        font-size: var(--font-size-h1);
+        font-family: var(--font-family-h), sans-serif;
+        font-style: normal;
+        font-weight: var(--font-weight-bold);
+        line-height: 120%;
+        letter-spacing: -1.12px;
+    }
+
+    .h2 {
+        font-size: var(--font-size-h2);
+        font-family: var(--font-family-h), sans-serif;
+        font-style: normal;
+        font-weight: var(--font-weight-bold);
+        line-height: 120%;
+        letter-spacing: -1.12px;
+    }
+
+    .h3 {
+        font-size: var(--font-size-h3);
+        font-family: var(--font-family-h), sans-serif;
+        font-style: normal;
+        font-weight: var(--font-weight-bold);
+        line-height: 120%;
+        letter-spacing: -1.12px;
+    }
+
+    .h4 {
+        font-size: var(--font-size-h4);
+        font-family: var(--font-family-h), sans-serif;
+        font-style: normal;
+        font-weight: var(--font-weight-bold);
+        line-height: 120%;
+        letter-spacing: -1.12px;
+    }
+
+    .h5 {
+        font-size: var(--font-size-h5);
+        font-family: var(--font-family-h), sans-serif;
+        font-style: normal;
+        font-weight: var(--font-weight-bold);
+        line-height: 120%;
+        letter-spacing: -1.12px;
+    }
+
+    .h6 {
+        font-size: var(--font-size-h6);
+        font-family: var(--font-family-h), sans-serif;
+        font-style: normal;
+        font-weight: var(--font-weight-bold);
+        line-height: 120%;
+        letter-spacing: -1.12px;
+    }
+
     /*################*/
     /*# COLORSCHEMES #*/
     /*################*/
@@ -264,57 +266,55 @@
         --color-heading: var(--color-white-1);
         --color-border: var(--color-white-transparent-2);
     }
-}
 
-/*##################*/
-/*# GLOBAL STYLING #*/
-/*##################*/
+    /*##################*/
+    /*# GLOBAL STYLING #*/
+    /*##################*/
 
-a {
-    color: var(--color-text-primary);
-    text-decoration: none;
-    cursor: pointer;
-}
+    a {
+        color: var(--color-text-primary);
+        text-decoration: none;
+        cursor: pointer;
+    }
 
-button {
-    all: unset;
-}
+    button {
+        all: unset;
+    }
 
 
-/*##################*/
-/*# GLOBAL CLASSES #*/
-/*##################*/
+    /*##################*/
+    /*# GLOBAL CLASSES #*/
+    /*##################*/
 
-.maxWidthContainer {
-    max-width: var(--max-width-xxl);
-    margin: auto;
-}
+    .maxWidthContainer {
+        max-width: var(--max-width-xxl);
+        margin: auto;
+    }
 
-.paddedContainer {
-    padding: var(--padding-section-l) var(--padding-global);
+    .paddedContainer {
+        padding: var(--padding-section-l) var(--padding-global);
 
-    background-color: var(--color-background);
-    color: var(--color-text-primary);
-}
+        background-color: var(--color-background);
+        color: var(--color-text-primary);
+    }
 
-.outerFlexContainer {
-    display: flex;
-    flex-direction: column;
-    gap: var(--padding-section-m);
-}
+    .outerFlexContainer {
+        display: flex;
+        flex-direction: column;
+        gap: var(--padding-section-m);
+    }
 
-.innerFlexContainer {
-    display: flex;
-    flex-direction: column;
-    gap: var(--padding-section-s);
-}
-
-@media screen and (min-width: 480px) {
     .innerFlexContainer {
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        gap: var(--padding-section-s);
+    }
+
+    @media screen and (min-width: 480px) {
+        .innerFlexContainer {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
 }
 
-/*TODO*/
-/*1. add attributes back to typographical classes*/
