@@ -2,7 +2,7 @@ import styles from "./ProductCardLayout.module.css"
 import Link from "next/link";
 import UnorderedListComponent from "@/ui/componenets/UnorderedListComponent";
 
-export interface ServiceCardLayoutPropTypes {
+export interface ProductCardLayoutPropTypes {
     // capsuleText: string;
     headingText: string;
     bodyText: string;
@@ -13,7 +13,7 @@ export interface ServiceCardLayoutPropTypes {
     version: "saffron" | "blue" | "green"
 }
 
-export default function ServiceCardLayout({
+export default function ProductCardLayout({
                                               // capsuleText,
                                               headingText,
                                               bodyText,
@@ -22,7 +22,7 @@ export default function ServiceCardLayout({
                                               colorScheme,
                                               addedStyle,
                                               version
-                                          }: ServiceCardLayoutPropTypes
+                                          }: ProductCardLayoutPropTypes
 ) {
     let selctedColor = ""
     let lineColor = ""
