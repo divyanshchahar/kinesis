@@ -24,7 +24,7 @@ export default function NumberedCardLayout(
             <p>{number}</p>
         </div>
 
-        <p className={`h6`}>{headingText}</p>
+        <p className={`h6 ${styles.heading}`}>{headingText}</p>
 
         <p className={`lightNormal`}>{bodyText}</p>
     </div>
