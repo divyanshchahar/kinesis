@@ -42,23 +42,25 @@ export default function Header2Layout({
 
     }
     return (
-        <div className={`${styles.container} ${colorScheme} paddedContainer`}>
-            <div className={`${styles.top} lightNormal`}>
-                All products
-                <div className={`${styles.capsule} ${selectedColor} regularNormal`}>
-                    {capsulText}
+        <div className={`${colorScheme} paddedContainer`}>
+            <div className={`${styles.container} maxWidthContainer`}>
+                <div className={`${styles.top} lightNormal`}>
+                    All products
+                    <div className={`${styles.capsule} ${selectedColor} regularNormal`}>
+                        {capsulText}
+                    </div>
                 </div>
-            </div>
-            <p className={`h1 ${styles.heading}`}>{headingText}</p>
-            <p>{bodyText}</p>
+                <p className={`h1 ${styles.heading}`}>{headingText}</p>
+                <p className={`lightNormal`}>{bodyText}</p>
 
-            {
-                hasBox && <div className={`${styles.box} ${colorScheme} ${selctedColorBox}`}>
-                    {
-                        boxText
-                    }
-                </div>
-            }
+                {
+                    hasBox && <div className={`${styles.box} ${colorScheme} ${selctedColorBox} lightNormal`}>
+                        {
+                            boxText
+                        }
+                    </div>
+                }
+            </div>
         </div>
     )
 }
