@@ -4,7 +4,8 @@
 
 @media screen and (min-width: 480px) {
     .xxsContainer {
-        max-width: 40%;
+        min-width: var(--max-width-xxs);
+        max-width: 47%;
     }
 }
 
@@ -18,7 +19,7 @@
 @media screen and (min-width: 480px) {
     .flex {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: stretch;
         flex-wrap: wrap;
     }
 }

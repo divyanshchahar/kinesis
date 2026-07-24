@@ -1,6 +1,13 @@
 .xxsContainer {
-    max-width: var(--max-width-xxs);
+    width: 100%
 }
+
+@media screen and (min-width: 480px) {
+    .xxsContainer {
+        max-width: var(--max-width-xxs);
+    }
+}
+
 
 .flex {
     display: flex;
@@ -12,7 +19,7 @@
 @media screen and (min-width: 480px) {
     .flex {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: stretch;
         flex-wrap: wrap;
     }
 }
@@ -22,7 +29,6 @@
     flex-direction: column;
     gap: var(--padding-section-s);
     width: 100%
-    /*align-items: center;*/
 }
 
 .description {
@@ -34,7 +40,6 @@
 .unOrderedList {
     display: flex;
     flex-direction: column;
-    /*flex-wrap: wrap;*/
     width: 100%;
     gap: var(--dimension-4);
 }

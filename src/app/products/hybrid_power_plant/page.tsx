@@ -12,7 +12,7 @@ export default function HybridPowerPlant() {
             <Header2Layout colorScheme={"colorScheme3"} capsulText={"SUSTANABILITY"} headingText={"Hybrid Power Plant"}
                            bodyText={"A one-of-a-kind, 100% indigenously developed and manufactured hybrid power solution combining Solar and Wind energy. Modular in construction — from 0.5kW to multiple megawatts — it stays effective even at low wind speeds and can be customised for any application or terrain: fixed, vehicle-mounted, or mini-grid."}
                            hasBox={true} version={"green"}
-                           boxText={"This is the text in the box Already deployed across Defence, Rural Electrification, Marine/Telecom and Industrial/Commercial installations — and exported to 30+ countries."}/>
+                           boxText={"Already deployed across Defence, Rural Electrification, Marine/Telecom and Industrial/Commercial installations — and exported to 30+ countries."}/>
             <div className={`paddedContainer colorScheme2 outerFlexContainer`}>
 
                 <div className={`maxWidthContainer ${styles.outerFlex}`}>
@@ -22,7 +22,7 @@ export default function HybridPowerPlant() {
                                             version={"green"}/>
 
                     <UnorderedListComponent listType={"check mark"} listColor={"green"}
-                                            listItems={[`Vertical-Axis Wind Turbines with on-board "Smart" electronics`, `Dynamic Maximum Power Point Tracking (MPPT)`, `Easy connection for both On-Grid and Off-Grid setups`, `Simple mounting on any surface — no masts, guy wires or towers`, `Simple mounting on any surface — no masts, guy wires or towers`, `Higher power density per square foot; scalable generation`, `Environment-friendly, efficient, cost-effective and silent`, `Increases battery life and reduces required storage capacity`]}
+                                            listItems={[`Vertical-Axis Wind Turbines with on-board "Smart" electronics`, `Dynamic Maximum Power Point Tracking (MPPT)`, `Easy connection for both On-Grid and Off-Grid setups`, `Simple mounting on any surface — no masts, guy wires or towers`, `Ballasted installation that avoids roof penetration`, `Higher power density per square foot; scalable generation`, `Environment-friendly, efficient, cost-effective and silent`, `Increases battery life and reduces required storage capacity`]}
                                             colorScheme={"colorScheme2"}
                                             addedStyles={`${styles.unOrderedList}`}/>
 
@@ -62,15 +62,10 @@ export default function HybridPowerPlant() {
                 <div className={`maxWidthContainer ${styles.outerFlex}`}>
 
                     <AccentedHeading2Layout colorScheme={"colorScheme2"}
-                                            headingText={"Technology & Design Features"}
+                                            headingText={"Application By Sector"}
                                             version={"green"}/>
 
                     <div className={`${styles.flex}`}>
-                        <DetailsCardLayout colorScheme={"colorScheme2"} version={"green"}
-                                           headingText={"Emerging and Specialised"}
-                                           bulletPoints={["PCM-based cold storage and chillers", "Atmospheric water generation", "EV charging stations"]}
-                                           addedStyling={`${styles.xxsContainer}`}/>
-
                         <DetailsCardLayout colorScheme={"colorScheme2"} version={"green"}
                                            headingText={"Defence"}
                                            bulletPoints={["Simple installation for high-altitude and desert terrain", "Zero IR signature"]}
@@ -85,6 +80,18 @@ export default function HybridPowerPlant() {
                                            headingText={"Urban & Commercial"}
                                            bulletPoints={["Rooftop for residential, office and industrial buildings", "Rooftop for residential, office and industrial buildings", "Toll plazas and advertising displays"]}
                                            addedStyling={`${styles.xxsContainer}`}/>
+
+                        <DetailsCardLayout colorScheme={"colorScheme2"} version={"green"}
+                                           headingText={"Mobile & Emergency"}
+                                           bulletPoints={["Vehicle-mounted for medical, comms and command-control", "Supports disaster management, police and defence\n", "Toll plazas and advertising displays"]}
+                                           addedStyling={`${styles.xxsContainer}`}/>
+
+                        <DetailsCardLayout colorScheme={"colorScheme2"} version={"green"}
+                                           headingText={"Emerging and Specialised"}
+                                           bulletPoints={["PCM-based cold storage and chillers", "Atmospheric water generation", "EV charging stations"]}
+                                           addedStyling={`${styles.xxsContainer}`}/>
+
+
                     </div>
 
                 </div>

@@ -10,13 +10,13 @@ export default function UAV() {
         <>
             <Header2Layout colorScheme={"colorScheme3"} capsulText={"DEFENCE"} headingText={"UAV & UCAV"}
                            bodyText={"Indigenously developed Unmanned Aerial Vehicles (UAV) and Unmanned Combat Aerial Vehicles (UCAV) for surveillance, reconnaissance and mission-critical defence operations — supporting India’s self-reliance in defence technology."}
-                           version={"green"} hasBox={false}/>
+                           version={"blue"} hasBox={false}/>
 
             <div className={`paddedContainer colorScheme2 outerFlexContainer`}>
                 <div className={`maxWidthContainer ${styles.outerFlex}`}>
 
                     <AccentedHeading2Layout colorScheme={"colorScheme2"} headingText={"Capabilities"}
-                                            version={"green"}/>
+                                            version={"blue"}/>
 
                     <div className={`${styles.flex}`}>
                         <TextCard1Layout lineColor={"blue"} backgroundColor={"foreground"}
@@ -40,7 +40,7 @@ export default function UAV() {
                 <div className={`maxWidthContainer ${styles.outerFlex}`}>
 
                     <AccentedHeading2Layout colorScheme={"colorScheme2"} headingText={"Technical Briefing"}
-                                            version={"green"}/>
+                                            version={"blue"}/>
 
 
                     <p className={`${styles.description} lightNormal`}>

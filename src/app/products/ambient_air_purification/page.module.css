@@ -1,5 +1,11 @@
 .xxsContainer {
-    max-width: var(--max-width-xxs);
+    width: 100%
+}
+
+@media screen and (min-width: 480px) {
+    .xxsContainer {
+        max-width: var(--max-width-xxs);
+    }
 }
 
 .flex {
@@ -12,7 +18,7 @@
 @media screen and (min-width: 480px) {
     .flex {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: stretch;
         flex-wrap: wrap;
     }
 }
@@ -22,7 +28,6 @@
     flex-direction: column;
     gap: var(--padding-section-s);
     width: 100%
-    /*align-items: center;*/
 }
 
 .description {
@@ -58,13 +63,25 @@
 
 .highlightcard {
     background-color: var(--color-background);
-    color: var(--color-text-secondary);
+    color: var(--color-text-primary);
 
     display: flex;
     flex-direction: column;
     gap: var(--padding-section-s);
     padding: var(--dimension-3);
     border-radius: var(--radius-3);
+}
+
+@media screen and (min-width: 480px) {
+
+    .highlightcard {
+        flex-direction: row;
+        align-items: center;
+
+        div {
+            flex: 1;
+        }
+    }
 }
 
 .green {
