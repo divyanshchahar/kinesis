@@ -15,7 +15,8 @@ export default function TextCard1Layout({
                                             backgroundColor,
                                             headingText,
                                             bodyText,
-                                            colorScheme
+                                            colorScheme,
+                                            addedStyles
                                         }: TextCard1LayoutPropTypes) {
     let selectedLineColor = ""
     let seletcedBackgroundColor = ""
@@ -42,9 +43,10 @@ export default function TextCard1Layout({
     }
 
     return (
-        <div className={`${styles.container} ${selectedLineColor} ${seletcedBackgroundColor} ${colorScheme}`}>
+        <div
+            className={`${styles.container} ${selectedLineColor} ${seletcedBackgroundColor} ${colorScheme} ${addedStyles}`}>
             <hr/>
-            <p className={"h6"}>{headingText}</p>
+            <p className={`h6 ${styles.heading}`}>{headingText}</p>
             <p className={"lightNormal"}>{bodyText}</p>
         </div>
     )

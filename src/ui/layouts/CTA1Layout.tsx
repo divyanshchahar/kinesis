@@ -12,9 +12,9 @@ export default function CTA1Layout({colorScheme, addedStyle, bodyText, headingTe
     return (
         <div className={`paddedContainer ${colorScheme} ${styles.container} ${addedStyle}`}>
             <div className={`maxWidthContainer ${styles.flex}`}>
-                <p className={`h1 ${styles.heading}`}>{headingText}</p>
+                <p className={`h2 ${styles.heading}`}>{headingText}</p>
                 <p className={`lightNormal`}>{bodyText}</p>
-                <CTAButton version={"inline"} ctaText={"Get In Touch"} addedStyle={styles.fitted}/>
+                <CTAButton version={"large"} ctaText={"Get In Touch"} addedStyle={styles.fitted}/>
             </div>
         </div>
     )

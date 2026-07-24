@@ -6,13 +6,15 @@ export interface DetailsCardLayoutPropTypes {
     version: "green" | "saffron" | "blue" | "accented",
     headingText: string,
     bulletPoints: string[],
+    addedStyling?: string,
 }
 
 export default function DetailsCardLayout({
                                               colorScheme,
                                               version,
                                               headingText,
-                                              bulletPoints
+                                              bulletPoints,
+                                              addedStyling
                                           }: DetailsCardLayoutPropTypes) {
 
     let selectedColor = ""
@@ -40,11 +42,11 @@ export default function DetailsCardLayout({
             version = "green"
 
     }
-    return <div className={`${styles.container} ${colorScheme} ${selectedBackground}`}>
+    return <div className={`${styles.container} ${colorScheme} ${selectedBackground} ${addedStyling}`}>
         <p className={`h6 ${selectedColor}`}>{headingText}</p>
 
         <div>
-            <UnorderedListComponent listType={"arrow"} listColor={version} listItems={bulletPoints}
+            <UnorderedListComponent listType={"check mark"} listColor={version} listItems={bulletPoints}
                                     colorScheme={colorScheme} addedStyles={`${styles.leftPadding} ${styles.gap}`}/>
         </div>
     </div>

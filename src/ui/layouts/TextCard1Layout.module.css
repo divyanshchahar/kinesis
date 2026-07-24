@@ -41,3 +41,7 @@
 .foreground {
     background-color: var(--color-foreground);
 }
+
+.heading {
+    color: var(--color-heading);
+}

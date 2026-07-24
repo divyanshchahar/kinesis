@@ -7,7 +7,7 @@ export interface AccentedHeading1LayoutPropTypes {
     version: "saffron" | "blue" | "green"
 }
 
-export default function AccentedHeading1Layout({
+export default function AccentedHeading2Layout({
                                                    colorScheme,
                                                    headingText,
                                                    version,
@@ -34,10 +34,9 @@ export default function AccentedHeading1Layout({
     return <div className={`${colorScheme} ${styles.container} ${addedStyle}`}>
         <div className={`${styles.container}`}>
             <div className={`${styles.lineContainer}`}>
-            {/*<div>*/}
                 <hr className={`${styles.line} ${selectedColor}`}/>
             </div>
-            <p className={`h2`}>{headingText}</p>
+            <p className={`h2 ${styles.heading}`}>{headingText}</p>
         </div>
     </div>
 }
