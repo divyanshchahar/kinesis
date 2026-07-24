@@ -6,12 +6,16 @@
     background-color: transparent;
 }
 
+.heading {
+    color: var(--color-heading)
+}
+
 .lineContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    /*min-width: var(--dimension-6);*/
+    height: var(--font-size-h1);
 }
 
 .line {
@@ -19,7 +23,7 @@
     border-radius: 2px;
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 480px) {
     .line {
         width: var(--dimension-5);
     }
