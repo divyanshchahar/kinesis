@@ -1,12 +1,12 @@
 .container {
     color: var(--color-text-primary);
     background-color: var(--color-background);
-    display: flex;
-    flex-direction: column;
-    gap: var(--dimension-3);
+
     margin: auto;
     text-align: center;
     border-radius: var(--radius-3);
+    width: 100%;
+    padding: var(--padding-section-m) var(--padding-global);
 }
 
 
@@ -17,4 +17,14 @@
 .fitted {
     width: fit-content;
     margin: auto;
+}
+
+.max60chContainer {
+    max-width: var(--max-width-60ch);
+    margin: auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimension-3);
 }

@@ -11,11 +11,13 @@ export interface CTALayoutProptype {
 export default function CTA2Layout({colorScheme, addedStyle, bodyText, headingText}: CTALayoutProptype) {
     return (
         <div className={`paddedContainer maxWidthContainer ${colorScheme} ${styles.container} ${addedStyle}`}>
-            <p className={`h1 ${styles.heading}`}>{headingText}</p>
+            <div className={`${styles.max60chContainer}`}>
+                <p className={`h1 ${styles.heading}`}>{headingText}</p>
 
-            <p className={`lightNormal`}>{bodyText}</p>
+                <p className={`lightNormal`}>{bodyText}</p>
 
-            <CTAButton version={"inline"} ctaText={"Get In Touch"} addedStyle={styles.fitted}/>
+                <CTAButton version={"large"} ctaText={"Contact Our Team"} addedStyle={styles.fitted}/>
+            </div>
         </div>
     )
 }
