@@ -9,7 +9,7 @@ import styles from "./page.module.css"
 export default function PlasticToDiesel() {
     return (
         <>
-            <Header2Layout colorScheme={"colorScheme3"} capsulText={"SUSTAINABILITY"}
+            <Header2Layout colorScheme={"colorScheme3"} capsulText={"COMMUNICATION"}
                            headingText={"Private 5G Networks — RDN Box"}
                            bodyText={"The RDN Box is a compact, self-contained wireless network hub that integrates the Radio Access Network (RAN), Core Network and an AI engine into a single portable unit. Built on 3GPP-defined 5G-Advanced standards and pre-configured for plug-and-play deployment — a fully functional private 5G network set up anywhere in minutes, with no existing infrastructure required."}
                            hasBox={false} version={"saffron"}/>
