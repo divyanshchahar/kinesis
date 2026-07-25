@@ -15,6 +15,8 @@ export default function AboutUs() {
                            smallText={"ABOUT KINESIS"}
                            headingText={"A movement to unite India's innovators, industries & academia."}
                            bodyText={"Kinesis is a pioneering initiative aimed at uniting Indian industries and enabling small OEMs to make their mark in both national and international markets. Our platform is enriched by leading technical and operational specialists from industry, academia, the military, and public administration — and by senior former diplomats who open global doors."}/>
+
+            {/*MISSION AND VISION*/}
             <div className={`paddedContainer colorScheme1`}>
                 <div className={`maxWidthContainer ${styles.missionAndVision}`}>
                     <TextCard2Layout headingText={"Our Mission"}
@@ -33,6 +35,7 @@ export default function AboutUs() {
                 </div>
             </div>
 
+            {/*INDUSTRIAL NATIONALISM*/}
             <div className={`paddedContainer colorScheme3`}>
                 <div className={`maxWidthContainer ${styles.flex}`}>
                     <TextCard5Layout headingText={"Industrial Nationalism"}
@@ -80,6 +83,7 @@ export default function AboutUs() {
                 </div>
             </div>
 
+            {/*WHAT WE BELIEVE IN*/}
             <div className={`paddedContainer colorScheme2`}>
 
                 <div className={`maxWidthContainer ${styles.flex}`}>
@@ -106,6 +110,7 @@ export default function AboutUs() {
                 </div>
             </div>
 
+            {/*OUR TEAM*/}
             <div className={`paddedContainer colorScheme1`}>
                 <div className={`maxWidthContainer ${styles.flex}`}>
                     <TextCard5Layout smallText={"OUR TEAM"} headingText={"The people behind Kinesis."}
