@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimension-1);
+
+    color: var(--color-heading);
+    padding: var(--dimension-2);
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        flex-direction: row;
+        gap: var(--dimension-1);
+        justify-content: space-between;
+    }
+}
+
+.saffron {
+    color: var(--color-saffron-1);
+}
+
+.green {
+    color: var(--color-green-1);
+}
+
+.blue {
+    color: var(--color-blue-3);
+}
