@@ -1,0 +1,64 @@
+.missionAndVision {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-section-s)
+    /*align-items: center;*/
+}
+
+@media screen and (min-width: 480px) {
+    .missionAndVision {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.missionVisionCard {
+    width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .missionVisionCard {
+        min-width: var(--max-width-xs);
+        flex: 1;
+    }
+}
+
+.flexMinWidth {
+    width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .flexMinWidth {
+        min-width: var(--max-width-xxs);
+        flex: 1;
+        max-width: 384px;
+    }
+}
+
+.bold {
+    font-weight: var(--font-weight-bold);
+}
+
+.ourMotto {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-section-m);
+}
+
+.highlightText {
+    color: var(--color-saffron-1);
+}
+
+.highlightBox {
+    width: 100%;
+    background-color: var(--color-foreground);
+    padding: var(--dimension-3);
+    border-left: 2px solid var(--color-saffron-1);
+    border-radius: 0 var(--radius-3) var(--radius-3) 0;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-section-m);
+}
