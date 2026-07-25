@@ -4,6 +4,7 @@
     border-radius: var(--radius-3);
 
     color: var(--color-text-primary);
+    background-color: var(--color-foreground);
 
     hr {
         width: var(--dimension-5);
