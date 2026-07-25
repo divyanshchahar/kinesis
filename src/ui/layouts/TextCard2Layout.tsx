@@ -31,9 +31,13 @@ export default function TextCard2Layout({
             break;
     }
 
-    return <div className={`${styles.container} ${selectedLineColor} ${colorScheme}`}>
-        <hr/>
-        <p className={"h2"}>{headingText}</p>
-        <p className={"lightNormal"}>{bodyText}</p>
-    </div>
+    return (
+        <div className={`${styles.container} ${selectedLineColor} ${colorScheme} ${addedStyles}`}>
+            <hr/>
+
+            <p className={`h2 ${styles.heading}`}>{headingText}</p>
+
+            <p className={"lightNormal"}>{bodyText}</p>
+        </div>
+    )
 }
