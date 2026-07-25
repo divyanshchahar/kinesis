@@ -69,7 +69,7 @@ export default function PlasticToDiesel() {
                             <TextCard4Layout colorScheme={"colorScheme2"} version={"green"}
                                              headingText={"Franchisee contributes"}
                                              bulletPoints={[`Capital investment: ₹12.75 Cr`, `2-acre motorable land and infrastructure`, `Security and administrative support`]}
-                                             addedStyle={styles.flexContainer}/>
+                                             addedStyle={`${styles.flexContainer}`}/>
 
                             <TextCard4Layout colorScheme={"colorScheme3"} version={`accented`}
                                              headingText={"Franchisee receives"}
