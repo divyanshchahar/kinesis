@@ -1,11 +1,12 @@
 import Header1Layout from "@/ui/layouts/Header1Layout";
-import TextCard2Layout from "@/ui/layouts/TextCard2Layout";
+import TextCard1Layout from "@/ui/layouts/TextCard1Layout";
 import styles from "./page.module.css"
 import TextCard5Layout from "@/ui/layouts/TextCard5Layout";
 import TeamMemberLayout from "@/ui/layouts/TeamMemberLayout";
 import founder from "./../../../public/images/founder.jpg"
 import father from "./../../../public/images/father.jpeg"
 import CTA1Layout from "@/ui/layouts/CTA1Layout";
+import TextCard2Layout from "@/ui/layouts/TextCard2Layout";
 
 export default function AboutUs() {
     return (
@@ -14,6 +15,8 @@ export default function AboutUs() {
                            smallText={"ABOUT KINESIS"}
                            headingText={"A movement to unite India's innovators, industries & academia."}
                            bodyText={"Kinesis is a pioneering initiative aimed at uniting Indian industries and enabling small OEMs to make their mark in both national and international markets. Our platform is enriched by leading technical and operational specialists from industry, academia, the military, and public administration — and by senior former diplomats who open global doors."}/>
+
+            {/*MISSION AND VISION*/}
             <div className={`paddedContainer colorScheme1`}>
                 <div className={`maxWidthContainer ${styles.missionAndVision}`}>
                     <TextCard2Layout headingText={"Our Mission"}
@@ -32,6 +35,7 @@ export default function AboutUs() {
                 </div>
             </div>
 
+            {/*INDUSTRIAL NATIONALISM*/}
             <div className={`paddedContainer colorScheme3`}>
                 <div className={`maxWidthContainer ${styles.flex}`}>
                     <TextCard5Layout headingText={"Industrial Nationalism"}
@@ -79,6 +83,34 @@ export default function AboutUs() {
                 </div>
             </div>
 
+            {/*WHAT WE BELIEVE IN*/}
+            <div className={`paddedContainer colorScheme2`}>
+
+                <div className={`maxWidthContainer ${styles.flex}`}>
+                    <TextCard5Layout headingText={"Supporting small, talented entrepreneurs."} bodyText={""}
+                                     colorScheme={"colorScheme2"}
+                                     smallText={"WHAT WE BELIEVE IN"} version={"green"}/>
+
+                    <div className={`${styles.flex}`}>
+                        <TextCard1Layout headingText={"Homegrown innovation"}
+                                         bodyText={"Groundbreaking technology is born in startups and small organisations — we help it scale."}
+                                         colorScheme={"colorScheme2"} lineColor={"saffron"}
+                                         backgroundColor={"foreground"}/>
+
+                        <TextCard1Layout headingText={"Partnerships within India"}
+                                         bodyText={"Synergy between Indian companies drives collective, self-reliant growth."}
+                                         colorScheme={"colorScheme2"} lineColor={"green"}
+                                         backgroundColor={"foreground"}/>
+                        <TextCard1Layout lineColor={"blue"} backgroundColor={"foreground"}
+                                         headingText={"Exports, not dependence"}
+                                         bodyText={"International collaboration serves strategy and exports — never dependence."}
+                                         colorScheme={"colorScheme2"}/>
+
+                    </div>
+                </div>
+            </div>
+
+            {/*OUR TEAM*/}
             <div className={`paddedContainer colorScheme1`}>
                 <div className={`maxWidthContainer ${styles.flex}`}>
                     <TextCard5Layout smallText={"OUR TEAM"} headingText={"The people behind Kinesis."}

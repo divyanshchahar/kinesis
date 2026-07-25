@@ -22,11 +22,3 @@
 .blue {
     color: var(--color-blue-3);
 }
-
-.heading {
-    color: var(--color-heading);
-}
-
-.max60chContainer {
-    max-width: var(--max-width-60ch);
-}

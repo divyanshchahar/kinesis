@@ -7,12 +7,10 @@
 
     background-color: var(--color-foreground);
     border-radius: var(--radius-3);
-    border: 1px solid var(--color-border);
 }
 
 .heading {
     color: var(--color-heading);
-    text-align: center;
 }
 
 .bottom {
