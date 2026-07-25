@@ -60,5 +60,5 @@
 .flex{
     display: flex;
     flex-direction: column;
-    gap: var(--padding-section-m);
+    gap: var(--padding-section-s);
 }
