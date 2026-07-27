@@ -76,7 +76,7 @@
     /*######################*/
 
     --max-width-xxl: 1280px;
-    --max-width-60ch: 60ch;
+    --max-width-60ch: 653px;
     --max-width-xl: 1024px;
     --max-width-l: 768px;
     --max-width-m: 560px;
@@ -328,6 +328,18 @@ button {
         flex-direction: row;
         flex-wrap: wrap;
     }
+}
+
+.flex2 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-section-s);
+}
+
+.flex3 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-section-m);
 }
 
 /*TODO*/
