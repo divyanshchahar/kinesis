@@ -6,9 +6,16 @@ export interface TextCard4LayoutPropTypes {
     version: "green" | "saffron" | "blue" | "accented",
     headingText: string,
     bulletPoints: string[],
+    addedStyle?: string
 }
 
-export default function TextCard4Layout({colorScheme, version, headingText, bulletPoints}: TextCard4LayoutPropTypes) {
+export default function TextCard4Layout({
+                                            colorScheme,
+                                            version,
+                                            headingText,
+                                            bulletPoints,
+                                            addedStyle
+                                        }: TextCard4LayoutPropTypes) {
 
     let selectedColor = ""
     let selectedBackground = ""
@@ -35,7 +42,7 @@ export default function TextCard4Layout({colorScheme, version, headingText, bull
             version = "green"
 
     }
-    return <div className={`${styles.container} ${colorScheme} ${selectedBackground}`}>
+    return <div className={`${styles.container} ${colorScheme} ${selectedBackground} ${addedStyle}`}>
         <p className={`h6 ${selectedColor}`}>{headingText}</p>
 
         <div>
