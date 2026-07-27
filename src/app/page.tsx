@@ -122,7 +122,7 @@ export default function Home() {
             <div className={`paddedContainer colorScheme2`}>
                 <div className={`maxWidthContainer ${styles.flex2}`}>
 
-                    <div className={`${styles.flex1} ${styles.ourSolutions}`}>
+                    <div className={`${styles.flex1} ${styles.ourSolutiofns}`}>
                         <TextCard5Layout smallText={"OUR SOLUTIONS"}
                                          headingText={"Indigenous technology across sustainability, defence & communication."}
                                          bodyText={""}
