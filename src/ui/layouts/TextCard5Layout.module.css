@@ -9,6 +9,8 @@
     p:last-child {
         margin-bottom: 0;
     }
+
+    max-width: var(--max-width-60ch );
 }
 
 .green {
@@ -21,4 +23,8 @@
 
 .blue {
     color: var(--color-blue-3);
+}
+
+.heading {
+    color: var(--color-heading);
 }

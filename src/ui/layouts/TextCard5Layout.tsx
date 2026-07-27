@@ -32,10 +32,12 @@ export default function TextCard5Layout({
     }
 
     return (
-        <div className={`${styles.container} ${colorScheme} ${addedStyle}`}>
-            <p className={`boldNormal ${selectedColor}`}>{smallText}</p>
-            <p className={`h3`}>{headingText}</p>
-            <p className={`lightNormal`}>{bodyText}</p>
+        <div className={`${colorScheme} ${addedStyle}`}>
+            <div className={`${styles.container}`}>
+                <p className={`boldNormal ${selectedColor}`}>{smallText}</p>
+                <p className={`h3 ${styles.heading}`}>{headingText}</p>
+                {bodyText && <p className={`lightNormal`}>{bodyText}</p>}
+            </div>
         </div>
     )
 }
