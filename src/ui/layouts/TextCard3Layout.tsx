@@ -5,11 +5,18 @@ export interface TextCard3LayoutPropTypes {
     headingText: string,
     bodyText: string,
     colorScheme: string,
+    addedStyle?: string,
 }
 
-export default function TextCard3Layout({smallText, headingText, bodyText, colorScheme}: TextCard3LayoutPropTypes) {
+export default function TextCard3Layout({
+                                            smallText,
+                                            headingText,
+                                            bodyText,
+                                            colorScheme,
+                                            addedStyle
+                                        }: TextCard3LayoutPropTypes) {
     return (
-        <div className={`${styles.container} ${colorScheme}`}>
+        <div className={`${styles.container} ${colorScheme} ${addedStyle}`}>
             <p className={"boldSmall"}>{smallText}</p>
             <p className={"h6"}>{headingText}</p>
             <p className={"lightNormal"}>{bodyText}</p>
