@@ -15,10 +15,11 @@ export default function TextInputComponent({
                                                colorScheme,
                                                mandatory
                                            }: TextInputComponent) {
-    // const finalFieldName = `${fieldName} ${mandatory ? "*" : ""}`;
-    return <>
-        <label
-            className={`${styles.label} regularNormal ${addedStyles} ${colorScheme} ${mandatory && styles.asterisk}`}>{fieldName}</label>
-        <input type="text" placeholder={placeHolder} className={`${styles.input} ${colorScheme} regularNormal`}/>
-    </>
+    return (
+        <div>
+            <label
+                className={`${styles.label} regularNormal ${addedStyles} ${colorScheme} ${mandatory && styles.asterisk}`}>{fieldName}</label>
+            <input type="text" placeholder={placeHolder} className={`${styles.input} ${colorScheme} regularNormal`}/>
+        </div>
+    )
 }
