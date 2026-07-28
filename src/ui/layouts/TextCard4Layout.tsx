@@ -7,6 +7,7 @@ export interface TextCard4LayoutPropTypes {
     headingText: string,
     bulletPoints: string[],
     addedStyle?: string
+    bulletTypes?: "check mark" | "arrow"
 }
 
 export default function TextCard4Layout({
@@ -14,7 +15,7 @@ export default function TextCard4Layout({
                                             version,
                                             headingText,
                                             bulletPoints,
-                                            addedStyle
+                                            addedStyle, bulletTypes = "check mark",
                                         }: TextCard4LayoutPropTypes) {
 
     let selectedColor = ""
@@ -46,7 +47,7 @@ export default function TextCard4Layout({
         <p className={`h6 ${selectedColor}`}>{headingText}</p>
 
         <div>
-            <UnorderedListComponent listType={"check mark"} listColor={version} listItems={bulletPoints}
+            <UnorderedListComponent listType={bulletTypes} listColor={version} listItems={bulletPoints}
                                     colorScheme={colorScheme} addedStyles={`${styles.leftPadding} ${styles.gap}`}/>
         </div>
     </div>
