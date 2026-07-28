@@ -1,0 +1,93 @@
+.contactUs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimension-2);
+    padding: var(--dimension-3);
+
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    border-radius: var(--radius-3);
+}
+
+.whoShouldContactUS {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimension-2);
+    padding: var(--dimension-3);
+
+    color: var(--color-text-primary);
+    background-color: var(--color-foreground);
+    border-radius: var(--radius-3);
+    border: 1px solid var(--color-border);
+}
+
+.saffron {
+    color: var(--color-saffron-1);
+}
+
+.green {
+    color: var(--color-green-1);
+}
+
+.boldFont {
+    font-weight: var(--font-weight-bold);
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimension-2);
+    width: 100%;
+    padding: var(--dimension-3);
+
+    border-radius: var(--radius-3);
+    border: 1px solid var(--color-border);
+    background-color: var(--color-foreground);
+}
+
+.heading {
+    color: var(--color-heading);
+}
+
+.block {
+    display: block;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap2 {
+    gap: var(--dimension-2);
+}
+
+.centeredTExt {
+    text-align: center;
+    margin-top: var(--dimension-4);
+}
+
+.responsiveFlexContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (min-width: 480px) {
+    .responsiveFlexContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+
+.minWidth431 {
+    width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .minWidth431 {
+        flex: 1 1 431px;
+    }
+}
