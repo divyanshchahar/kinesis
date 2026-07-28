@@ -1,6 +1,6 @@
 import styles from "./TextAreaComponent.module.css"
 
-export interface TextInputComponent {
+export interface TextAreaComponentPropTypes {
     fieldName: string,
     placeHolder: string,
     mandatory: true | false,
@@ -14,11 +14,13 @@ export default function TextInputComponent({
                                                addedStyles,
                                                colorScheme,
                                                mandatory
-                                           }: TextInputComponent) {
+                                           }: TextAreaComponentPropTypes) {
 
-    return <>
-        <label
-            className={`${styles.label} regularNormal ${addedStyles} ${colorScheme} ${mandatory && styles.asterisk}`}>{fieldName}</label>
-        <textarea placeholder={placeHolder} rows={3} className={`${styles.textarea} ${colorScheme} regularNormal`}/>
-    </>
+    return (
+        <div>
+            <label
+                className={`${styles.label} regularNormal ${addedStyles} ${colorScheme} ${mandatory && styles.asterisk}`}>{fieldName}</label>
+            <textarea placeholder={placeHolder} rows={3} className={`${styles.textarea} ${colorScheme} regularNormal`}/>
+        </div>
+    )
 }
