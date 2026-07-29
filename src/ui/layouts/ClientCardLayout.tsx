@@ -4,11 +4,12 @@ import styles from "./ClientcardLayout.module.css"
 export interface ClientCardLayoutPropTypes {
     clientImage: StaticImageData,
     clientName: string,
+    addedStyle?: string,
 }
 
-export default function ClientCardLayout({clientImage, clientName}: ClientCardLayoutPropTypes) {
+export default function ClientCardLayout({clientImage, clientName, addedStyle}: ClientCardLayoutPropTypes) {
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} ${addedStyle}`}>
             <Image src={clientImage} alt={clientName} height={40}/> <p className={"boldNormal"}>{`${clientName}`}</p>
         </div>
     )
