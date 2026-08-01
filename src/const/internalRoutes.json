@@ -1,0 +1,15 @@
+{
+  "home": "/",
+  "services": "/services",
+  "products": {
+    "root": "/products",
+    "ambientAirPurification": "/products/ambient_air_purification",
+    "carbonCapture": "/products/carbon_capture",
+    "hybridPowerPlant": "/products/hybrid_power_plant",
+    "plastictoDiesel": "/products/plastic_to_diesel",
+    "uavAndUcav": "/products/uav",
+    "wasteToHydrogen": "/products/waste_to_hydrogen",
+    "private5g": "/products/private_5g"
+  },
+  "contactus": "/contactus"
+}

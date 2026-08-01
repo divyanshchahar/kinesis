@@ -1,4 +1,6 @@
 import styles from "./Header2Layout.module.css"
+import Link from "next/link";
+import internalLinks from "./../../const/internalRoutes.json"
 
 export interface Header2LayoutPropTypes {
     colorScheme: string,
@@ -45,7 +47,7 @@ export default function Header2Layout({
         <div className={`${colorScheme} paddedContainer`}>
             <div className={`${styles.container} maxWidthContainer`}>
                 <div className={`${styles.top} lightNormal`}>
-                    All products
+                    <Link href={internalLinks.products.root}>All products</Link>
                     <div className={`${styles.capsule} ${selectedColor} regularNormal`}>
                         {capsulText}
                     </div>

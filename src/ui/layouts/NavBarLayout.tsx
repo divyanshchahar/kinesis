@@ -268,7 +268,7 @@ const MenubarDemo = () => {
 
 export default function NavBarLayout() {
     return (
-        <div>
+        <div className={`${styles.stickyContainer}`}>
             <div className={`${styles.triColor}`}>
                 <hr className={`${styles.saffronLine}`}/>
                 <hr className={`${styles.whiteLine}`}/>
