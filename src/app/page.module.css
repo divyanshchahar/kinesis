@@ -4,9 +4,9 @@
 }
 
 .heroBackground {
-    background: radial-gradient(120% 80% at 80% 0%, rgba(255, 153, 51, 0.14), transparent 55%), radial-gradient(90% 70% at 0% 100%, rgba(19, 136, 8, 0.16), transparent 55%), radial-gradient(120% 80% at 80% 0%, rgba(255, 153, 51, 0.14), transparent 55%), radial-gradient(90% 70% at 0% 100%, rgba(19, 136, 8, 0.16), transparent 55%), radial-gradient(120% 80% at 80% 0%, rgba(255, 153, 51, 0.14), transparent 55%), radial-gradient(90% 70% at 0% 100%, rgba(19, 136, 8, 0.16), transparent 55%) var(--color-background);
+    background: radial-gradient(120% 80% at 80% 0%, rgba(255, 153, 51, 0.14), transparent 55%), radial-gradient(90% 70% at 0% 100%, rgba(19, 136, 8, 0.16), transparent 55%), radial-gradient(120% 80% at 80% 0%, rgba(255, 153, 51, 0.14), transparent 55%), radial-gradient(90% 70% at 0% 100%, rgba(19, 136, 8, 0.16), transparent 55%), radial-gradient(120% 80% at 80% 0%, rgba(255, 153, 51, 0.14), transparent 55%), radial-gradient(90% 70% at 0% 100%, rgba(19, 136, 8, 0.16), transparent 55%) var(--color-blue-transparent-3);
     background-size: cover;
-    opacity: 90%;
+    /*opacity: 90%;*/
 }
 
 .heroSection {
@@ -156,8 +156,8 @@
     }
 }
 
-.flex3{
-    width:100%;
+.flex3 {
+    width: 100%;
 }
 
 
