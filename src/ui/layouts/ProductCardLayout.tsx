@@ -10,7 +10,8 @@ export interface ProductCardLayoutPropTypes {
     bulletPoints: string[],
     colorScheme: string,
     addedStyle?: string,
-    version: "saffron" | "blue" | "green"
+    version: "saffron" | "blue" | "green",
+    linkUrl: string,
 }
 
 export default function ProductCardLayout({
@@ -21,7 +22,8 @@ export default function ProductCardLayout({
                                               bulletPoints,
                                               colorScheme,
                                               addedStyle,
-                                              version
+                                              version,
+                                              linkUrl
                                           }: ProductCardLayoutPropTypes
 ) {
     let selctedColor = ""
@@ -59,7 +61,7 @@ export default function ProductCardLayout({
                                         colorScheme={colorScheme}/>
             </div>
 
-            <Link href="" className={`boldNormal ${styles.link} ${selctedColor}`}>{linkText}</Link>
+            <Link href={linkUrl} className={`boldNormal ${styles.link} ${selctedColor}`}>{linkText}</Link>
 
         </div>
     )
