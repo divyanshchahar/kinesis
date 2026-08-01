@@ -38,6 +38,7 @@
     --color-blue-6: rgba(30, 58, 138, 1);
     --color-blue-transparent-1: rgba(30, 58, 138, 0.25);
     --color-blue-transparent-2: rgba(30, 58, 138, 0.08);
+    --color-blue-transparent-3: rgba(22, 32, 58, 0.9);
 
     --color-grey-1: rgba(90, 100, 120, 1);
     --color-grey-2: rgba(90, 100, 120, 1);
@@ -289,7 +290,7 @@ button {
 .maxWidthContainer {
     max-width: var(--max-width-xxl);
     margin: auto;
-    width:100%
+    width: 100%
 }
 
 .paddedContainer {
