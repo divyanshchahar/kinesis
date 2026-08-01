@@ -3,6 +3,7 @@ import AccentedHeading1Layout from "@/ui/layouts/AccentedHeading1Layout";
 import ProductCardLayout from "@/ui/layouts/ProductCardLayout";
 import styles from "./page.module.css"
 import CTA1Layout from "@/ui/layouts/CTA1Layout";
+import interNalLinks from "./../../const/internalRoutes.json"
 
 export default function Products() {
     return (
@@ -27,6 +28,7 @@ export default function Products() {
                                                colorScheme={"colorScheme2"}
                                                version={"green"}
                                                addedStyle={styles.productCard}
+                                               linkUrl={interNalLinks.products.hybridPowerPlant}
                             />
 
                             <ProductCardLayout headingText={"Carbon Capture"}
@@ -36,6 +38,7 @@ export default function Products() {
                                                colorScheme={"colorScheme2"}
                                                version={"green"}
                                                addedStyle={styles.productCard}
+                                               linkUrl={interNalLinks.products.carbonCapture}
                             />
 
                             <ProductCardLayout headingText={"Ambient Air Purification"}
@@ -45,6 +48,7 @@ export default function Products() {
                                                colorScheme={"colorScheme2"}
                                                version={"green"}
                                                addedStyle={styles.productCard}
+                                               linkUrl={interNalLinks.products.ambientAirPurification}
                             />
 
                             <ProductCardLayout headingText={"Waste to Hydrogen"}
@@ -52,14 +56,18 @@ export default function Products() {
                                                linkText={"View Details"}
                                                bulletPoints={["Clean hydrogen fuel from waste", "Valuable metal-carbonate by-products", "Charcoal upgradable to graphene", "Tackles stubble-burning & municipal waste"]}
                                                colorScheme={"colorScheme2"}
-                                               version={"green"} addedStyle={styles.productCard}/>
+                                               version={"green"}
+                                               addedStyle={styles.productCard}
+                                               linkUrl={interNalLinks.products.wasteToHydrogen}
+                            />
 
                             <ProductCardLayout headingText={"Plastic to Diesel"}
                                                bodyText={"A pyrolysis reactor with catalytic hydro treatment that converts plastic waste into certified high-speed diesel and carbon nano materials."}
                                                bulletPoints={["India’s first policy-recognised solution", "8,000–24,000 L ULSD per day (80% yield)", "BS6 / Euro 6 compliant, < 8 ppm sulphur", "Designed as a carbon net-zero process"]}
                                                linkText={"View Details"}
                                                version={"green"} colorScheme={"colorScheme2"}
-                                               addedStyle={styles.productCard}/>
+                                               addedStyle={styles.productCard}
+                                               linkUrl={interNalLinks.products.plastictoDiesel}/>
                         </div>
                     </div>
 
@@ -72,7 +80,8 @@ export default function Products() {
                                                linkText={"View Details"}
                                                bulletPoints={["Built for surveillance & combat roles", "Indigenous design and manufacture", "Suited to defence & border security", "Detailed specifications on request"]}
                                                colorScheme={"colorScheme2"}
-                                               version={"blue"} addedStyle={styles.productCard}/>
+                                               version={"blue"} addedStyle={styles.productCard}
+                                               linkUrl={interNalLinks.products.uavAndUcav}/>
                         </div>
 
                     </div>
@@ -86,7 +95,8 @@ export default function Products() {
                                                linkText={"View Details"}
                                                bulletPoints={["Built for surveillance & combat roles", "Indigenous design and manufacture", "Suited to defence & border security", "Detailed specifications on request"]}
                                                colorScheme={"colorScheme2"}
-                                               version={"saffron"} addedStyle={styles.productCard}/>
+                                               version={"saffron"} addedStyle={styles.productCard}
+                                               linkUrl={interNalLinks.products.private5g}/>
                         </div>
                     </div>
 
