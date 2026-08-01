@@ -1,6 +1,8 @@
 import type {Metadata} from "next";
 import {Manrope, Space_Grotesk} from "next/font/google";
 import "./globals.css";
+import NavBarLayout from "@/ui/layouts/NavBarLayout";
+import FooterLayout from "@/ui/layouts/FooterLayout";
 
 const headingFont = Space_Grotesk({
     variable: "--font-family-heading",
@@ -22,7 +24,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={`${normalFont.variable} ${headingFont.variable}`}>
+        <NavBarLayout/>
         <body>{children}</body>
+        <FooterLayout/>
         </html>
     );
 }
