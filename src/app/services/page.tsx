@@ -2,6 +2,7 @@ import Header1Layout from "@/ui/layouts/Header1Layout";
 import ServiceCardLayout from "@/ui/layouts/ServiceCardLayout";
 import styles from "./page.module.css"
 import CTA1Layout from "@/ui/layouts/CTA1Layout";
+import internalUrl from "./../../const/internalRoutes.json"
 
 export default function Services() {
     return (
@@ -17,19 +18,25 @@ export default function Services() {
                                        bodyText={"Technical insight for high-stakes decision-making — guiding defence and government clients through the full lifecycle of unmanned aerial platforms."}
                                        linkText={"Related: UAV & UCAV platforms"}
                                        bulletPoints={["Platform selection & procurement — strategy guidance matched to mission requirements and budgets.", "Regulatory compliance support— navigating certification and airspace regulation.", "Operational integration expertise — embedding unmanned systems into existing operations."]}
-                                       colorScheme={"colorScheme2"} version={"blue"}/>
+                                       colorScheme={"colorScheme2"} version={"blue"}
+                                       navigationUrl={internalUrl.products.uavAndUcav}
+                                       id={"defence"}/>
 
-                    <ServiceCardLayout capsuleText={"sustainability"} headingText={"Waste-to-Energy Solutions"}
+                    <ServiceCardLayout capsuleText={"SUSTAINABILITY"} headingText={"Waste-to-Energy Solutions"}
                                        bodyText={"Turning waste liabilities into reliable power generation — for municipalities, industrial clients, and energy developers."}
                                        linkText={"Related: Waste to Hydrogen"}
                                        bulletPoints={["Feasibility studies & technology selection — grounded assessment of the right conversion pathway.", "Regulatory navigation — permits, compliance and policy alignment.", "Project implementation support — from pilot to full commercial operation."]}
-                                       colorScheme={"colorScheme2"} version={"green"}/>
+                                       colorScheme={"colorScheme2"} version={"green"}
+                                       navigationUrl={""}
+                                       id={"sustainabilitySolutions"}/>
 
                     <ServiceCardLayout capsuleText={"COMMUNICATION"} headingText={"Communications Solutions"}
                                        bodyText={"Resilient, secure infrastructure for mission-critical operations — serving defence, government, and commercial clients."}
                                        linkText={"Related: Private 5G Networks"}
                                        bulletPoints={["Systems integration — connecting new capability with existing infrastructure.", "Regulatory navigation — permits, compliance and policy alignment.", "Interoperability planning — ensuring systems, agencies and vendors work as one."]}
-                                       colorScheme={"colorScheme2"} version={"saffron"}/>
+                                       colorScheme={"colorScheme2"} version={"saffron"}
+                                       navigationUrl={internalUrl.products.uavAndUcav}
+                                       id={"communication"}/>
                 </div>
             </div>
 
@@ -38,3 +45,4 @@ export default function Services() {
         </>
     )
 }
+

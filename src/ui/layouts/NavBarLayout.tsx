@@ -112,20 +112,23 @@ const DropDownMenu = () => {
                     </Link>
 
                     <div className={`${styles.linkCarrier} ${!isServices && styles.hide}`}>
-                        <Link href={internalLinks.services} className={`${styles.menuItemLink} lightNormal`}
+                        <Link href={internalLinks.services.root} className={`${styles.menuItemLink} lightNormal`}
                               onClick={() => toggleMenu()}>
                             <p>All Services</p>
                         </Link>
 
-                        <Link href={""} className={`${styles.menuItemLink} lightNormal`} onClick={() => toggleMenu()}>
+                        <Link href={internalLinks.services.defence} className={`${styles.menuItemLink} lightNormal`}
+                              onClick={() => toggleMenu()}>
                             <p>UCAV and UAV Consultation</p>
                         </Link>
 
-                        <Link href={""} className={`${styles.menuItemLink} lightNormal`} onClick={() => toggleMenu()}>
+                        <Link href={internalLinks.services.sustainability}
+                              className={`${styles.menuItemLink} lightNormal`} onClick={() => toggleMenu()}>
                             <p>Waste to Energy Solution</p>
                         </Link>
 
-                        <Link href={""} className={`${styles.menuItemLink} lightNormal`} onClick={() => toggleMenu()}>
+                        <Link href={internalLinks.services.communication}
+                              className={`${styles.menuItemLink} lightNormal`} onClick={() => toggleMenu()}>
                             <p>Communication Solution</p>
                         </Link>
                     </div>
@@ -279,19 +282,22 @@ const MenubarDemo = () => {
                         <Menubar.Label className={styles.label}>Services</Menubar.Label>
 
                         <Menubar.Item className={`${styles.Item} boldNormal ${localColorScheme}`}
-                                      onSelect={() => navigateOnClick(internalLinks.services)}>
+                                      onSelect={() => navigateOnClick(internalLinks.services.root)}>
                             All Services
                         </Menubar.Item>
 
-                        <Menubar.Item className={`${styles.Item} boldNormal ${localColorScheme}`}>
+                        <Menubar.Item className={`${styles.Item} boldNormal ${localColorScheme}`}
+                                      onSelect={() => navigateOnClick(internalLinks.services.defence)}>
                             UCAV and UAV Consultaion
                         </Menubar.Item>
 
-                        <Menubar.Item className={`${styles.Item} boldNormal ${localColorScheme}`}>
+                        <Menubar.Item className={`${styles.Item} boldNormal ${localColorScheme}`}
+                                      onSelect={() => navigateOnClick(internalLinks.services.sustainability)}>
                             Waste to Energy Solution
                         </Menubar.Item>
 
-                        <Menubar.Item className={`${styles.Item} boldNormal ${localColorScheme}`}>
+                        <Menubar.Item className={`${styles.Item} boldNormal ${localColorScheme}`}
+                                      onSelect={() => navigateOnClick(internalLinks.services.communication)}>
                             Communication Solutions
                         </Menubar.Item>
 
@@ -304,8 +310,7 @@ const MenubarDemo = () => {
 
 export default function NavBarLayout() {
     return (
-        // <div className={`${styles.stickyContainer}`}>
-        <div>
+        <div className={`${styles.stickyContainer}`}>
             <div className={`${styles.triColor}`}>
                 <hr className={`${styles.saffronLine}`}/>
                 <hr className={`${styles.whiteLine}`}/>
@@ -321,8 +326,6 @@ export default function NavBarLayout() {
                     <MenubarDemo/>
                     <CTAButton version={"inline"} ctaText={"Contact Us"}/>
                 </div>
-
-
             </div>
         </div>
     )

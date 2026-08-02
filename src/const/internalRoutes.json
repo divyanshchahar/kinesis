@@ -1,6 +1,11 @@
 {
   "home": "/",
-  "services": "/services",
+  "services": {
+    "root": "/services",
+    "sustainability": "/services#sustainabilitySolutions",
+    "defence": "/services#defence",
+    "communication": "/services#communication"
+  },
   "products": {
     "root": "/products",
     "ambientAirPurification": "/products/ambient_air_purification",
@@ -13,10 +18,10 @@
   },
   "aboutus": {
     "root": "/aboutus",
-    "companyOverview": "/aboutus/#compnayOverview",
-    "missionAndVision": "/aboutus/#missionAndVision",
-    "industrialNationalism": "/aboutus/#industrialNationalism",
-    "ourTeam": "/aboutus/#ourTeam"
+    "companyOverview": "/aboutus#compnayOverview",
+    "missionAndVision": "/aboutus#missionAndVision",
+    "industrialNationalism": "/aboutus#industrialNationalism",
+    "ourTeam": "/aboutus#ourTeam"
   },
   "contactus": "/contactus"
 }
