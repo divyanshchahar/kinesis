@@ -39,7 +39,7 @@ export default function PlasticToDiesel() {
                                                 version={"green"}/>
 
                         <UnorderedListComponent listType={"check mark"} listColor={"green"}
-                                                listItems={[`Sulphur content: < 8 ppm`, `Emissions (at 2000 RPM): NOx 6 ppm, CO 4 ppm`, `Certifications: ISCC, EN590, BIS`]}
+                                                listItems={[`Sulphur content: < 8 ppm`, `Emissions (at 2000 RPM): NOx 6 ppm, CO 4 ppm`, `Compliance: BS6, Euro 6, CPCB2, EU Stage 5`,`Certifications: ISCC, EN590, BIS`]}
                                                 colorScheme={"colorScheme2"} addedStyles={styles.unOrderedList}/>
                     </div>
 
@@ -73,7 +73,7 @@ export default function PlasticToDiesel() {
 
                             <TextCard4Layout colorScheme={"colorScheme3"} version={`accented`}
                                              headingText={"Franchisee receives"}
-                                             bulletPoints={[`~6,000 L/day of BS6-grade diesel at ₹10/L below market`, `This is a list item₹2 Cr annual return (after a 6-month moratorium)`, `Partial capital and full working-capital funding`, `OEM management handled by the operating company`, `Option to take over the plant after 10 years`]}
+                                             bulletPoints={[`~6,000 L/day of BS6-grade diesel at ₹10/L below market`, `₹2 Cr annual return (after a 6-month moratorium)`, `Partial capital and full working-capital funding`, `OEM management handled by the operating company`, `Option to take over the plant after 10 years`]}
                                              addedStyle={styles.flexContainer}/>
                         </div>
                     </div>
