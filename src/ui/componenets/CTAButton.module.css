@@ -4,6 +4,10 @@
     border-radius: var(--radius-2);
 }
 
+.container:hover {
+    cursor: pointer;
+}
+
 .smallPAdding {
     padding: var(--dimension-1) var(--dimension-2);
 }
