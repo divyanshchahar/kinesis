@@ -1,3 +1,5 @@
+"use client"
+
 import Header1Layout from "@/ui/layouts/Header1Layout";
 import styles from "./page.module.css"
 import UnorderedListComponent from "@/ui/componenets/UnorderedListComponent";
@@ -62,7 +64,8 @@ export default function ContactUS() {
                                                    placeHolder={"Type your medssaeg here"} mandatory={true}/>
 
                                 <CTAButton version={"inline"} ctaText={"Send Message"}
-                                           addedStyle={styles.centeredTExt}/>
+                                           addedStyle={styles.centeredTExt} clickHandler={() => {
+                                }}/>
                             </form>
                         </div>
                     </div>
@@ -71,3 +74,6 @@ export default function ContactUS() {
         </>
     )
 }
+
+// TODO
+// 1. Add Forms Data Collection

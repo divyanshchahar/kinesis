@@ -1,3 +1,5 @@
+"use client"
+
 import styles from "./page.module.css"
 import CTAButton from "@/ui/componenets/CTAButton";
 import TextCard5Layout from "@/ui/layouts/TextCard5Layout";
@@ -15,11 +17,15 @@ import bel from "./../../public/icons/bel.png"
 import bharatDynamics from "./../../public/icons/bharat dynamics limited.png"
 import engineeringProjects from "./../../public/icons/indian navy.png"
 import ministry from "./../../public/icons/ministry of new and renewable enrgy.svg"
+import {useRouter} from "next/navigation";
+import internalLinks from "./../const/internalRoutes.json"
 
 export default function Home() {
+
+    const router = useRouter();
+
     return (
         <>
-
             <div className={`${styles.heroImage}`}>
                 <div className={`colorScheme3 ${styles.heroBackground} paddedContainer`}>
                     <div className={`maxWidthContainer ${styles.heroSection}`}>
@@ -41,8 +47,14 @@ export default function Home() {
 
                         <div className={styles.buttonCarrier}>
                             <CTAButton version={"large"} ctaText={"Explore Our Solutions"}
-                                       addedStyle={`${styles.fitContent}`}/>
-                            <button className={`${styles.translucentButton} regularNormal ${styles.fitContent}`}>Partner
+                                       addedStyle={`${styles.fitContent}`} clickHandler={() => {
+                                router.push(internalLinks.products.root)
+                            }}/>
+
+                            <button className={`${styles.translucentButton} regularNormal ${styles.fitContent}`}
+                                    onClick={() => {
+                                        router.push(internalLinks.contactus)
+                                    }}>Partner
                                 with Us
                             </button>
                         </div>
@@ -162,40 +174,57 @@ export default function Home() {
                         </div>
 
                         <div className={`${styles.flex1}`}>
-                            <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"Hybrid Power Plants"}
-                                             bodyText={"Indigenous Solar + Wind hybrid, modular from 0.5kW to megawatts, deployed in 30+ countries."}
-                                             colorScheme={"colorScheme2"} addedStyle={styles.item4Width}/>
+                            <Link href={internalLinks.products.hybridPowerPlant}>
 
-                            <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"Carbon Capture"}
-                                             bodyText={"Electro-catalytic chamber that turns CO₂ into pure oxygen and high-value graphene."}
-                                             colorScheme={"colorScheme2"} addedStyle={styles.item4Width}/>
+                                <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"Hybrid Power Plants"}
+                                                 bodyText={"Indigenous Solar + Wind hybrid, modular from 0.5kW to megawatts, deployed in 30+ countries."}
+                                                 colorScheme={"colorScheme2"} addedStyle={styles.item4Width}/>
+                            </Link>
 
-                            <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"Ambient Air Purification"}
-                                             bodyText={"Waterless, filterless IIT Delhi tech — proven 25–40% AQI improvement in Delhi."}
-                                             colorScheme={"colorScheme2"} addedStyle={styles.item4Width}/>
+                            <Link href={internalLinks.products.carbonCapture}>
+                                <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"Carbon Capture"}
+                                                 bodyText={"Electro-catalytic chamber that turns CO₂ into pure oxygen and high-value graphene."}
+                                                 colorScheme={"colorScheme2"} addedStyle={styles.item4Width}/>
+                            </Link>
 
-                            <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"Waste to Hydrogen"}
-                                             bodyText={"Converts waste into clean hydrogen, metal carbonates and activated charcoal."}
-                                             colorScheme={"colorScheme2"} addedStyle={styles.item4Width}/>
+                            <Link href={internalLinks.products.ambientAirPurification}>
+                                <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"Ambient Air Purification"}
+                                                 bodyText={"Waterless, filterless IIT Delhi tech — proven 25–40% AQI improvement in Delhi."}
+                                                 colorScheme={"colorScheme2"} addedStyle={styles.item4Width}/>
+                            </Link>
 
-                            <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"Hybrid Power Plants"}
-                                             bodyText={"Indigenous Solar + Wind hybrid, modular from 0.5kW to megawatts, deployed in 30+ countries."}
-                                             colorScheme={"colorScheme2"} addedStyle={styles.item4Width}/>
+                            <Link href={internalLinks.products.wasteToHydrogen}>
+                                <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"Waste to Hydrogen"}
+                                                 bodyText={"Converts waste into clean hydrogen, metal carbonates and activated charcoal."}
+                                                 colorScheme={"colorScheme2"} addedStyle={styles.item4Width}/>
+                            </Link>
 
-                            <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"Plastic to Diesel"}
-                                             bodyText={"Pyrolysis reactor producing certified ULSD — India’s first policy-recognised solution."}
-                                             colorScheme={"colorScheme2"}
-                                             addedStyle={styles.item4Width}/>
+                            <Link href={internalLinks.products.hybridPowerPlant}>
+                                <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"Hybrid Power Plants"}
+                                                 bodyText={"Indigenous Solar + Wind hybrid, modular from 0.5kW to megawatts, deployed in 30+ countries."}
+                                                 colorScheme={"colorScheme2"} addedStyle={styles.item4Width}/>
+                            </Link>
 
-                            <TextCard3Layout smallText={"DEFENCE"} headingText={"UAV & UCAV"}
-                                             bodyText={"Indigenous unmanned aerial and combat platforms for surveillance and defence."}
-                                             colorScheme={"colorScheme2"}
-                                             addedStyle={styles.item4Width}/>
+                            <Link href={internalLinks.products.plastictoDiesel}>
+                                <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"Plastic to Diesel"}
+                                                 bodyText={"Pyrolysis reactor producing certified ULSD — India’s first policy-recognised solution."}
+                                                 colorScheme={"colorScheme2"}
+                                                 addedStyle={styles.item4Width}/>
+                            </Link>
 
-                            <TextCard3Layout smallText={"COMMUNICATION"} headingText={"Private 5G Networks"}
-                                             bodyText={"Portable, plug-and-play private 5G — 10km reach, sub-10ms latency, off-grid ready."}
-                                             colorScheme={"colorScheme2"}
-                                             addedStyle={styles.item4Width}/>
+                            <Link href={internalLinks.products.uavAndUcav}>
+                                <TextCard3Layout smallText={"DEFENCE"} headingText={"UAV & UCAV"}
+                                                 bodyText={"Indigenous unmanned aerial and combat platforms for surveillance and defence."}
+                                                 colorScheme={"colorScheme2"}
+                                                 addedStyle={styles.item4Width}/>
+                            </Link>
+
+                            <Link href={internalLinks.products.private5g}>
+                                <TextCard3Layout smallText={"COMMUNICATION"} headingText={"Private 5G Networks"}
+                                                 bodyText={"Portable, plug-and-play private 5G — 10km reach, sub-10ms latency, off-grid ready."}
+                                                 colorScheme={"colorScheme2"}
+                                                 addedStyle={styles.item4Width}/>
+                            </Link>
                         </div>
                     </div>
                 </div>
