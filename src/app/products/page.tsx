@@ -20,7 +20,7 @@ export default function Products() {
                         <AccentedHeading1Layout colorScheme={"colorScheme2"} headingText={"Sustainability Solution"}
                                                 version={"green"}/>
 
-                        <div className={"innerFlexContainer"}>
+                        <div className={"innerFlexContainer"} id={"sustainabilitySolutions"}>
                             <ProductCardLayout headingText={"Hybrid Power Plant"}
                                                bodyText={"A one-of-a-kind, 100% indigenous hybrid combining Solar and Wind energy — modular, effective even at low wind speeds, and customisable for any terrain."}
                                                linkText={"View Details"}
