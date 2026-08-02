@@ -12,6 +12,7 @@ export interface ServiceCardLayoutPropTypes {
     addedStyle?: string,
     version: "saffron" | "blue" | "green",
     navigationUrl: string,
+    id?: string,
 }
 
 export default function ServiceCardLayout({
@@ -23,7 +24,7 @@ export default function ServiceCardLayout({
                                               colorScheme,
                                               addedStyle,
                                               version,
-                                              navigationUrl
+                                              navigationUrl, id
                                           }: ServiceCardLayoutPropTypes
 ) {
     let selctedCapsuleColor = ""
@@ -46,7 +47,7 @@ export default function ServiceCardLayout({
     }
 
     return (
-        <div className={`${colorScheme} ${styles.container} ${addedStyle}`}>
+        <div className={`${colorScheme} ${styles.container} ${addedStyle}`} id={id}>
             <div className={styles.top}>
                 <div className={`lightSmall ${styles.capsule} ${selctedCapsuleColor}`}>{capsuleText}</div>
 
