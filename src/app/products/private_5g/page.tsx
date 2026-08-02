@@ -123,7 +123,8 @@ export default function PlasticToDiesel() {
                         </div>
                     </div>
 
-                    <CTA2Layout colorScheme={"colorScheme3"} headingText={"Interested in Plastic to Diesel?"}
+                    <CTA2Layout colorScheme={"colorScheme3"}
+                                headingText={"Interested in Private 5G Networks — RDN Box?"}
                                 bodyText={"Request a detailed brief, specifications or a technology demonstration."}/>
                 </div>
             </div>
