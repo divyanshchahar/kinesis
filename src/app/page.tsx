@@ -50,7 +50,11 @@ export default function Home() {
                                        addedStyle={`${styles.fitContent}`} clickHandler={() => {
                                 router.push(internalLinks.products.root)
                             }}/>
-                            <button className={`${styles.translucentButton} regularNormal ${styles.fitContent}`}>Partner
+
+                            <button className={`${styles.translucentButton} regularNormal ${styles.fitContent}`}
+                                    onClick={() => {
+                                        router.push(internalLinks.products.root)
+                                    }}>Partner
                                 with Us
                             </button>
                         </div>
