@@ -83,7 +83,7 @@ export default function HybridPowerPlant() {
 
                         <DetailsCardLayout colorScheme={"colorScheme2"} version={"green"}
                                            headingText={"Mobile & Emergency"}
-                                           bulletPoints={["Vehicle-mounted for medical, comms and command-control", "Supports disaster management, police and defence\n", "Toll plazas and advertising displays"]}
+                                           bulletPoints={["Vehicle-mounted for medical, comms and command-control", "Supports disaster management, police and defence"]}
                                            addedStyling={`${styles.xxsContainer}`}/>
 
                         <DetailsCardLayout colorScheme={"colorScheme2"} version={"green"}
