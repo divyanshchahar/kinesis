@@ -19,7 +19,7 @@ export default function CarbonCApture() {
                                         headingText={"Turning emissions into value"}
                                         version={"green"}/>
 
-                <p className={`lightNormal ${styles.max60chContainer}`}>
+                <p className={`regularNormal ${styles.max60chContainer}`}>
                     The captured carbon is produced as graphene — a high-value nanomaterial known for its exceptional
                     strength, conductivity and versatility, with commercial applications across electronics, energy
                     storage, construction and advanced materials manufacturing.
