@@ -1,6 +1,9 @@
 {
   "home": "/",
-  "services": "/services",
+  "services": {
+    "root": "/services",
+    "sustainability": "/services/#sustainabilitySolutions"
+  },
   "products": {
     "root": "/products",
     "ambientAirPurification": "/products/ambient_air_purification",
