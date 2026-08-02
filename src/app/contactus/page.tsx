@@ -1,3 +1,5 @@
+"use client"
+
 import Header1Layout from "@/ui/layouts/Header1Layout";
 import styles from "./page.module.css"
 import UnorderedListComponent from "@/ui/componenets/UnorderedListComponent";
