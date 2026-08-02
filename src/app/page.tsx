@@ -1,3 +1,5 @@
+"use client"
+
 import styles from "./page.module.css"
 import CTAButton from "@/ui/componenets/CTAButton";
 import TextCard5Layout from "@/ui/layouts/TextCard5Layout";
@@ -15,11 +17,15 @@ import bel from "./../../public/icons/bel.png"
 import bharatDynamics from "./../../public/icons/bharat dynamics limited.png"
 import engineeringProjects from "./../../public/icons/indian navy.png"
 import ministry from "./../../public/icons/ministry of new and renewable enrgy.svg"
+import {useRouter} from "next/navigation";
+import internalLinks from "./../const/internalRoutes.json"
 
 export default function Home() {
+
+    const router = useRouter();
+
     return (
         <>
-
             <div className={`${styles.heroImage}`}>
                 <div className={`colorScheme3 ${styles.heroBackground} paddedContainer`}>
                     <div className={`maxWidthContainer ${styles.heroSection}`}>
@@ -41,7 +47,9 @@ export default function Home() {
 
                         <div className={styles.buttonCarrier}>
                             <CTAButton version={"large"} ctaText={"Explore Our Solutions"}
-                                       addedStyle={`${styles.fitContent}`}/>
+                                       addedStyle={`${styles.fitContent}`} clickHandler={() => {
+                                router.push(internalLinks.products.root)
+                            }}/>
                             <button className={`${styles.translucentButton} regularNormal ${styles.fitContent}`}>Partner
                                 with Us
                             </button>

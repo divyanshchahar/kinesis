@@ -40,6 +40,8 @@ const DropDownMenu = () => {
         setIsMenu(!isMenu);
     }
 
+    const router = useRouter();
+
 
     return (
         <>
@@ -165,7 +167,10 @@ const DropDownMenu = () => {
 
                 <hr/>
 
-                <CTAButton version={"inline"} ctaText={"Contact Us"} addedStyle={styles.ctaButton}/>
+                <CTAButton version={"inline"} ctaText={"Contact Us"} addedStyle={styles.ctaButton}
+                           clickHandler={() => {
+                               router.push(internalLinks.contactus)
+                           }}/>
             </div>
         </>
     )
@@ -309,6 +314,8 @@ const MenubarDemo = () => {
 };
 
 export default function NavBarLayout() {
+
+    const router = useRouter();
     return (
         <div className={`${styles.stickyContainer}`}>
             <div className={`${styles.triColor}`}>
@@ -324,7 +331,9 @@ export default function NavBarLayout() {
 
                 <div className={`${styles.desktop}`}>
                     <MenubarDemo/>
-                    <CTAButton version={"inline"} ctaText={"Contact Us"}/>
+                    <CTAButton version={"inline"} ctaText={"Contact Us"} clickHandler={() => {
+                        router.push(internalLinks.contactus)
+                    }}/>
                 </div>
             </div>
         </div>
