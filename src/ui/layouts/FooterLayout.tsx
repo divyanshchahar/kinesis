@@ -24,10 +24,10 @@ export default function FooterLayout() {
 
                 <div className={`${styles.links}`}>
                     <p className={`boldNormal ${styles.secondryText}`}>EXPLORE</p>
-                    <Link href={""} className={"regularNormal"}>About Us</Link>
-                    <Link href={""} className={"regularNormal"}>Products</Link>
-                    <Link href={""} className={"regularNormal"}>Services</Link>
-                    <Link href={""} className={"regularNormal"}>Contact Us</Link>
+                    <Link href={internalLinks.aboutus.root} className={"regularNormal"}>About Us</Link>
+                    <Link href={internalLinks.products.root} className={"regularNormal"}>Products</Link>
+                    <Link href={internalLinks.services.root} className={"regularNormal"}>Services</Link>
+                    <Link href={internalLinks.contactus} className={"regularNormal"}>Contact Us</Link>
                 </div>
 
                 <div className={`${styles.links}`}>
