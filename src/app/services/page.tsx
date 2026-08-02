@@ -33,7 +33,7 @@ export default function Services() {
                     <ServiceCardLayout capsuleText={"COMMUNICATION"} headingText={"Communications Solutions"}
                                        bodyText={"Resilient, secure infrastructure for mission-critical operations — serving defence, government, and commercial clients."}
                                        linkText={"Related: Private 5G Networks"}
-                                       bulletPoints={["Systems integration — connecting new capability with existing infrastructure.", "Regulatory navigation — permits, compliance and policy alignment.", "Interoperability planning — ensuring systems, agencies and vendors work as one."]}
+                                       bulletPoints={["Network design for mission-critical operations — engineered for reliability under pressure.", "Systems integration — connecting new capability with existing infrastructure.", "Interoperability planning — ensuring systems, agencies and vendors work as one."]}
                                        colorScheme={"colorScheme2"} version={"saffron"}
                                        navigationUrl={internalUrl.products.uavAndUcav}
                                        id={"communication"}/>
