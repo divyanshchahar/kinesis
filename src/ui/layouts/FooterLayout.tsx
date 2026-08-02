@@ -1,10 +1,17 @@
+"use client"
+
 import styles from "./FooterLayout.module.css"
 import Link from "next/link";
 import CTAButton from "@/ui/componenets/CTAButton";
 import companyLogo from "./../../../public/logo/logo.svg"
 import Image from "next/image"
+import {useRouter} from "next/navigation";
+import internalLinks from "./../../const/internalRoutes.json"
+
 
 export default function FooterLayout() {
+    const router = useRouter();
+
     return (
         <div className={`paddedContainer ${styles.container} colorScheme3`}>
 
@@ -27,7 +34,8 @@ export default function FooterLayout() {
                     <p className={`boldNormal ${styles.secondryText}`}>CONTACT</p>
                     <p className={"regularNormal"}>+91-9971870714</p>
                     <p className={"regularNormal"}>info@kinesistecch.in</p>
-                    <CTAButton version={"inline"} ctaText={"Start a Conversation"} addedStyle={styles.fittedWidth}/>
+                    <CTAButton version={"inline"} ctaText={"Start a Conversation"} addedStyle={styles.fittedWidth}
+                               clickHandler={() => router.push(internalLinks.contactus)}/>
                 </div>
             </div>
 
