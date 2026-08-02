@@ -17,7 +17,7 @@ export default function AboutUs() {
                            bodyText={"Kinesis is a pioneering initiative aimed at uniting Indian industries and enabling small OEMs to make their mark in both national and international markets. Our platform is enriched by leading technical and operational specialists from industry, academia, the military, and public administration — and by senior former diplomats who open global doors."}/>
 
             {/*MISSION AND VISION*/}
-            <div className={`paddedContainer colorScheme1`}>
+            <div className={`paddedContainer colorScheme1`} id={"missionAndVision"}>
                 <div className={`maxWidthContainer ${styles.missionAndVision}`}>
                     <TextCard2Layout headingText={"Our Mission"}
                                      bodyText={"Consolidating the efforts of Indian industrialists — with a special focus on small enterprises and OEMs — to foster collaboration and innovative development in a spirit of industrial patriotism that drives growth, self-reliance, and pride in our country's industrial heritage."}
@@ -36,7 +36,7 @@ export default function AboutUs() {
             </div>
 
             {/*INDUSTRIAL NATIONALISM*/}
-            <div className={`paddedContainer colorScheme3`}>
+            <div className={`paddedContainer colorScheme3`} id={"industrialNationalism"}>
                 <div className={`maxWidthContainer ${styles.flex}`}>
                     <TextCard5Layout headingText={"Industrial Nationalism"}
                                      bodyText={"A concept that embodies our dream of uniting India's innovators, industries and academia to build a modern, self-reliant India — not just a philosophy, but a movement we aspire to ignite across the nation."}
@@ -84,7 +84,7 @@ export default function AboutUs() {
             </div>
 
             {/*WHAT WE BELIEVE IN*/}
-            <div className={`paddedContainer colorScheme2`}>
+            <div className={`paddedContainer colorScheme2`} id={"compnayOverview"}>
 
                 <div className={`maxWidthContainer ${styles.flex}`}>
                     <TextCard5Layout headingText={"Supporting small, talented entrepreneurs."} bodyText={""}
@@ -101,6 +101,7 @@ export default function AboutUs() {
                                          bodyText={"Synergy between Indian companies drives collective, self-reliant growth."}
                                          colorScheme={"colorScheme2"} lineColor={"green"}
                                          backgroundColor={"foreground"}/>
+
                         <TextCard1Layout lineColor={"blue"} backgroundColor={"foreground"}
                                          headingText={"Exports, not dependence"}
                                          bodyText={"International collaboration serves strategy and exports — never dependence."}
@@ -111,7 +112,7 @@ export default function AboutUs() {
             </div>
 
             {/*OUR TEAM*/}
-            <div className={`paddedContainer colorScheme1`}>
+            <div className={`paddedContainer colorScheme1`} id={"ourTeam"}>
                 <div className={`maxWidthContainer ${styles.flex}`}>
                     <TextCard5Layout smallText={"OUR TEAM"} headingText={"The people behind Kinesis."}
                                      bodyText={"A compact team combining entrepreneurial leadership with decades of hands-on expertise across defence, sustainable energy and communications — each member leading the practice they know best."}
