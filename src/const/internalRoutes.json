@@ -11,5 +11,12 @@
     "wasteToHydrogen": "/products/waste_to_hydrogen",
     "private5g": "/products/private_5g"
   },
+  "aboutus": {
+    "root": "/aboutus",
+    "companyOverview": "/aboutus/#compnayOverview",
+    "missionAndVision": "/aboutus/#missionAndVision",
+    "industrialNationalism": "/aboutus/#industrialNationalism",
+    "ourTeam": "/aboutus/#ourTeam"
+  },
   "contactus": "/contactus"
 }
