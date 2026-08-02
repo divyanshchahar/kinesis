@@ -53,7 +53,7 @@ export default function Home() {
 
                             <button className={`${styles.translucentButton} regularNormal ${styles.fitContent}`}
                                     onClick={() => {
-                                        router.push(internalLinks.products.root)
+                                        router.push(internalLinks.contactus)
                                     }}>Partner
                                 with Us
                             </button>
