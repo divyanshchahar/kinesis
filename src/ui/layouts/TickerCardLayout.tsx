@@ -18,11 +18,10 @@ export default function TickerCardLayout({colorScheme, addedStyle, clients}: Tic
                 <div className={`${styles.clients}`}>
                     {clients.map((client, i) => {
                         return (
-                            <>
+
                                 <ClientCardLayout clientImage={client.clientImage} clientName={client.clientName}
                                                   key={i}
                                                   addedStyle={`${styles.clientCard}`}/>
-                            </>
                         )
                     })}
                 </div>
@@ -30,11 +29,11 @@ export default function TickerCardLayout({colorScheme, addedStyle, clients}: Tic
                 <div className={`${styles.clients}`}>
                     {clients.map((client, i) => {
                         return (
-                            <>
-                                <ClientCardLayout clientImage={client.clientImage} clientName={client.clientName}
-                                                  key={i}
-                                                  addedStyle={`${styles.clientCard}`}/>
-                            </>
+
+                            <ClientCardLayout clientImage={client.clientImage} clientName={client.clientName}
+                                              key={i}
+                                              addedStyle={`${styles.clientCard}`}/>
+
                         )
                     })}
                 </div>

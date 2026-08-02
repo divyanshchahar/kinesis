@@ -115,6 +115,7 @@
     /*box-shadow: 0 2px 10px var(--black-a7);*/
     color: var(--color-text-primary);
     gap: var(--dimension-2);
+    z-index: 10;
 }
 
 .Trigger {
@@ -158,6 +159,7 @@
     animation-duration: 400ms;
     animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
     will-change: transform, opacity;
+    z-index: 11;
 }
 
 .Item,
@@ -260,7 +262,7 @@
 }
 
 
-.desktop{
+.desktop {
     display: none;
 }
 
@@ -272,7 +274,8 @@
     }
 }
 
-.stickyContainer{
+.stickyContainer {
     position: sticky;
     top: 0;
+    z-index: 10;
 }
