@@ -10,7 +10,8 @@ export interface ServiceCardLayoutPropTypes {
     bulletPoints: string[],
     colorScheme: string,
     addedStyle?: string,
-    version: "saffron" | "blue" | "green"
+    version: "saffron" | "blue" | "green",
+    navigationUrl: string,
 }
 
 export default function ServiceCardLayout({
@@ -21,7 +22,8 @@ export default function ServiceCardLayout({
                                               bulletPoints,
                                               colorScheme,
                                               addedStyle,
-                                              version
+                                              version,
+                                              navigationUrl
                                           }: ServiceCardLayoutPropTypes
 ) {
     let selctedCapsuleColor = ""
@@ -44,7 +46,7 @@ export default function ServiceCardLayout({
     }
 
     return (
-        <div className={`${colorScheme} ${styles.container}`}>
+        <div className={`${colorScheme} ${styles.container} ${addedStyle}`}>
             <div className={styles.top}>
                 <div className={`lightSmall ${styles.capsule} ${selctedCapsuleColor}`}>{capsuleText}</div>
 
@@ -52,11 +54,12 @@ export default function ServiceCardLayout({
 
                 <p className={`lightNormal`}>{bodyText}</p>
 
-                <Link href="" className={`boldNormal ${styles.link} ${linkColor}`}>{linkText}</Link>
+                <Link href={navigationUrl} className={`boldNormal ${styles.link} ${linkColor}`}>{linkText}</Link>
             </div>
 
             <div>
-                <UnorderedListComponent listType={"check mark"} listColor={version} listItems={bulletPoints} colorScheme={colorScheme}/>
+                <UnorderedListComponent listType={"check mark"} listColor={version} listItems={bulletPoints}
+                                        colorScheme={colorScheme}/>
             </div>
         </div>
     )
