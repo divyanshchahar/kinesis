@@ -112,7 +112,7 @@ const DropDownMenu = () => {
                     </Link>
 
                     <div className={`${styles.linkCarrier} ${!isServices && styles.hide}`}>
-                        <Link href={internalLinks.services} className={`${styles.menuItemLink} lightNormal`}
+                        <Link href={internalLinks.services.root} className={`${styles.menuItemLink} lightNormal`}
                               onClick={() => toggleMenu()}>
                             <p>All Services</p>
                         </Link>
@@ -279,7 +279,7 @@ const MenubarDemo = () => {
                         <Menubar.Label className={styles.label}>Services</Menubar.Label>
 
                         <Menubar.Item className={`${styles.Item} boldNormal ${localColorScheme}`}
-                                      onSelect={() => navigateOnClick(internalLinks.services)}>
+                                      onSelect={() => navigateOnClick(internalLinks.services.root)}>
                             All Services
                         </Menubar.Item>
 
