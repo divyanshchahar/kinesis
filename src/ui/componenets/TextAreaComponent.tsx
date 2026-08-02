@@ -19,7 +19,7 @@ export default function TextInputComponent({
     return (
         <div>
             <label
-                className={`${styles.label} regularNormal ${addedStyles} ${colorScheme} ${mandatory && styles.asterisk}`}>{fieldName}</label>
+                className={`${styles.label} boldSmall ${addedStyles} ${colorScheme} ${mandatory && styles.asterisk}`}>{fieldName}</label>
             <textarea placeholder={placeHolder} rows={3} className={`${styles.textarea} ${colorScheme} regularNormal`}/>
         </div>
     )
