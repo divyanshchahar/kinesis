@@ -18,8 +18,8 @@ export default function TextCard3Layout({
     return (
         <div className={`${styles.container} ${colorScheme} ${addedStyle}`}>
             <p className={"boldSmall"}>{smallText}</p>
-            <p className={"h6"}>{headingText}</p>
-            <p className={"lightNormal"}>{bodyText}</p>
+            <p className={`h6 ${styles.headingf}`}>{headingText}</p>
+            <p className={"regularNormal"}>{bodyText}</p>
         </div>
     )
 }
