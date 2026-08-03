@@ -1,0 +1,27 @@
+{
+  "home": "/",
+  "services": {
+    "root": "/services",
+    "sustainability": "/services#sustainabilitySolutions",
+    "defence": "/services#defence",
+    "communication": "/services#communication"
+  },
+  "products": {
+    "root": "/products",
+    "ambientAirPurification": "/products/ambient_air_purification",
+    "carbonCapture": "/products/carbon_capture",
+    "hybridPowerPlant": "/products/hybrid_power_plant",
+    "plastictoDiesel": "/products/plastic_to_diesel",
+    "uavAndUcav": "/products/uav",
+    "wasteToHydrogen": "/products/waste_to_hydrogen",
+    "private5g": "/products/private_5g"
+  },
+  "aboutus": {
+    "root": "/aboutus",
+    "companyOverview": "/aboutus#compnayOverview",
+    "missionAndVision": "/aboutus#missionAndVision",
+    "industrialNationalism": "/aboutus#industrialNationalism",
+    "ourTeam": "/aboutus#ourTeam"
+  },
+  "contactus": "/contactus"
+}

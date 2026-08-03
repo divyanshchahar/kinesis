@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-section-s);
+
+    color: var(--color-text-primary);
+    background-color: var(--color-blue-4);
+
+    hr {
+        border: 0.5px solid var(--color-text-secondary);
+        max-width: var(--max-width-xxl);
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.secondryText {
+    color: var(--color-text-secondary);
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-section-s);
+    width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .top {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.logoContainer {
+    text-align: center;
+    max-width: var(--max-width-xs);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimension-2);
+    width: fit-content;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimension-2);
+    width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .bottom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.fittedWidth {
+    width: fit-content;
+}
+
+.saffron {
+    color: var(--color-saffron-1);
+}

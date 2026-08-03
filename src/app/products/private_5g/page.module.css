@@ -1,0 +1,34 @@
+.unOrderedList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--dimension-4);
+}
+
+@media screen and (min-width: 480px) {
+    .unOrderedList {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: var(--dimension-4);
+
+        li {
+            max-width: var(--max-width-xxs);
+        }
+    }
+}
+
+.max60chContainer {
+    max-width: var(--max-width-60ch);
+}
+
+.flexContainer{
+    flex: 1;
+}
+
+@media screen and (min-width: 480px) {
+    .flexContainer{
+        min-width: var(--max-width-xxs);
+    }
+}

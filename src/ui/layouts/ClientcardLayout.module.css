@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--dimension-2);
+    align-items: center;
+    padding: var(--dimension-2);
+
+    width: fit-content;
+
+    background-color: var(--color-white-1);
+
+    border-radius: var(--radius-2);
+
+    p {
+        color: var(--color-blue-1)
+    }
+}

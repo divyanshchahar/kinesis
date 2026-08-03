@@ -1,0 +1,47 @@
+.container {
+    padding: var(--dimension-3);
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimension-2);
+    color: var(--color-text-primary);
+
+    border-radius: var(--radius-2);
+    border: 1px solid var(--color-border);
+    background-color: var(--color-foreground);
+}
+
+.line {
+    width: var(--dimension-5);
+    border-radius: 2px;
+}
+
+.capsule {
+    border: 1px solid var(--color-border);
+    padding: var(--dimension-1) var(--dimension-2);
+    width: fit-content;
+    border-radius: 9999px;
+    background-color: var(--color-background);
+}
+
+.countries {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--dimension-2);
+}
+
+.heading {
+    color: var(--color-heading);
+}
+
+.saffron {
+    border: 2px solid var(--color-saffron-1);
+}
+
+.green {
+    border: 2px solid var(--color-green-1);
+}
+
+.blue {
+    border: 2px solid var(--color-blue-3);
+}

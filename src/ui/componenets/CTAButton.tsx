@@ -4,10 +4,11 @@ export interface CTAButtonPropTypes {
     version: "large" | "inline",
     ctaText: string,
     addedStyle?: string
+    clickHandler: () => void
 }
 
 
-export default function CTAButton({version, ctaText, addedStyle}: CTAButtonPropTypes) {
+export default function CTAButton({version, ctaText, addedStyle, clickHandler}: CTAButtonPropTypes) {
     let paddedClassName = "";
 
     switch (version) {
@@ -20,7 +21,10 @@ export default function CTAButton({version, ctaText, addedStyle}: CTAButtonPropT
     }
 
     return (
-        <button className={`${addedStyle} boldNormal ${styles.container} ${paddedClassName} colorScheme1`}>
+        <button className={`${addedStyle} boldNormal ${styles.container} ${paddedClassName} colorScheme1`}
+                onClick={() => {
+                    clickHandler()
+                }}>
             {ctaText}
         </button>
     )

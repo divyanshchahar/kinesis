@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimension-2);
+    padding: var(--dimension-2) 0;
+    overflow: hidden;
+
+    background-color: var(--color-background);
+}
+
+.animatedRow {
+    display: flex;
+    width: max-content;
+    animation: ticker-scroll 15s linear infinite;
+    will-change: transform;
+}
+
+.animatedRow:hover {
+    animation-play-state: paused;
+}
+
+.clients {
+    display: flex;
+    flex-direction: row;
+    gap: var(--dimension-4);
+    padding: var(--dimension-2);
+    width: 100%;
+}
+
+.heading {
+    text-align: center;
+    color: var(--color-heading);
+}
+
+.clientCard {
+    flex-shrink: 0;
+}
+
+@keyframes ticker-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}

@@ -1,0 +1,281 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*padding: var(--padding-section-s);*/
+    padding: var(--dimension-2);
+    align-items: center;
+
+    background-color: rgb(22, 32, 58);
+    /*position: sticky;*/
+    /*top: 0;*/
+    opacity: 100%;
+    /*z-index: 1000;*/
+    width: 100%;
+}
+
+.triColor {
+    display: flex;
+    flex-direction: row;
+}
+
+.saffronLine {
+    width: 100%;
+    border: 1px solid var(--color-saffron-1);
+}
+
+.whiteLine {
+    width: 100%;
+    border: 1px solid var(--color-white-1);
+}
+
+.greenLine {
+    width: 100%;
+    border: 1px solid var(--color-green-1);
+}
+
+
+.dropDownMenu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimension-2);
+    position: absolute;
+    /*top: 300px;z*/
+    top: calc(100px + var(--padding-section-s));
+    left: 0;
+    background-color: var(--color-background);
+    width: 100%;
+    padding: var(--padding-section-s);
+
+    hr {
+        border: 1px solid var(--color-border);
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .dropDownMenu {
+        display: none;
+    }
+}
+
+.menuItemLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ctaButton {
+    text-align: center;
+}
+
+.linkCarrier {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimension-2);
+
+    padding: 0 var(--dimension-4);
+}
+
+.hide {
+    display: none !important;
+}
+
+.transform {
+    transform: rotate(180deg);
+}
+
+.hamBurgerMenuItem {
+    height: var(--font-size-m);
+    width: var(--font-size-m);
+    color: var(--color-white-1);
+}
+
+.hamburgerMenuButton {
+    all: unset;
+}
+
+@media screen and (min-width: 480px) {
+    .hamburgerMenuButton {
+        display: none;
+    }
+}
+
+
+/*###########*/
+/*# MENUBAR #*/
+/*###########*/
+
+.Root {
+    display: flex;
+    /*background-color: white;*/
+    /*background-color: red;*/
+    padding: var(--dimension-1);
+    border-radius: var(--radius-1);
+    /*box-shadow: 0 2px 10px var(--black-a7);*/
+    color: var(--color-text-primary);
+    gap: var(--dimension-2);
+    z-index: 10;
+}
+
+.Trigger {
+    all: unset;
+    /*padding: 8px 12px;*/
+    outline: none;
+    user-select: none;
+    /*font-weight: 500;*/
+    /*line-height: 1;*/
+    /*border-radius: 4px;*/
+    /*color: var(--violet-11);*/
+    /*font-size: 13px;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*gap: 2px;*/
+    font-family: var(--font-family-p), sans-serif;
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-n);
+}
+
+.Trigger[data-highlighted],
+.Trigger[data-state="open"] {
+    /*background-color: var(--violet-4);*/
+}
+
+.Content,
+.SubContent {
+    /*min-width: 220px;*/
+    /*background-color: white;*/
+    background-color: var(--color-background);
+    border-radius: var(--radius-1);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-primary);
+    padding: var(--dimension-1);
+    /*padding: 5px;*/
+    /*box-shadow: 0px 10px 38px -10px rgba(22, 23, 24, 0.35),*/
+    /*0px 10px 20px -15px rgba(22, 23, 24, 0.2);*/
+    animation-duration: 400ms;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+    z-index: 11;
+}
+
+.Item,
+.SubTrigger,
+.CheckboxItem,
+.RadioItem {
+    all: unset;
+    /*font-size: 13px;*/
+    /*line-height: 1;*/
+    /*color: var(--violet-11);*/
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    /*height: 25px;*/
+    /*padding: 0 10px;*/
+    padding: var(--dimension-1);
+    position: relative;
+    user-select: none;
+    color: var(--color-text-primary);
+
+    font-family: var(--font-family-p), sans-serif;
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: var(--font-weight-light);
+    line-height: var(--line-height-n);
+}
+
+.label {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+
+    /*background-color: red;*/
+
+    font-family: var(--font-family-p), sans-serif;
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: var(--font-weight-light);
+    line-height: var(--line-height-n);
+}
+
+.Item:global(.inset),
+.SubTrigger:global(.inset),
+.CheckboxItem:global(.inset),
+.RadioItem:global(.inset) {
+    /*padding-left: 20px;*/
+}
+
+.Item[data-state="open"],
+.SubTrigger[data-state="open"] {
+    background-color: var(--violet-4);
+    color: var(--violet-11);
+}
+
+.Item[data-highlighted],
+.SubTrigger[data-highlighted],
+.CheckboxItem[data-highlighted],
+.RadioItem[data-highlighted] {
+    /*color: var(--violet-1);*/
+    /*color: var(--color-text-primary);*/
+    background-color: var(--color-foreground);
+}
+
+.Item[data-disabled],
+.SubTrigger[data-disabled],
+.CheckboxItem[data-disabled],
+.RadioItem[data-disabled] {
+    color: var(--mauve-8);
+    pointer-events: none;
+}
+
+.ItemIndicator {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Separator {
+    height: 1px;
+    /*background-color: var(--violet-6);*/
+    background-color: var(--color-border);
+    margin: 5px;
+}
+
+.RightSlot {
+    margin-left: auto;
+    padding-left: 20px;
+    color: var(--mauve-9);
+}
+
+[data-highlighted] > .RightSlot {
+    color: white;
+}
+
+[data-disabled] > .RightSlot {
+    color: var(--mauve-8);
+}
+
+
+.desktop {
+    display: none;
+}
+
+@media screen and (min-width: 480px) {
+    .desktop {
+        display: flex;
+        flex-direction: row;
+        gap: var(--dimension-2);
+    }
+}
+
+.stickyContainer {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
