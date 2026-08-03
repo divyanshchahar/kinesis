@@ -21,7 +21,7 @@ export default function ContactUS() {
 
                         <div className={`${styles.flex} ${styles.gap2} ${styles.minWidth431}`}>
                             <div className={`${styles.contactUs} colorScheme3`}>
-                                <p className={`boldNormal`}>Reach Out</p>
+                                <p className={`h6 ${styles.heading}`}>Reach Out</p>
 
                                 <p className={`regularNormal ${styles.saffron}`}>EMAIL</p>
 
@@ -33,9 +33,9 @@ export default function ContactUS() {
                             </div>
 
                             <div className={`${styles.whoShouldContactUS} colorScheme2`}>
-                                <p className={`h6 ${styles.green}`}>WHO SHOULD REACH OUT</p>
+                                <p className={`boldSmall ${styles.green}`}>WHO SHOULD REACH OUT</p>
 
-                                <UnorderedListComponent listType={"arrow"} listColor={"green"}
+                                <UnorderedListComponent listType={"arrow"} listColor={"saffron"}
                                                         listItems={[`Indian OEMs and small manufacturers`, `Startups and entrepreneurs with homegrown tech`, `Government and defence procurement bodies`, `Partners seeking export collaboration`]}
                                                         colorScheme={"colorScheme2"}/>
                             </div>
@@ -61,9 +61,9 @@ export default function ContactUS() {
                                                     colorScheme={"colorScheme2"}/>
 
                                 <TextAreaComponent colorScheme={"colorScheme2"} fieldName={"Message"}
-                                                   placeHolder={"Type your medssaeg here"} mandatory={true}/>
+                                                   placeHolder={"Type your messaeg here"} mandatory={true}/>
 
-                                <CTAButton version={"inline"} ctaText={"Send Message"}
+                                <CTAButton version={"large"} ctaText={"Send Message"}
                                            addedStyle={styles.centeredTExt} clickHandler={() => {
                                 }}/>
                             </form>
