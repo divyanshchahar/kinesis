@@ -1,6 +1,5 @@
 import Header1Layout from "@/ui/layouts/Header1Layout";
 import ServiceCardLayout from "@/ui/layouts/ServiceCardLayout";
-import styles from "./page.module.css"
 import CTA1Layout from "@/ui/layouts/CTA1Layout";
 import internalUrl from "./../../const/internalRoutes.json"
 
@@ -13,7 +12,7 @@ export default function Services() {
                 bodyText={"Beyond our product portfolio, Kinesis offers specialist advisory services — helping institutions and enterprises make high-stakes technology decisions with confidence."}
                 colorScheme={"colorScheme3"}/>
             <div className={"colorScheme2 outerFlexContainer paddedContainer"}>
-                <div className={`maxWidthContainer ${styles.flex}`}>
+                <div className={`maxWidthContainer columnFlexContainer gapS`}>
                     <ServiceCardLayout capsuleText={"DEFENCE"} headingText={"UCAV & UAV Consultation"}
                                        bodyText={"Technical insight for high-stakes decision-making — guiding defence and government clients through the full lifecycle of unmanned aerial platforms."}
                                        linkText={"Related: UAV & UCAV platforms"}
