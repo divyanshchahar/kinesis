@@ -23,7 +23,7 @@ export default function CharctersticTableLayout({
         <div className={`${colorScheme} ${addedStyle} ${styles.container}`}>
             {values.map((value, i) => (
                 <CharactersticCardLayout key={i} characterstic={value.characterstic} value={value.value}
-                                         colorScheme={colorScheme} version={version}/>
+                                         colorScheme={colorScheme} version={version} addedStyle={styles.bordered}/>
             ))}
         </div>
     )
