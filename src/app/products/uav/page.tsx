@@ -12,32 +12,32 @@ export default function UAV() {
                            bodyText={"Indigenously developed Unmanned Aerial Vehicles (UAV) and Unmanned Combat Aerial Vehicles (UCAV) for surveillance, reconnaissance and mission-critical defence operations — supporting India’s self-reliance in defence technology."}
                            version={"blue"} hasBox={false}/>
 
-            <div className={`paddedContainer colorScheme2 outerFlexContainer`}>
-                <div className={`maxWidthContainer ${styles.outerFlex}`}>
+            <div className={`paddedContainer colorScheme2 columnFlexContainer gapS`}>
+                <div className={`maxWidthContainer columnFlexContainer gapS`}>
 
                     <AccentedHeading2Layout colorScheme={"colorScheme2"} headingText={"Capabilities"}
                                             version={"blue"}/>
 
-                    <div className={`${styles.flex}`}>
+                    <div className={`grid3 gapS`}>
                         <TextCard1Layout lineColor={"blue"} backgroundColor={"foreground"}
                                          headingText={"Surveillance & reconnaissance"}
                                          bodyText={"UCAV platforms engineered for mission-critical and time-sensitive defence operations."}
-                                         colorScheme={"colorScheme2"} addedStyles={styles.xxsContainer}/>
+                                         colorScheme={"colorScheme2"}/>
 
                         <TextCard1Layout lineColor={"blue"} backgroundColor={"foreground"}
                                          headingText={"Combat roles"}
                                          bodyText={"Persistent aerial monitoring for border security, situational awareness and intelligence gathering."}
-                                         colorScheme={"colorScheme2"} addedStyles={styles.xxsContainer}/>
+                                         colorScheme={"colorScheme2"}/>
 
                         <TextCard1Layout lineColor={"blue"} backgroundColor={"foreground"}
                                          headingText={"Indigenous design"}
                                          bodyText={"Developed and manufactured in India, reducing dependence on imported defence systems."}
-                                         colorScheme={"colorScheme2"} addedStyles={styles.xxsContainer}/>
+                                         colorScheme={"colorScheme2"}/>
                     </div>
 
                 </div>
 
-                <div className={`maxWidthContainer ${styles.outerFlex}`}>
+                <div className={`maxWidthContainer columnFlexContainer gapS`}>
 
                     <AccentedHeading2Layout colorScheme={"colorScheme2"} headingText={"Technical Briefing"}
                                             version={"blue"}/>
