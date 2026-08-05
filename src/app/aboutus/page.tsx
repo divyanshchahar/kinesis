@@ -37,7 +37,7 @@ export default function AboutUs() {
 
             {/*INDUSTRIAL NATIONALISM*/}
             <div className={`paddedContainer colorScheme3`} id={"industrialNationalism"}>
-                <div className={`maxWidthContainer ${styles.flex}`}>
+                <div className={`maxWidthContainer columnFlexContainer gapS`}>
                     <TextCard5Layout headingText={"Industrial Nationalism"}
                                      bodyText={"A concept that embodies our dream of uniting India's innovators, industries and academia to build a modern, self-reliant India — not just a philosophy, but a movement we aspire to ignite across the nation."}
                                      colorScheme={"colorScheme3"} version={"saffron"} smallText={"OUR MOTTO"}/>
@@ -86,12 +86,12 @@ export default function AboutUs() {
             {/*WHAT WE BELIEVE IN*/}
             <div className={`paddedContainer colorScheme2`} id={"compnayOverview"}>
 
-                <div className={`maxWidthContainer ${styles.flex}`}>
+                <div className={`maxWidthContainer columnFlexContainer gapS`}>
                     <TextCard5Layout headingText={"Supporting small, talented entrepreneurs."} bodyText={""}
                                      colorScheme={"colorScheme2"}
                                      smallText={"WHAT WE BELIEVE IN"} version={"green"}/>
 
-                    <div className={`${styles.flex}`}>
+                    <div className={`grid3 gapS`}>
                         <TextCard1Layout headingText={"Homegrown innovation"}
                                          bodyText={"Groundbreaking technology is born in startups and small organisations — we help it scale."}
                                          colorScheme={"colorScheme2"} lineColor={"saffron"}
@@ -113,45 +113,45 @@ export default function AboutUs() {
 
             {/*OUR TEAM*/}
             <div className={`paddedContainer colorScheme1`} id={"ourTeam"}>
-                <div className={`maxWidthContainer ${styles.flex}`}>
+                <div className={`maxWidthContainer columnFlexContainer gapS`}>
                     <TextCard5Layout smallText={"OUR TEAM"} headingText={"The people behind Kinesis."}
                                      bodyText={"A compact team combining entrepreneurial leadership with decades of hands-on expertise across defence, sustainable energy and communications — each member leading the practice they know best."}
                                      colorScheme={"colorScheme2"} version={"green"}/>
 
-                    <div className={`flex`}>
+                    <div className={`grid3 gapS`}>
                         <TeamMemberLayout teamMemberName={"Mayank Sharma"} teamMemberDesignation={"Founder & CEO"}
                                           teamMemberImage={founder}
                                           colorScheme={"colorScheme1"}
                                           bulletPoints={[`B.Tech in Electronics & Communications Engineering; MSc in Sports Industry Management, emlyon Business School`, `Delivered venue management and event consultancy for the Gujarat Cricket Association`, `Co-founded MyPicBook LLP and led IT project management across the tech sector`, `Former President of BloodConnect Foundation, driving community-first initiatives`, `Now building a start-up in hydrogen generation and carbon capture technology`]}
-                                          version={"saffron"} addedStyle={`${styles.flexMinWidth}`}/>
+                                          version={"saffron"}/>
 
                         <TeamMemberLayout teamMemberName={"Anubhav Kant Sharma"}
                                           teamMemberDesignation={"UAV & UCAV Advisor"}
                                           teamMemberImage={founder}
                                           colorScheme={"colorScheme1"}
                                           bulletPoints={[`10 years of experience in unmanned aerial and combat aerial vehicle systems`, `Background in systems integration, autonomous flight control and mission planning`, `Worked across the defence and aerospace sector at companies including Boeing and HAL`, `Advised on the LCA Tejas programme`, `Leads Kinesis's UAV/UCAV consultation practice`]}
-                                          version={"blue"} addedStyle={`${styles.flexMinWidth}`}/>
+                                          version={"blue"}/>
 
                         <TeamMemberLayout teamMemberName={"Parag Aggarwal"}
                                           teamMemberDesignation={"Waste to Energy Advisor"}
                                           teamMemberImage={founder}
                                           colorScheme={"colorScheme1"}
                                           bulletPoints={[`15 years of experience in sustainable energy and waste management`, `Expertise in anaerobic digestion, thermal conversion and circular economy frameworks`, `Contributed to NITI Aayog's E20 initiative`, `Advises Kinesis on environmentally responsible, commercially viable energy solutions`]}
-                                          version={"green"} addedStyle={`${styles.flexMinWidth}`}/>
+                                          version={"green"}/>
 
                         <TeamMemberLayout teamMemberName={"Sachin Gupta"}
                                           teamMemberDesignation={"Communication Solutions Advisor"}
                                           teamMemberImage={founder}
                                           colorScheme={"colorScheme1"}
                                           bulletPoints={[`20 years of experience in communications and connectivity`, `Expertise in telecom infrastructure and secure networks`, `Held senior roles at Airtel and Tata Docomo`, `Instrumental in Airtel's 5G roll-out`, `Helps Kinesis clients build resilient, future-ready communication systems`]}
-                                          version={"saffron"} addedStyle={`${styles.flexMinWidth}`}/>
+                                          version={"saffron"}/>
 
                         <TeamMemberLayout teamMemberName={"Manoj Kumar"}
                                           teamMemberDesignation={"ADVISOR"}
                                           teamMemberImage={father}
                                           colorScheme={"colorScheme1"}
                                           bulletPoints={[`Grew unit turnover and profit by 400% as factory head`, `Runner-up, Unit Head of the Year (All India)`, `Headed BEL's national and international marketing`, `Grew Naval orders tenfold; led ₹10,000+ Cr negotiations`, `Represented MoD delegation at Tokyo expo`, `B.E., NIT Karnataka`]}
-                                          version={"blue"} addedStyle={`${styles.flexMinWidth}`}/>
+                                          version={"blue"}/>
                     </div>
                 </div>
             </div>
