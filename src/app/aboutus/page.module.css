@@ -23,26 +23,8 @@
     }
 }
 
-.flexMinWidth {
-    width: 100%;
-}
-
-@media screen and (min-width: 480px) {
-    .flexMinWidth {
-        min-width: var(--max-width-xxs);
-        flex: 1;
-        max-width: 384px;
-    }
-}
-
 .bold {
     font-weight: var(--font-weight-bold);
-}
-
-.ourMotto {
-    display: flex;
-    flex-direction: column;
-    gap: var(--padding-section-m);
 }
 
 .highlightText {
@@ -55,10 +37,4 @@
     padding: var(--dimension-3);
     border-left: 2px solid var(--color-saffron-1);
     border-radius: 0 var(--radius-3) var(--radius-3) 0;
-}
-
-.flex{
-    display: flex;
-    flex-direction: column;
-    gap: var(--padding-section-s);
 }
