@@ -15,40 +15,38 @@ export default function WasteToHydrogen() {
 
             <div className={`paddedContainer colorScheme2 outerFlexContainer`}>
 
-                <div className={`maxWidthContainer ${styles.outerFlex}`}>
+                <div className={`maxWidthContainer columnFlexContainer gapS`}>
 
                     <AccentedHeading2Layout colorScheme={"colorScheme2"}
                                             headingText={"How it Works"}
                                             version={"green"}/>
 
-                    <div className={`${styles.flex}`}>
-
+                    <div className={`grid3 gapS`}>
                         <NumberedCardLayout headingText={"Segregation of particulate matter"}
                                             bodyText={"The system draws in ambient air and segregates suspended particulate matter (PM) from it."}
                                             number={"1"} colorScheme={"colorScheme2"}
-                                            addedStyle={`${styles.xxsContainer}`}/>
+                        />
 
                         <NumberedCardLayout headingText={"Concentration & collection"}
                                             bodyText={"These particles are concentrated and collected within the system."}
                                             number={"2"} colorScheme={"colorScheme2"}
-                                            addedStyle={`${styles.xxsContainer}`}/>
+                        />
 
                         <NumberedCardLayout headingText={"Removal via depositor"}
                                             bodyText={"A dedicated depositor unit safely removes the collected PM, preventing it from re-entering the atmosphere."}
                                             number={"3"} colorScheme={"colorScheme2"}
-                                            addedStyle={`${styles.xxsContainer}`}/>
+                        />
 
                     </div>
-
                 </div>
 
                 <div className={`maxWidthContainer colorScheme3 ${styles.highlightcard}`}>
-                    <div className={`${styles.flex2}`}>
+                    <div className={`columnFlexContainer gap2`}>
                         <p className={`h1 ${styles.green}`}>25 - 40 %</p>
                         <p className={`lightNormal`}>AQI IMPROVEMENT</p>
                     </div>
 
-                    <div className={`${styles.flex2}`}>
+                    <div className={`columnFlexContainer gap2`}>
                         <p className={`boldNormal`}>Proven Performance</p>
 
                         <p className={`lightNormal`}>
@@ -60,29 +58,28 @@ export default function WasteToHydrogen() {
                     </div>
                 </div>
 
-                <div className={`maxWidthContainer ${styles.outerFlex}`}>
+                <div className={`maxWidthContainer columnFlexContainer gapS`}>
 
                     <AccentedHeading2Layout colorScheme={"colorScheme2"}
                                             headingText={"Key Applications"}
                                             version={"green"}/>
 
-                    <div className={`${styles.flex}`}>
+                    <div className={`responsiveFlexContainer gapS`}>
                         <TextCard1Layout lineColor={"green"} backgroundColor={"foreground"}
                                          headingText={"Pollution hotspots"}
                                          bodyText={"Busy traffic intersections, congested urban centres and construction zones with consistently poor air quality."}
-                                         colorScheme={"colorScheme2"} addedStyles={styles.xxsContainer}/>
+                                         colorScheme={"colorScheme2"} addedStyles={styles.keyApplicationsCard}/>
 
                         <TextCard1Layout lineColor={"green"} backgroundColor={"foreground"}
                                          headingText={"Industrial hubs"}
                                          bodyText={"Zones with concentrated industrial activity where particulate emissions are typically high."}
-                                         colorScheme={"colorScheme2"} addedStyles={styles.xxsContainer}/>
-
+                                         colorScheme={"colorScheme2"} addedStyles={styles.keyApplicationsCard}/>
 
                     </div>
 
                 </div>
 
-                <div className={`maxWidthContainer ${styles.outerFlex}`}>
+                <div className={`maxWidthContainer columnFlexContainer gapS`}>
 
                     <AccentedHeading2Layout colorScheme={"colorScheme2"}
                                             headingText={"Economic Impact"}
