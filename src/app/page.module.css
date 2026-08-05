@@ -6,14 +6,12 @@
 .heroBackground {
     background: radial-gradient(120% 80% at 80% 0%, rgba(255, 153, 51, 0.14), transparent 55%), radial-gradient(90% 70% at 0% 100%, rgba(19, 136, 8, 0.16), transparent 55%), radial-gradient(120% 80% at 80% 0%, rgba(255, 153, 51, 0.14), transparent 55%), radial-gradient(90% 70% at 0% 100%, rgba(19, 136, 8, 0.16), transparent 55%), radial-gradient(120% 80% at 80% 0%, rgba(255, 153, 51, 0.14), transparent 55%), radial-gradient(90% 70% at 0% 100%, rgba(19, 136, 8, 0.16), transparent 55%) var(--color-blue-transparent-3);
     background-size: cover;
-    /*opacity: 90%;*/
 }
 
 .heroSection {
     display: flex;
     flex-direction: column;
     gap: var(--dimension-3);
-    opacity: 100% !important;
 }
 
 .max60chContainer {
@@ -30,14 +28,9 @@
 
 .buttonCarrier {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: var(--dimension-3);
-}
-
-@media screen and (min-width: 480px) {
-    .buttonCarrier {
-        flex-direction: column;
-    }
 }
 
 .fitContent {
@@ -56,7 +49,6 @@
     display: flex;
     flex-direction: column;
     gap: var(--padding-section-s);
-    /*max-width: var(--max-width-60ch);*/
 }
 
 @media screen and (min-width: 480px) {
@@ -70,53 +62,17 @@
     display: flex;
     flex-direction: column;
     gap: var(--dimension-1);
+    max-width: fit-content;
+    flex: 1 0;
 }
 
 .saffron {
     color: var(--color-saffron-1);
 }
 
-/*##############*/
-/*# WHAT WE DO #*/
-/*##############*/
-
-.flex1 {
-    display: flex;
-    flex-direction: column;
-    gap: var(--padding-section-s);
-}
-
-@media screen and (min-width: 480px) {
-    .flex1 {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-}
-
-.item4Width {
-    width: 100%;
-}
-
-@media screen and (min-width: 480px) {
-    .item4Width {
-        max-width: 384px;
-        /*flex:1;*/
-    }
-}
-
-.flex2 {
-    display: flex;
-    flex-direction: column;
-    gap: var(--padding-section-m);
-}
-
-.secondryText {
-    color: var(--color-text-secondary);
-}
-
-.boldText {
-    font-weight: var(--font-weight-bold);
-}
+/*############*/
+/*#OUR MOTTO #*/
+/*############*/
 
 .textBox {
     display: flex;
@@ -130,34 +86,36 @@
 }
 
 .fullFlex {
-    flex: 1;
+    min-width: 100%;
+
+    a {
+        margin-top: var(--dimension-3);
+        display: block;
+    }
 }
 
-.ourSolutions {
-    justify-content: space-between;
+@media screen and (min-width: 768px) {
+    .fullFlex {
+        min-width: auto;
+        flex: 1;
+    }
 }
+
+/*#################*/
+/*# OUR SOLUTIONS #*/
+/*#################*/
+
+.ourSolutions {
+    align-items: flex-end;
+}
+
+/*################*/
+/*# GLOBAL REACH #*/
+/*################*/
 
 .exportMap {
     width: 100%;
     height: 100%;
-    margin-top: var(--padding-section-m);
-}
-
-.responsiveFlex {
-    display: flex;
-    flex-direction: column;
-    gap: var(--padding-section-s);
-}
-
-@media screen and (min-width: 480px) {
-    .responsiveFlex {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-}
-
-.flex3 {
-    width: 100%;
 }
 
 
