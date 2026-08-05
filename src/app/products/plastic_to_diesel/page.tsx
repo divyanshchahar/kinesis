@@ -15,8 +15,8 @@ export default function PlasticToDiesel() {
                            hasBox={false} version={"green"}/>
             <div className={`colorScheme2 paddedContainer`}>
 
-                <div className={`maxWidthContainer flex3`}>
-                    <div className={`flex2`}>
+                <div className={`maxWidthContainer columnFlexContainer gapM`}>
+                    <div className={`columnFlexContainer gapS`}>
                         <AccentedHeading2Layout colorScheme={"colorScheme2"} headingText={"Input and Output Capacity"}
                                                 version={"green"}/>
 
@@ -34,21 +34,21 @@ export default function PlasticToDiesel() {
                                                  version={"green"} addedStyle={styles.flexContainer}/>
                     </div>
 
-                    <div className={`flex2`}>
+                    <div className={`columnFlexContainer gapS`}>
                         <AccentedHeading2Layout colorScheme={"colorScheme2"} headingText={"Fuel Quality & Emissions"}
                                                 version={"green"}/>
 
                         <UnorderedListComponent listType={"check mark"} listColor={"green"}
-                                                listItems={[`Sulphur content: < 8 ppm`, `Emissions (at 2000 RPM): NOx 6 ppm, CO 4 ppm`, `Compliance: BS6, Euro 6, CPCB2, EU Stage 5`,`Certifications: ISCC, EN590, BIS`]}
+                                                listItems={[`Sulphur content: < 8 ppm`, `Emissions (at 2000 RPM): NOx 6 ppm, CO 4 ppm`, `Compliance: BS6, Euro 6, CPCB2, EU Stage 5`, `Certifications: ISCC, EN590, BIS`]}
                                                 colorScheme={"colorScheme2"} addedStyles={styles.unOrderedList}/>
                     </div>
 
-                    <div className={`flex2`}>
+                    <div className={`columnFlexContainer gapS`}>
                         <AccentedHeading2Layout colorScheme={"colorScheme2"}
                                                 headingText={"Carbon Capture & By-Products"}
                                                 version={"green"}/>
 
-                        <div className={`flex`}>
+                        <div className={`responsiveFlexContainer gapS`}>
                             <TextCard1Layout lineColor={"green"} backgroundColor={"foreground"}
                                              headingText={"CCSU system"}
                                              bodyText={"Captures carbon for graphene production (1 ton/day)."}
@@ -61,11 +61,11 @@ export default function PlasticToDiesel() {
                         </div>
                     </div>
 
-                    <div className={`flex2`}>
+                    <div className={`columnFlexContainer gapM`}>
                         <AccentedHeading2Layout colorScheme={"colorScheme2"} headingText={"Franchise Business Model"}
                                                 version={"green"}/>
 
-                        <div className={`flex`}>
+                        <div className={`responsiveFlexContainer gapS`}>
                             <TextCard4Layout colorScheme={"colorScheme2"} version={"green"}
                                              headingText={"Franchisee contributes"}
                                              bulletPoints={[`Capital investment: ₹12.75 Cr`, `2-acre motorable land and infrastructure`, `Security and administrative support`]}
