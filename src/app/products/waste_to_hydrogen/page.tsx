@@ -12,36 +12,36 @@ export default function WasteToHydrogen() {
                            bodyText={"An indigenously developed, proprietary technology that converts waste into valuable outputs — Hydrogen gas, Metal Carbonates and Charcoal/Activated Charcoal — turning a disposal problem into a resource-recovery opportunity, addressing waste management and clean energy generation simultaneously."}
                            hasBox={false} version={"green"}/>
 
-            <div className={`paddedContainer colorScheme2 outerFlexContainer`}>
+            <div className={`paddedContainer colorScheme2 columnFlexContainer gapM`}>
 
-                <div className={`maxWidthContainer ${styles.outerFlex}`}>
+                <div className={`maxWidthContainer columnFlexContainer gapS`}>
 
                     <AccentedHeading2Layout colorScheme={"colorScheme2"}
                                             headingText={"Core Process & Outputs"}
                                             version={"green"}/>
 
-                    <div className={`${styles.flex}`}>
+                    <div className={`grid3 gapS`}>
                         <TextCard1Layout lineColor={"green"} backgroundColor={"foreground"}
                                          headingText={"Hydrogen"}
                                          bodyText={"Persistent aerial monitoring for border security, situational awareness and intelligence gathering."}
-                                         colorScheme={"colorScheme2"} addedStyles={styles.xxsContainer}/>
+                                         colorScheme={"colorScheme2"}/>
 
                         <TextCard1Layout lineColor={"green"} backgroundColor={"foreground"}
                                          headingText={"Metal Carbonates"}
                                          bodyText={"A valuable byproduct recovered during processing, suitable for industrial or commercial use."}
-                                         colorScheme={"colorScheme2"} addedStyles={styles.xxsContainer}/>
+                                         colorScheme={"colorScheme2"}/>
 
                         <TextCard1Layout lineColor={"green"} backgroundColor={"foreground"}
                                          headingText={"Charcoal / Activated Charcoal"}
                                          bodyText={"A primary output, with further processing potential to yield Graphene and Wood Vinegar a natural bio-pesticide and soil enhancer"}
-                                         colorScheme={"colorScheme2"} addedStyles={styles.xxsContainer}/>
+                                         colorScheme={"colorScheme2"}/>
 
 
                     </div>
 
                 </div>
 
-                <div className={`maxWidthContainer ${styles.outerFlex}`}>
+                <div className={`maxWidthContainer columnFlexContainer gapS`}>
 
                     <AccentedHeading2Layout colorScheme={"colorScheme2"}
                                             headingText={"Deployment Readiness"}
@@ -54,24 +54,22 @@ export default function WasteToHydrogen() {
                     </p>
                 </div>
 
-                <div className={`maxWidthContainer ${styles.outerFlex}`}>
+                <div className={`maxWidthContainer columnFlexContainer gapS`}>
 
                     <AccentedHeading2Layout colorScheme={"colorScheme2"}
                                             headingText={"Key Applications"}
                                             version={"green"}/>
 
-                    <div className={`${styles.flex}`}>
+                    <div className={`responsiveFlexContainer gapS`}>
                         <TextCard1Layout lineColor={"green"} backgroundColor={"foreground"}
                                          headingText={"Industrial townships & municipal corporations"}
                                          bodyText={"Decentralised, on-site waste processing for urban and industrial waste streams, reducing landfill dependency while generating usable energy and materials."}
-                                         colorScheme={"colorScheme2"} addedStyles={styles.xxsContainer}/>
+                                         colorScheme={"colorScheme2"} addedStyles={styles.keyApplicationCard}/>
 
                         <TextCard1Layout lineColor={"green"} backgroundColor={"foreground"}
                                          headingText={"Agricultural waste (Parali / stubble)"}
                                          bodyText={"A productive alternative to stubble burning — converting crop residue into hydrogen, charcoal and other byproducts, directly addressing a major seasonal air-pollution challenge."}
-                                         colorScheme={"colorScheme2"} addedStyles={styles.xxsContainer}/>
-
-
+                                         colorScheme={"colorScheme2"} addedStyles={styles.keyApplicationCard}/>
                     </div>
 
                 </div>
