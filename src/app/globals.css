@@ -319,38 +319,7 @@ button {
     }
 }
 
-.flex {
-    display: flex;
-    flex-direction: column;
-    gap: var(--padding-section-s);
-}
-
-@media screen and (min-width: 480px) {
-    .flex {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-}
-
-.flex2 {
-    display: flex;
-    flex-direction: column;
-    gap: var(--padding-section-s);
-}
-
-.flex3 {
-    display: flex;
-    flex-direction: column;
-    gap: var(--padding-section-m);
-}
-
-
-.rowFlexContainer {
-    display: flex;
-    flex-direction: row;
-}
-
-.columnFlexContainer {
+.columnFlexContainer, .grid3, .grid4 {
     display: flex;
     flex-direction: column;
 }
@@ -392,5 +361,37 @@ button {
     gap: var(--padding-section-l);
 }
 
-/*TODO*/
-/*1. add attributes back to typographical classes*/
+@media screen and (min-width: 832px) {
+    .grid3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1376px) {
+    .grid3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 608px) {
+    .grid4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 944px) {
+    .grid4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1376px) {
+    .grid4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
