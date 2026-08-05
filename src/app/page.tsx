@@ -116,8 +116,9 @@ export default function Home() {
                               }
             />
 
+            {/*WHAT WE DO*/}
             < div className={`paddedContainer colorScheme1`}>
-                <div className={`maxWidthContainer ${styles.flex2}`}>
+                <div className={`maxWidthContainer columnFlexContainer gapM`}>
 
                     <TextCard5Layout smallText={"WHAT WE DO"}
                                      headingText={"A platform that connects Indian innovators to real markets."}
@@ -125,33 +126,38 @@ export default function Home() {
                                      colorScheme={"colorScheme1"}
                                      version={"green"}/>
 
-                    <div className={`${styles.flex1}`}>
+                    <div className={`grid4 gapS`}>
                         <TextCard1Layout lineColor={"saffron"} backgroundColor={"background"}
                                          headingText={"Unite Indian OEMs"}
                                          bodyText={"Enabling small OEMs and startups to make their mark in both national and international markets."}
-                                         colorScheme={"colorScheme1"} addedStyles={styles.item4Width}/>
+                                         colorScheme={"colorScheme1"}
+                        />
 
                         <TextCard1Layout lineColor={"green"} backgroundColor={"background"}
                                          headingText={"Strategic consulting"}
                                          bodyText={"Expert guidance tailored for successful product launches and effective marketing campaigns."}
-                                         colorScheme={"colorScheme1"} addedStyles={styles.item4Width}/>
+                                         colorScheme={"colorScheme1"}
+                        />
 
                         <TextCard1Layout lineColor={"blue"} backgroundColor={"background"}
                                          headingText={"Cross-sector expertise"}
                                          bodyText={"Specialists from industry, academia, the military and public administration under one roof."}
-                                         colorScheme={"colorScheme1"} addedStyles={styles.item4Width}/>
+                                         colorScheme={"colorScheme1"}
+                        />
 
                         <TextCard1Layout lineColor={"saffron"} backgroundColor={"background"}
                                          headingText={"Global connections"}
                                          bodyText={"Senior former diplomats and international marketing agencies opening doors worldwide."}
-                                         colorScheme={"colorScheme1"} addedStyles={styles.item4Width}/>
+                                         colorScheme={"colorScheme1"}
+                        />
                     </div>
 
                 </div>
             </div>
 
+            {/*OUR MOTTO*/}
             <div className={`paddedContainer colorScheme3`}>
-                <div className={`maxWidthContainer ${styles.flex1}`}>
+                <div className={`maxWidthContainer responsiveFlexContainer gapS`}>
                     <div className={`${styles.fullFlex}`}>
                         <TextCard5Layout version={"saffron"}
                                          smallText={"OUR MOTTO"}
@@ -159,7 +165,8 @@ export default function Home() {
                                          bodyText={"The road to global leadership begins with technological self-reliance. Indian companies must prioritise partnerships within the nation, using international collaboration mainly for strategy and exports — keeping the foundation of India's industrial ecosystem rooted in indigenous excellence."}
                                          colorScheme={"colorScheme3"}/>
 
-                        <Link href={""} className={`boldNormal ${styles.saffron}`}>Read Our Story →</Link>
+                        <Link href={internalLinks.aboutus.root} className={`boldNormal ${styles.saffron}`}>Read Our
+                            Story →</Link>
                     </div>
 
                     <div className={`${styles.fullFlex}`}>
@@ -175,10 +182,11 @@ export default function Home() {
 
             </div>
 
+            {/*OUR SOLUTIONS*/}
             <div className={`paddedContainer colorScheme2`}>
-                <div className={`maxWidthContainer ${styles.flex2}`}>
+                <div className={`maxWidthContainer columnFlexContainer gapM`}>
 
-                    <div className={`${styles.flex1} ${styles.ourSolutiofns}`}>
+                    <div className={`responsiveFlexContainer ${styles.ourSolutions} gapS`}>
                         <TextCard5Layout smallText={"OUR SOLUTIONS"}
                                          headingText={"Indigenous technology across sustainability, defence & communication."}
                                          bodyText={""}
@@ -188,43 +196,43 @@ export default function Home() {
                                                addedStyle={styles.fitContent}/>
                     </div>
 
-                    <div className={`${styles.flex1}`}>
+                    <div className={`grid4 gapS`}>
                         <Link href={internalLinks.products.hybridPowerPlant}>
 
                             <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"Hybrid Power Plants"}
                                              bodyText={"Indigenous Solar + Wind hybrid, modular from 0.5kW to megawatts, deployed in 30+ countries."}
-                                             colorScheme={"colorScheme2"} addedStyle={styles.item4Width}/>
+                                             colorScheme={"colorScheme2"}/>
                         </Link>
 
                         <Link href={internalLinks.products.carbonCapture}>
                             <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"Carbon Capture"}
                                              bodyText={"Electro-catalytic chamber that turns CO₂ into pure oxygen and high-value graphene."}
-                                             colorScheme={"colorScheme2"} addedStyle={styles.item4Width}/>
+                                             colorScheme={"colorScheme2"}/>
                         </Link>
 
                         <Link href={internalLinks.products.ambientAirPurification}>
                             <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"Ambient Air Purification"}
                                              bodyText={"Waterless, filterless IIT Delhi tech — proven 25–40% AQI improvement in Delhi."}
-                                             colorScheme={"colorScheme2"} addedStyle={styles.item4Width}/>
+                                             colorScheme={"colorScheme2"}/>
                         </Link>
 
                         <Link href={internalLinks.products.wasteToHydrogen}>
                             <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"Waste to Hydrogen"}
                                              bodyText={"Converts waste into clean hydrogen, metal carbonates and activated charcoal."}
-                                             colorScheme={"colorScheme2"} addedStyle={styles.item4Width}/>
+                                             colorScheme={"colorScheme2"}/>
                         </Link>
 
                         <Link href={internalLinks.products.plastictoDiesel}>
                             <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"Plastic to Diesel"}
                                              bodyText={"Pyrolysis reactor producing certified ULSD — India’s first policy-recognised solution."}
                                              colorScheme={"colorScheme2"}
-                                             addedStyle={styles.item4Width}/>
+                            />
                         </Link>
 
                         <Link href={internalLinks.products.uavAndUcav}>
-                            <TextCard3Layout smallText={"SUSTAINABILITY"} headingText={"UAV & UCAV"}
+                            <TextCard3Layout smallText={"DEFENCE"} headingText={"UAV & UCAV"}
                                              bodyText={"Indigenous unmanned aerial and combat platforms for surveillance and defence."}
-                                             colorScheme={"colorScheme2"} addedStyle={styles.item4Width}/>
+                                             colorScheme={"colorScheme2"}/>
                         </Link>
 
 
@@ -232,17 +240,15 @@ export default function Home() {
                             <TextCard3Layout smallText={"COMMUNICATION"} headingText={"Private 5G Networks"}
                                              bodyText={"Portable, plug-and-play private 5G — 10km reach, sub-10ms latency, off-grid ready."}
                                              colorScheme={"colorScheme2"}
-                                             addedStyle={styles.item4Width}/>
+                            />
                         </Link>
                     </div>
                 </div>
             </div>
 
-            {/*GLOBAL REACH*/
-            }
-
+            {/*GLOBAL REACH*/}
             <div className={`paddedContainer colorScheme1`}>
-                <div className={`maxWidthContainer`}>
+                <div className={`maxWidthContainer columnFlexContainer gapS`}>
                     <TextCard5Layout smallText={"GLOBAL REACH"}
                                      headingText={"Export access across three regions.\n"}
                                      bodyText={"Indigenous excellence at home, strategic collaboration abroad — our export network spans Central America, the Middle East, and South East Asia."}
@@ -251,19 +257,19 @@ export default function Home() {
                     <Image src={exportMap} alt={"export map pf the world"} width={1000} height={507}
                            className={styles.exportMap}/>
 
-                    <div className={`${styles.responsiveFlex}`}>
+                    <div className={`grid3 gapS`}>
 
                         <RegionCardLayout colorScheme={"colorScheme1"} region={"Middle East"}
                                           countries={["Guatemala", "El Salvador", "Honduras", "Belize"]}
-                                          version={"saffron"} addedStyle={styles.flex3}/>
+                                          version={"saffron"}/>
 
                         <RegionCardLayout colorScheme={"colorScheme1"} region={"Central America"}
                                           countries={["Guatemala", "El Salvador", "Honduras", "United Arab Emirates", "Somalia"]}
-                                          version={"green"} addedStyle={styles.flex3}/>
+                                          version={"green"}/>
 
                         <RegionCardLayout colorScheme={"colorScheme1"} region={"South East Asia"}
                                           countries={["Indonesia", "Vietnam"]}
-                                          version={"blue"} addedStyle={styles.flex3}/>
+                                          version={"blue"}/>
                     </div>
 
                 </div>
