@@ -182,7 +182,6 @@ const MenubarDemo = () => {
     const router = useRouter();
 
     const navigateOnClick = (internalUrl: string) => {
-        console.log(internalUrl);
         router.push(internalUrl);
     }
 
@@ -317,21 +316,21 @@ export default function NavBarLayout() {
 
     const router = useRouter();
     return (
-        <div className={`${styles.stickyContainer}`}>
+        <div className={`${styles.container} colorScheme3`}>
             <div className={`${styles.triColor}`}>
                 <hr className={`${styles.saffronLine}`}/>
                 <hr className={`${styles.whiteLine}`}/>
                 <hr className={`${styles.greenLine}`}/>
             </div>
 
-            <div className={`colorScheme3 ${styles.container}`}>
+            <div className={`${styles.menuContainer} maxWidthContainer`}>
                 <Image src={companyLogo} alt="logo" width={100} height={100}/>
 
                 <DropDownMenu/>
 
                 <div className={`${styles.desktop}`}>
                     <MenubarDemo/>
-                    <CTAButton version={"inline"} ctaText={"Contact Us"} clickHandler={() => {
+                    <CTAButton version={"inline"} ctaText={"Contact Us"}  addedStyle={styles.ctaButton} clickHandler={() => {
                         router.push(internalLinks.contactus)
                     }}/>
                 </div>
