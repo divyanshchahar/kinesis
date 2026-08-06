@@ -29,10 +29,6 @@
     color: var(--color-green-1);
 }
 
-.boldFont {
-    font-weight: var(--font-weight-bold);
-}
-
 .formContainer {
     display: flex;
     flex-direction: column;
@@ -49,38 +45,15 @@
     color: var(--color-heading);
 }
 
-.block {
-    display: block;
-    width: 100%;
-}
+/*.flex {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
 
-.flex {
-    display: flex;
-    flex-direction: column;
-}
-
-.gap2 {
-    gap: var(--dimension-2);
-}
-
-.centeredTExt {
+.centeredText {
     text-align: center;
     margin-top: var(--dimension-4);
 }
-
-.responsiveFlexContainer {
-    display: flex;
-    flex-direction: column;
-}
-
-
-@media screen and (min-width: 480px) {
-    .responsiveFlexContainer {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-}
-
 
 .minWidth431 {
     width: 100%;

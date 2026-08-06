@@ -17,9 +17,9 @@ export default function ContactUS() {
             <div className={`paddedContainer colorScheme2`}>
                 <div className={`maxWidthContainer`}>
                     <div
-                        className={`${styles.responsiveFlexContainer} ${styles.gap2}`}>
+                        className={`responsiveFlexContainer gap2`}>
 
-                        <div className={`${styles.flex} ${styles.gap2} ${styles.minWidth431}`}>
+                        <div className={`columnFlexContainer gap2 ${styles.minWidth431}`}>
                             <div className={`${styles.contactUs} colorScheme3`}>
                                 <p className={`h6 ${styles.heading}`}>Reach Out</p>
 
@@ -48,7 +48,7 @@ export default function ContactUS() {
                                 <p className={`lightNormal`}>Fields marked with an asterisk(*) are required</p>
                             </div>
 
-                            <form className={`${styles.flex} ${styles.gap2} colorScheme2`}>
+                            <form className={`colorScheme2 columnFlexContainer gap2`}>
                                 <TextInputComponent fieldName={"Name"} placeHolder={"Your Full Name"} mandatory={true}
                                                     colorScheme={"colorScheme2"}/>
 
@@ -64,7 +64,7 @@ export default function ContactUS() {
                                                    placeHolder={"Type your messaeg here"} mandatory={true}/>
 
                                 <CTAButton version={"large"} ctaText={"Send Message"}
-                                           addedStyle={styles.centeredTExt} clickHandler={() => {
+                                           addedStyle={styles.centeredText} clickHandler={() => {
                                 }}/>
                             </form>
                         </div>

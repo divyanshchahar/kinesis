@@ -16,18 +16,17 @@ export default function Products() {
             <div className={"paddedContainer colorScheme2 "}>
                 <div className={"maxWidthContainer outerFlexContainer"}>
 
-                    <div className={`${styles.flex}`}>
+                    <div className={`columnFlexContainer gapS`}>
                         <AccentedHeading1Layout colorScheme={"colorScheme2"} headingText={"Sustainability Solution"}
                                                 version={"green"}/>
 
-                        <div className={"innerFlexContainer"} id={"sustainabilitySolutions"}>
+                        <div className={`grid3 gapS`} id={"sustainabilitySolutions"}>
                             <ProductCardLayout headingText={"Hybrid Power Plant"}
                                                bodyText={"A one-of-a-kind, 100% indigenous hybrid combining Solar and Wind energy — modular, effective even at low wind speeds, and customisable for any terrain."}
                                                linkText={"View Details"}
                                                bulletPoints={["0.5kW to multiple megawatts, modular", "No masts, towers or roof penetration", "Deployed across Defence, Telecom & Industry"]}
                                                colorScheme={"colorScheme2"}
                                                version={"green"}
-                                               addedStyle={styles.productCard}
                                                linkUrl={interNalLinks.products.hybridPowerPlant}
                             />
 
@@ -37,7 +36,6 @@ export default function Products() {
                                                bulletPoints={["Captured carbon produced as graphene", "Creates a revenue stream, not just cost", "POC plant operational in Meerut", "Deployed across Defence, Telecom & Industry"]}
                                                colorScheme={"colorScheme2"}
                                                version={"green"}
-                                               addedStyle={styles.productCard}
                                                linkUrl={interNalLinks.products.carbonCapture}
                             />
 
@@ -47,7 +45,6 @@ export default function Products() {
                                                bulletPoints={["No water, no filters, low maintenance", "25–40% AQI improvement (Delhi field trial", "Ideal for pollution hotspots & industrial hubs", "Helps avoid GRAP economic losses"]}
                                                colorScheme={"colorScheme2"}
                                                version={"green"}
-                                               addedStyle={styles.productCard}
                                                linkUrl={interNalLinks.products.ambientAirPurification}
                             />
 
@@ -57,7 +54,6 @@ export default function Products() {
                                                bulletPoints={["Clean hydrogen fuel from waste", "Valuable metal-carbonate by-products", "Charcoal upgradable to graphene", "Tackles stubble-burning & municipal waste"]}
                                                colorScheme={"colorScheme2"}
                                                version={"green"}
-                                               addedStyle={styles.productCard}
                                                linkUrl={interNalLinks.products.wasteToHydrogen}
                             />
 
@@ -66,36 +62,35 @@ export default function Products() {
                                                bulletPoints={["India’s first policy-recognised solution", "8,000–24,000 L ULSD per day (80% yield)", "BS6 / Euro 6 compliant, < 8 ppm sulphur", "Designed as a carbon net-zero process"]}
                                                linkText={"View Details"}
                                                version={"green"} colorScheme={"colorScheme2"}
-                                               addedStyle={styles.productCard}
                                                linkUrl={interNalLinks.products.plastictoDiesel}/>
                         </div>
                     </div>
 
-                    <div className={`${styles.flex}`}>
+                    <div className={`columnFlexContainer gapS`}>
                         <AccentedHeading1Layout colorScheme={"colorScheme2"} headingText={"Defence Systems"}
                                                 version={"blue"}/>
-                        <div>
+                        <div className={`grid3 gapS`}>
                             <ProductCardLayout headingText={"UAV & UCAV"}
                                                bodyText={"Indigenously developed unmanned aerial and unmanned combat aerial vehicles for surveillance, reconnaissance and mission-critical defence operations."}
                                                linkText={"View Details"}
                                                bulletPoints={["Built for surveillance & combat roles", "Indigenous design and manufacture", "Suited to defence & border security", "Detailed specifications on request"]}
                                                colorScheme={"colorScheme2"}
-                                               version={"blue"} addedStyle={styles.productCard}
+                                               version={"blue"}
                                                linkUrl={interNalLinks.products.uavAndUcav}/>
                         </div>
 
                     </div>
 
-                    <div className={`${styles.flex}`}>
+                    <div className={`columnFlexContainer gapS`}>
                         <AccentedHeading1Layout colorScheme={"colorScheme2"} headingText={"Communication"}
                                                 version={"saffron"}/>
-                        <div>
+                        <div className={`grid3 gapS`}>
                             <ProductCardLayout headingText={"Private 5G Networks — RDN Box"}
                                                bodyText={"A compact, self-contained private 5G hub integrating RAN, Core and an AI engine — plug-and-play, deployable anywhere in minutes."}
                                                linkText={"View Details"}
                                                bulletPoints={["Built for surveillance & combat roles", "Indigenous design and manufacture", "Suited to defence & border security", "Detailed specifications on request"]}
                                                colorScheme={"colorScheme2"}
-                                               version={"saffron"} addedStyle={styles.productCard}
+                                               version={"saffron"}
                                                linkUrl={interNalLinks.products.private5g}/>
                         </div>
                     </div>

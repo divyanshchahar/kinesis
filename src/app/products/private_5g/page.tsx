@@ -16,9 +16,9 @@ export default function PlasticToDiesel() {
 
             <div className={`colorScheme2 paddedContainer`}>
 
-                <div className={`maxWidthContainer flex3`}>
+                <div className={`maxWidthContainer columnFlexContainer gapM`}>
                     <div className={`${styles.max60chContainer}`}>
-                        <div className={`flex2`}>
+                        <div className={`columnFlexContainer gapS`}>
                             <AccentedHeading2Layout colorScheme={"colorScheme2"} headingText={"The Problem"}
                                                     version={"saffron"}/>
 
@@ -35,7 +35,7 @@ export default function PlasticToDiesel() {
                     </div>
 
                     {/*CORE SPECIFICATION*/}
-                    <div className={`flex2`}>
+                    <div className={`columnFlexContainer gapS`}>
                         <AccentedHeading2Layout colorScheme={"colorScheme2"} headingText={"Core Specifications"}
                                                 version={"saffron"}/>
 
@@ -66,12 +66,12 @@ export default function PlasticToDiesel() {
                     </div>
 
                     {/*DEPLOYMENT FLEXIBILITY*/}
-                    <div className={`flex2`}>
+                    <div className={`columnFlexContainer gapS`}>
                         <AccentedHeading2Layout colorScheme={"colorScheme2"}
                                                 headingText={"Network Performance Modes"}
                                                 version={"saffron"}/>
 
-                        <div className={`flex`}>
+                        <div className={`grid3 gapS`}>
                             <TextCard1Layout lineColor={"saffron"} backgroundColor={"foreground"}
                                              headingText={"eMBB — Enhanced Mobile Broadband"}
                                              bodyText={"High-throughput downlink/uplink for bandwidth-intensive applications."}
@@ -90,7 +90,7 @@ export default function PlasticToDiesel() {
                     </div>
 
                     {/*NETWORK PERFORMANCE MODES*/}
-                    <div className={`flex2`}>
+                    <div className={`columnFlexContainer gapM`}>
                         <AccentedHeading2Layout colorScheme={"colorScheme2"} headingText={"Deployment Flexibility"}
                                                 version={"saffron"}/>
 
@@ -100,12 +100,12 @@ export default function PlasticToDiesel() {
                     </div>
 
                     {/*DEPLOYMENT FLEXIBILITY*/}
-                    <div className={`flex2`}>
+                    <div className={`columnFlexContainer gapM`}>
                         <AccentedHeading2Layout colorScheme={"colorScheme2"}
                                                 headingText={"Applications"}
                                                 version={"saffron"}/>
 
-                        <div className={`flex`}>
+                        <div className={`grid3 gapS`}>
                             <TextCard1Layout lineColor={"saffron"} backgroundColor={"foreground"}
                                              headingText={"Industry & mines"}
                                              bodyText={"Continuous connectivity for automation, asset monitoring and workforce safety in low-density areas underserved by public networks."}

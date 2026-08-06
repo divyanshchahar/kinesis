@@ -11,9 +11,9 @@ export default function CarbonCApture() {
                        hasBox={true}
                        version={"green"}
                        boxText={"A technology demonstrator / proof-of-concept plant is currently operational at the Meerut Industrial Area, validating the process at pilot scale."}/>
-        <div className={`paddedContainer colorScheme2 outerFlexContainer`}>
 
-            <div className={`maxWidthContainer ${styles.outerFlex}`}>
+        <div className={`paddedContainer colorScheme2 outerFlexContainer`}>
+            <div className={`maxWidthContainer columnFlexContainer gapS`}>
 
                 <AccentedHeading2Layout colorScheme={"colorScheme2"}
                                         headingText={"Turning emissions into value"}
@@ -31,22 +31,22 @@ export default function CarbonCApture() {
 
             </div>
 
-            <div className={`maxWidthContainer ${styles.outerFlex}`}>
+            <div className={`maxWidthContainer columnFlexContainer gapS`}>
 
                 <AccentedHeading2Layout colorScheme={"colorScheme2"}
                                         headingText={"Applications"}
                                         version={"green"}/>
 
-                <div className={`${styles.flex}`}>
+                <div className={`responsiveFlexContainer gapS`}>
                     <TextCard1Layout lineColor={"green"} backgroundColor={"foreground"}
                                      headingText={"Industrial emissions reduction"}
                                      bodyText={"Groundbreaking technology is born in startups and small organisations — we help itA practical solution for carbon-intensive industries such as cement, steel and power generation — cutting their carbon footprint while complying with tightening environmental regulations."}
-                                     colorScheme={"colorScheme2"} addedStyles={styles.xxsContainer}/>
+                                     colorScheme={"colorScheme2"} addedStyles={styles.applicationCard}/>
 
                     <TextCard1Layout lineColor={"green"} backgroundColor={"foreground"}
                                      headingText={"Marine shipping"}
                                      bodyText={"A cost-effective retrofit for ships, helping the maritime sector meet decarbonisation targets (e.g. IMO regulations) without a complete overhaul of existing vessels."}
-                                     colorScheme={"colorScheme2"} addedStyles={styles.xxsContainer}/>
+                                     colorScheme={"colorScheme2"} addedStyles={styles.applicationCard}/>
                 </div>
 
 
