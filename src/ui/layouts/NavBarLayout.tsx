@@ -51,7 +51,8 @@ const DropDownMenu = () => {
 
             <div className={`colorScheme3 ${styles.dropDownMenu} ${!isMenu && styles.hide}`}>
 
-                <Link href={internalLinks.home} className={`${styles.menuItemLink} boldNormal`}>
+                <Link href={internalLinks.home} className={`${styles.menuItemLink} boldNormal`}
+                      onClick={() => toggleMenu()}>
                     <p>Home</p>
                 </Link>
 
@@ -177,7 +178,7 @@ const DropDownMenu = () => {
 }
 
 
-const MenubarDemo = () => {
+const MenubarPrimitive = () => {
 
     const router = useRouter();
 
@@ -194,7 +195,7 @@ const MenubarDemo = () => {
             </Menubar.Menu>
 
             <Menubar.Menu>
-                <Menubar.Trigger className={`${styles.Trigger} lightNormal`}>About Us</Menubar.Trigger>
+                <Menubar.Trigger className={`${styles.Trigger} lightNormal colorScheme3`}>About Us</Menubar.Trigger>
 
                 <Menubar.Portal>
 
@@ -329,10 +330,12 @@ export default function NavBarLayout() {
                 <DropDownMenu/>
 
                 <div className={`${styles.desktop}`}>
-                    <MenubarDemo/>
-                    <CTAButton version={"inline"} ctaText={"Contact Us"}  addedStyle={styles.ctaButton} clickHandler={() => {
-                        router.push(internalLinks.contactus)
-                    }}/>
+                    <MenubarPrimitive/>
+
+                    <CTAButton version={"inline"} ctaText={"Contact Us"} addedStyle={styles.ctaButton}
+                               clickHandler={() => {
+                                   router.push(internalLinks.contactus)
+                               }}/>
                 </div>
             </div>
         </div>
