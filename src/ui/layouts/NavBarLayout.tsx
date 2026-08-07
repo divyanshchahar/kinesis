@@ -51,7 +51,8 @@ const DropDownMenu = () => {
 
             <div className={`colorScheme3 ${styles.dropDownMenu} ${!isMenu && styles.hide}`}>
 
-                <Link href={internalLinks.home} className={`${styles.menuItemLink} boldNormal`} onClick={()=>toggleMenu()}>
+                <Link href={internalLinks.home} className={`${styles.menuItemLink} boldNormal`}
+                      onClick={() => toggleMenu()}>
                     <p>Home</p>
                 </Link>
 

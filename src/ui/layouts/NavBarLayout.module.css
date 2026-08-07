@@ -138,7 +138,7 @@
     font-style: normal;
     font-weight: var(--font-weight-normal);
     line-height: var(--line-height-n);
-x    padding: var(--dimension-1) var(--dimension-2);
+    padding: var(--dimension-1) var(--dimension-2);
 }
 
 .Trigger[data-highlighted],
