@@ -138,11 +138,16 @@
     font-style: normal;
     font-weight: var(--font-weight-normal);
     line-height: var(--line-height-n);
+x    padding: var(--dimension-1) var(--dimension-2);
 }
 
 .Trigger[data-highlighted],
 .Trigger[data-state="open"] {
     background-color: var(--color-foreground);
+}
+
+.Trigger:hover {
+    cursor: pointer;
 }
 
 .Content {
@@ -173,6 +178,10 @@
     font-style: normal;
     font-weight: var(--font-weight-light);
     line-height: var(--line-height-n);
+}
+
+.Item:hover {
+    cursor: pointer;
 }
 
 .label {
@@ -220,6 +229,7 @@
     .desktop {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: var(--dimension-2);
         align-items: center;
     }
