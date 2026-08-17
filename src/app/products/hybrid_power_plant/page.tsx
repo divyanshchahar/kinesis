@@ -13,6 +13,7 @@ export default function HybridPowerPlant() {
                            bodyText={"A one-of-a-kind, 100% indigenously developed and manufactured hybrid power solution combining Solar and Wind energy. Modular in construction — from 0.5kW to multiple megawatts — it stays effective even at low wind speeds and can be customised for any application or terrain: fixed, vehicle-mounted, or mini-grid."}
                            hasBox={true} version={"green"}
                            boxText={"Already deployed across Defence, Rural Electrification, Marine/Telecom and Industrial/Commercial installations — and exported to 30+ countries."}/>
+
             <div className={`paddedContainer colorScheme2 columnFlexContainer gapM`}>
 
                 <div className={`maxWidthContainer columnFlexContainer gapS`}>
@@ -24,7 +25,7 @@ export default function HybridPowerPlant() {
                     <UnorderedListComponent listType={"check mark"} listColor={"green"}
                                             listItems={[`Vertical-Axis Wind Turbines with on-board "Smart" electronics`, `Dynamic Maximum Power Point Tracking (MPPT)`, `Easy connection for both On-Grid and Off-Grid setups`, `Simple mounting on any surface — no masts, guy wires or towers`, `Ballasted installation that avoids roof penetration`, `Higher power density per square foot; scalable generation`, `Environment-friendly, efficient, cost-effective and silent`, `Increases battery life and reduces required storage capacity`]}
                                             colorScheme={"colorScheme2"}
-                                            addedStyles={`${styles.unOrderedList}`}/>
+                                            addedStyles={`grid3 gapS`}/>
 
                 </div>
 

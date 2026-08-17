@@ -40,7 +40,7 @@ export default function TeamMemberLayout({
         <div className={`${styles.container} ${addedStyle} ${colorScheme}`}>
             <Image src={teamMemberImage} width={250} height={250} alt={teamMemberName} className={styles.image}/>
 
-            <p className={`h3 ${styles.heading}`}>{teamMemberName}</p>
+            <p className={`h5 ${styles.heading}`}>{teamMemberName}</p>
 
             <p className={`boldNormal ${selectedColor}`}>{teamMemberDesignation}</p>
 

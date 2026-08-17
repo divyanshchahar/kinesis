@@ -47,7 +47,7 @@ export default function TextCard1Layout({
             className={`${styles.container} ${selectedLineColor} ${seletcedBackgroundColor} ${colorScheme} ${addedStyles}`}>
             <hr/>
             <p className={`h6 ${styles.heading}`}>{headingText}</p>
-            <p className={"lightNormal"}>{bodyText}</p>
+            <p className={"regularNormal"}>{bodyText}</p>
         </div>
     )
 }

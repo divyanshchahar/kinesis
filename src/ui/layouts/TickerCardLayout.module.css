@@ -29,7 +29,12 @@
 
 .heading {
     text-align: center;
-    color: var(--color-heading);
+    color: var(--color-text-secondary);
+
+    font-size: var(--font-size-h5);
+    font-weight: var(--font-weight-light);
+    font-family: var(--font-family-p) , sans-serif;
+    /*font-weight: 200;*/
 }
 
 .clientCard {

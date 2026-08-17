@@ -21,6 +21,7 @@ import {useRouter} from "next/navigation";
 import internalLinks from "./../const/internalRoutes.json"
 import engineeringProjectsIndiaLimited from "../../public/icons/engineering projects india limited.png"
 import indianArmy from "./../../public/icons/Indian_Army_Circular_Insignia.svg"
+import avnl from "./../../public/icons/armoured_vehicle_nigam_limited.png"
 
 export default function Home() {
 
@@ -111,6 +112,10 @@ export default function Home() {
                                       {
                                           clientName: "Indian Army",
                                           clientImage: indianArmy,
+                                      },
+                                      {
+                                          clientImage: avnl,
+                                          clientName: "Armoured Vehicle Nigam Limited"
                                       }
                                   ]
                               }
@@ -171,8 +176,8 @@ export default function Home() {
 
                     <div className={`${styles.fullFlex}`}>
                         <div className={`colorScheme3 ${styles.textBox}`}>
-                            <p className={`boldNormal`}>"A movement to unite India's innovators, industries, and
-                                academia to build a modern, self-reliant India."</p>
+                            <p className={`${styles.boldMottoText}`}>"A movement to unite India's innovators,
+                                industries, and academia to build a modern, self-reliant India."</p>
 
                             <p className={"lightNormal"}>— The Kinesis vision · <span
                                 className={`${styles.saffron}`}>जय हिन्द</span></p>

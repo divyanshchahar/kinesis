@@ -32,8 +32,8 @@ export default function CharactersticCardLayout({
 
     return (
         <div className={`${styles.container} ${colorScheme} ${addedStyle}`}>
-            <p className={`regularNormal`}>{characterstic}</p>
-            <p className={`regularNormal ${selectedColor}`}>{value}</p>
+            <p className={`boldNormal`}>{characterstic}</p>
+            <p className={`boldNormal ${selectedColor}`}>{value}</p>
         </div>
     )
 }

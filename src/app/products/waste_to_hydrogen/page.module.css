@@ -8,3 +8,7 @@
         flex: 1;
     }
 }
+
+.max60chContainer{
+    max-width: var(--max-width-60ch);
+}

@@ -18,9 +18,9 @@ export default function CTA2Layout({colorScheme, addedStyle, bodyText, headingTe
     const router = useRouter();
 
     return (
-        <div className={`paddedContainer maxWidthContainer ${colorScheme} ${styles.container} ${addedStyle}`}>
+        <div className={`maxWidthContainer ${colorScheme} ${styles.container} ${addedStyle}`}>
             <div className={`${styles.max60chContainer}`}>
-                <p className={`h1 ${styles.heading}`}>{headingText}</p>
+                <p className={`h4 ${styles.heading}`}>{headingText}</p>
 
                 <p className={`lightNormal`}>{bodyText}</p>
 

@@ -36,7 +36,7 @@ export default function AccentedHeading2Layout({
             <div className={`${styles.lineContainer}`}>
                 <hr className={`${styles.line} ${selectedColor}`}/>
             </div>
-            <p className={`h2 ${styles.heading}`}>{headingText}</p>
+            <p className={`h4 ${styles.heading}`}>{headingText}</p>
         </div>
     </div>
 }

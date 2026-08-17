@@ -316,6 +316,7 @@ const MenubarPrimitive = () => {
 export default function NavBarLayout() {
 
     const router = useRouter();
+
     return (
         <div className={`${styles.container} colorScheme3`}>
             <div className={`${styles.triColor}`}>
