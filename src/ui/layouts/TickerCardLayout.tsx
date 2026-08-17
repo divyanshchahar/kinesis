@@ -10,7 +10,7 @@ export interface TickerCardLayoutPropTypes {
 export default function TickerCardLayout({colorScheme, addedStyle, clients}: TickerCardLayoutPropTypes) {
     return (
         <div className={`${styles.TickerCardLayout} ${styles.container} ${colorScheme} ${addedStyle}`}>
-            <p className={`${styles.heading} h6`}>Our Clients</p>
+            <p className={`${styles.heading}`}>Trusted by Leading Government Institutes and Enterprises</p>
 
             <div className={`${styles.animatedRow}`}>
 
@@ -19,9 +19,9 @@ export default function TickerCardLayout({colorScheme, addedStyle, clients}: Tic
                     {clients.map((client, i) => {
                         return (
 
-                                <ClientCardLayout clientImage={client.clientImage} clientName={client.clientName}
-                                                  key={i}
-                                                  addedStyle={`${styles.clientCard}`}/>
+                            <ClientCardLayout clientImage={client.clientImage} clientName={client.clientName}
+                                              key={i}
+                                              addedStyle={`${styles.clientCard}`}/>
                         )
                     })}
                 </div>
