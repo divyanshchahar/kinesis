@@ -15,7 +15,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: var(--font-size-h1);
+    height: var(--font-size-h4);
 }
 
 .line {
