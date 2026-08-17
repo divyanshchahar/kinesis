@@ -13,11 +13,12 @@
     border-radius: var(--radius-3);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 693px) {
 
     .highlightcard {
         flex-direction: row;
         align-items: center;
+        padding: var(--dimension-6);
 
         div {
             flex: 1;
