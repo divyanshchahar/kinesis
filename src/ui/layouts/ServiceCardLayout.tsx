@@ -49,7 +49,7 @@ export default function ServiceCardLayout({
     return (
         <div className={`${colorScheme} ${styles.container} ${addedStyle}`} id={id}>
             <div className={styles.top}>
-                <div className={`lightSmall ${styles.capsule} ${selctedCapsuleColor}`}>{capsuleText}</div>
+                <div className={`boldSmall ${styles.capsule} ${selctedCapsuleColor}`}>{capsuleText}</div>
 
                 <p className={`boldNormal ${styles.heading}`}>{headingText}</p>
 
