@@ -26,33 +26,39 @@ export default function Header2Layout({
 
     let selectedColor = ""
     let selctedColorBox = ""
+    let selectedBackground = ""
 
     switch (version) {
         case "saffron":
             selctedColorBox = styles.saffronBox
             selectedColor = styles.saffron
+            selectedBackground = styles.saffronBackground
             break;
         case "green":
             selctedColorBox = styles.greenBox
             selectedColor = styles.green
+            selectedBackground = styles.greenBackground
             break;
         case "blue":
             selctedColorBox = styles.blueBox
             selectedColor = styles.blue
+            selectedBackground = styles.blueBackground
             break;
 
 
     }
     return (
-        <div className={`${colorScheme} paddedContainer`}>
-            <div className={`${styles.container} maxWidthContainer`}>
+        <div className={`${styles.container} ${colorScheme} ${selectedBackground} paddedContainer`}>
+            <div className={`maxWidthContainer ${styles.flexBox}`}>
                 <div className={`${styles.top} lightNormal`}>
                     <Link href={internalLinks.products.root}>All products</Link>
                     <div className={`${styles.capsule} ${selectedColor} regularNormal`}>
                         {capsulText}
                     </div>
                 </div>
-                <p className={`h1 ${styles.heading}`}>{headingText}</p>
+
+                <p className={`h2 ${styles.heading}`}>{headingText}</p>
+
                 <p className={`lightNormal`}>{bodyText}</p>
 
                 {

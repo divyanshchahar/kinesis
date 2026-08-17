@@ -1,14 +1,17 @@
 .container {
     color: var(--color-text-primary);
-    background-color: var(--color-background);
-
-    display: flex;
-    flex-direction: column;
-    gap: var(--padding-section-s);
+    /*background: radial-gradient(90% 80% at 100% 0%, rgba(19, 136, 8, 0.18), transparent 55%) var(--color-background);*/
+    padding: var(--padding-section-m) var(--padding-global);
 
     p {
         max-width: var(--max-width-60ch);
     }
+}
+
+.flexBox {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimension-4);
 }
 
 .top {
@@ -66,5 +69,17 @@
 }
 
 .blueBox {
-    border-left: 2px solid var(--color-blue-3);
+    border: 2px solid var(--color-blue-3);
+}
+
+.greenBackground {
+    background: radial-gradient(90% 80% at 100% 0%, rgba(19, 136, 8, 0.18), transparent 55%) var(--color-background);
+}
+
+.saffronBackground {
+    background: radial-gradient(90% 80% at 100% 0%, rgba(255, 153, 51, 0.18), transparent 55%) var(--color-background);
+}
+
+.blueBackground {
+    background: radial-gradient(90% 80% at 100% 0%, rgba(30, 58, 138, 0.18), transparent 55%) var(--color-background);
 }
