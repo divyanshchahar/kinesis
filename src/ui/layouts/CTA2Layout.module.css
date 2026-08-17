@@ -6,7 +6,7 @@
     text-align: center;
     border-radius: var(--radius-3);
     width: 100%;
-    padding: var(--padding-section-m) var(--padding-global);
+    padding: var(--dimension-5) var(--padding-global);
 }
 
 
