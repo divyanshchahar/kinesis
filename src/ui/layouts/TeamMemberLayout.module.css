@@ -19,13 +19,13 @@
 
 .image {
     border-radius: 50%;
-    width: 100%;
+    width: min(100%,250px);
     height: auto;
     aspect-ratio: 1/1;
 }
 
 .saffron {
-    color: var(--color-saffron-1)
+    color: var(--color-saffron-2)
 }
 
 .blue {
