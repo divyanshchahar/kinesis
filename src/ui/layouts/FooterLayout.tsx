@@ -7,6 +7,7 @@ import companyLogo from "./../../../public/logo/logo.svg"
 import Image from "next/image"
 import {useRouter} from "next/navigation";
 import internalLinks from "./../../const/internalRoutes.json"
+import contactInformation from "../../const/contactInformation.json"
 
 
 export default function FooterLayout() {
@@ -32,8 +33,8 @@ export default function FooterLayout() {
 
                 <div className={`${styles.links}`}>
                     <p className={`boldNormal ${styles.secondryText}`}>CONTACT</p>
-                    <p className={"regularNormal"}>+91-9971870714</p>
-                    <p className={"regularNormal"}>info@kinesistecch.in</p>
+                    <p className={"regularNormal"}>{contactInformation.mobileNumber}</p>
+                    <p className={"regularNormal"}>{contactInformation.email}</p>
                     <CTAButton version={"inline"} ctaText={"Start a Conversation"} addedStyle={styles.fittedWidth}
                                clickHandler={() => router.push(internalLinks.contactus)}/>
                 </div>
