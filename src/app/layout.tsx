@@ -3,6 +3,8 @@ import {Manrope, Space_Grotesk} from "next/font/google";
 import "./globals.css";
 import NavBarLayout from "@/ui/layouts/NavBarLayout";
 import FooterLayout from "@/ui/layouts/FooterLayout";
+import styles from "@/ui/layouts/NavBarLayout.module.css";
+import triColorStyle from "./TriColorLayout.module.css"
 
 const headingFont = Space_Grotesk({
     variable: "--font-family-heading",
@@ -24,6 +26,13 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={`${normalFont.variable} ${headingFont.variable}`}>
+
+        <div className={`${triColorStyle.triColor}`}>
+            <hr className={`${styles.saffronLine}`}/>
+            <hr className={`${styles.whiteLine}`}/>
+            <hr className={`${styles.greenLine}`}/>
+        </div>
+        
         <NavBarLayout/>
         <body>{children}</body>
         <FooterLayout/>

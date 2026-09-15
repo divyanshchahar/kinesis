@@ -3,7 +3,7 @@
 import styles from "./FooterLayout.module.css"
 import Link from "next/link";
 import CTAButton from "@/ui/componenets/CTAButton";
-import companyLogo from "./../../../public/logo/logo.svg"
+import companyLogo from "./../../../public/logo/logo.png"
 import Image from "next/image"
 import {useRouter} from "next/navigation";
 import internalLinks from "./../../const/internalRoutes.json"
@@ -43,8 +43,7 @@ export default function FooterLayout() {
             <hr/>
 
             <div className={`${styles.bottom} maxWidthContainer`}>
-                <p className={`${styles.secondryText} lightNormal`}>© 2026 Kinesis IT Solution. Led by Mayank
-                    Sharma.</p>
+                <p className={`${styles.secondryText} lightNormal`}>© 2026 Kinesis IT Solution.</p>
                 <p className={`boldNormal ${styles.saffron}`}>जय हिन्द · JAI HIND</p>
             </div>
         </div>

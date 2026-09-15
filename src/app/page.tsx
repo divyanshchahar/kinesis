@@ -8,7 +8,7 @@ import Link from "next/link";
 import NormalButtonComponent from "@/ui/componenets/NormalButtonComponent";
 import TextCard3Layout from "@/ui/layouts/TextCard3Layout";
 import CTA1Layout from "@/ui/layouts/CTA1Layout";
-import exportMap from "./../../public/export_map.svg"
+import exportMap from "./../../public/world_map.png"
 import Image from "next/image";
 import RegionCardLayout from "@/ui/layouts/RegionCardLayout";
 import TickerCardLayout from "@/ui/layouts/TickerCardLayout";
@@ -98,7 +98,7 @@ export default function Home() {
                                           clientImage: ministry
                                       },
                                       {
-                                          clientName: "Bharat Dynamics",
+                                          clientName: "Bharat Dyanamics Ltd.",
                                           clientImage: bharatDynamics
                                       },
                                       {

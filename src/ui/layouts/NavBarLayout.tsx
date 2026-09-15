@@ -2,13 +2,13 @@
 
 import styles from "./NavBarLayout.module.css"
 import Image from "next/image";
-import companyLogo from "../../../public/logo/logo.svg"
+import companyLogo from "../../../public/logo/logo.png"
 import Link from "next/link";
 import CTAButton from "@/ui/componenets/CTAButton";
 import {useState} from "react";
 import HamburgerIconComponent from "../../../public/icons/HamburgerIconComponent";
 import {Menubar} from "radix-ui";
-import {useRouter} from "next/navigation";
+import {usePathname, useRouter} from "next/navigation";
 import internalLinks from "./../../const/internalRoutes.json"
 
 const localColorScheme = "colorScheme3";
@@ -182,20 +182,26 @@ const MenubarPrimitive = () => {
 
     const router = useRouter();
 
+    const pathName = usePathname();
+
     const navigateOnClick = (internalUrl: string) => {
         router.push(internalUrl);
     }
+
+    console.log(pathName);
 
     return (
         <Menubar.Root className={`${styles.Root} colorScheme3`}>
 
             <Menubar.Menu>
-                <Menubar.Trigger className={`${styles.Trigger} regularNormal`}
+                <Menubar.Trigger className={`${styles.Trigger} regularNormal ${pathName === "/" && styles.underLine}`}
                                  onClick={() => navigateOnClick(internalLinks.home)}>Home</Menubar.Trigger>
             </Menubar.Menu>
 
             <Menubar.Menu>
-                <Menubar.Trigger className={`${styles.Trigger} lightNormal colorScheme3`}>About Us</Menubar.Trigger>
+                <Menubar.Trigger
+                    className={`${styles.Trigger} lightNormal colorScheme3 ${pathName === internalLinks.aboutus.root && styles.underLine}`}>About
+                    Us</Menubar.Trigger>
 
                 <Menubar.Portal>
 
@@ -205,9 +211,11 @@ const MenubarPrimitive = () => {
                         sideOffset={5}
                         alignOffset={-3}
                     >
-                        <Menubar.Item className={`${styles.Item} lightRegular ${localColorScheme}`} onSelect={() => {
-                            navigateOnClick(internalLinks.aboutus.companyOverview)
-                        }}>
+                        <Menubar.Item
+                            className={`${styles.Item} lightRegular ${localColorScheme}`}
+                            onSelect={() => {
+                                navigateOnClick(internalLinks.aboutus.companyOverview)
+                            }}>
                             Company Overview
                         </Menubar.Item>
 
@@ -234,7 +242,9 @@ const MenubarPrimitive = () => {
             </Menubar.Menu>
 
             <Menubar.Menu>
-                <Menubar.Trigger className={`${styles.Trigger} lightNormal`}>Our Offerings</Menubar.Trigger>
+                <Menubar.Trigger
+                    className={`${styles.Trigger} lightNormal ${pathName === internalLinks.services.root && styles.underLine} ${pathName === internalLinks.products.root && styles.underLine}`}>Our
+                    Offerings</Menubar.Trigger>
 
                 <Menubar.Portal>
                     <Menubar.Content
@@ -319,12 +329,6 @@ export default function NavBarLayout() {
 
     return (
         <div className={`${styles.container} colorScheme3`}>
-            <div className={`${styles.triColor}`}>
-                <hr className={`${styles.saffronLine}`}/>
-                <hr className={`${styles.whiteLine}`}/>
-                <hr className={`${styles.greenLine}`}/>
-            </div>
-
             <div className={`${styles.menuContainer} maxWidthContainer`}>
                 <Image src={companyLogo} alt="logo" width={100} height={100}/>
 
