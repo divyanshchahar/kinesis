@@ -3,11 +3,12 @@
 import styles from "./FooterLayout.module.css"
 import Link from "next/link";
 import CTAButton from "@/ui/componenets/CTAButton";
-import companyLogo from "./../../../public/logo/logo.png"
+import companyLogo from "./../../../public/logo/logo.svg"
 import Image from "next/image"
 import {useRouter} from "next/navigation";
 import internalLinks from "./../../const/internalRoutes.json"
 import contactInformation from "../../const/contactInformation.json"
+
 
 
 export default function FooterLayout() {

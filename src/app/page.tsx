@@ -37,14 +37,14 @@ export default function Home() {
                                 Industrial Nationalism · Made in India
                             </div>
 
-                            <p className={`h1`}>Building a self-reliant industrial India.</p>
+                            <p className={`h1`}>Fuelling to the self-reliant industrial growth in India</p>
 
                             <p className={`regularNormal`}>
-                                Kinesis unites Indian industrialists — with a special focus on small enterprises and
-                                OEMs —
-                                to
-                                foster
-                                collaboration, indigenous innovation, and pride in our nation's industrial heritage.
+                                Kinesis builds on the concept of Industrial Nationalism, with a special focus on
+                                building an ecosystem of indigenous inventors of Deep-Technology and ground break
+                                innovations. Our aim is to foster collaboration between the industry, startups and
+                                academia, promote indigenous innovation, and take pride in our nation's industrial
+                                heritage
                             </p>
                         </div>
 
@@ -64,13 +64,13 @@ export default function Home() {
 
                         <div className={`${styles.stats}`}>
                             <div className={`${styles.attributes}`}>
-                                <p className={`${styles.saffron} h3`}>30 +</p>
+                                <p className={`${styles.saffron} h3`}>10 +</p>
                                 <p className={`regularNormal`}>Countries served by our tech</p>
                             </div>
 
                             <div className={`${styles.attributes}`}>
-                                <p className={`${styles.saffron} h3`}>7</p>
-                                <p className={`regularNormal`}>National Institutes Served</p>
+                                <p className={`${styles.saffron} h3`}>10 +</p>
+                                <p className={`regularNormal`}>Expert Channel in countries</p>
                             </div>
 
                             <div className={`${styles.attributes}`}>
@@ -94,6 +94,14 @@ export default function Home() {
                                           clientImage: airForce
                                       },
                                       {
+                                          clientName: "Indian Navy",
+                                          clientImage: indianNAvalServices
+                                      },
+                                      {
+                                          clientName: "Indian Army",
+                                          clientImage: indianArmy,
+                                      },
+                                      {
                                           clientName: "Ministry of New and Renewable Energy",
                                           clientImage: ministry
                                       },
@@ -102,16 +110,8 @@ export default function Home() {
                                           clientImage: bharatDynamics
                                       },
                                       {
-                                          clientName: "Indian Naval Services",
-                                          clientImage: indianNAvalServices
-                                      },
-                                      {
                                           clientName: "Engineering Projects India Limited",
                                           clientImage: engineeringProjectsIndiaLimited
-                                      },
-                                      {
-                                          clientName: "Indian Army",
-                                          clientImage: indianArmy,
                                       },
                                       {
                                           clientImage: avnl,
@@ -126,8 +126,8 @@ export default function Home() {
                 <div className={`maxWidthContainer columnFlexContainer gapM`}>
 
                     <TextCard5Layout smallText={"WHAT WE DO"}
-                                     headingText={"A platform that connects Indian innovators to real markets."}
-                                     bodyText={"We provide expert strategic consulting for successful product launches — backed by specialists from industry, academia, the military, and public administration, plus a network of senior former diplomats for global reach."}
+                                     headingText={"WE HELP INNOVATIVE TECHNOLOGIES ENTER INTO THE REAL MARKETS"}
+                                     bodyText={"Through our channel of domain experts and specialists from industry, academia, the military, and public administration, we solve the real world problems of Deep Tech startups and Indian Industries. We provide strategic consulting to enable the journey of an idea into a market viable product."}
                                      colorScheme={"colorScheme1"}
                                      version={"green"}/>
 
@@ -140,13 +140,13 @@ export default function Home() {
 
                         <TextCard1Layout lineColor={"green"} backgroundColor={"background"}
                                          headingText={"Strategic consulting"}
-                                         bodyText={"Expert guidance tailored for successful product launches and effective marketing campaigns."}
+                                         bodyText={"Expert guidance and hand holding regarding services including corporate strategy, product development, customer interactions, requirement analysis, funding, cost and supplier strategies etc."}
                                          colorScheme={"colorScheme1"}
                         />
 
                         <TextCard1Layout lineColor={"blue"} backgroundColor={"background"}
                                          headingText={"Cross-sector expertise"}
-                                         bodyText={"Specialists from industry, academia, the military and public administration under one roof."}
+                                         bodyText={"Recognized specialists from industry, academia, the military and public administration."}
                                          colorScheme={"colorScheme1"}
                         />
 
@@ -167,7 +167,7 @@ export default function Home() {
                         <TextCard5Layout version={"saffron"}
                                          smallText={"OUR MOTTO"}
                                          headingText={"Industrial Nationalism"}
-                                         bodyText={"The road to global leadership begins with technological self-reliance. Indian companies must prioritise partnerships within the nation, using international collaboration mainly for strategy and exports — keeping the foundation of India's industrial ecosystem rooted in indigenous excellence."}
+                                         bodyText={"The road to global leadership begins with technological self-reliance. We believe in building the strengths of the Indian Startup ecosystem such that the larger industries are keen to establish partnerships within Indian Startups. Our focus is also to foster international collaborations for strategy and exports — keeping the foundation of India's industrial ecosystem rooted in indigenous excellence."}
                                          colorScheme={"colorScheme3"}/>
 
                         <Link href={internalLinks.aboutus.root} className={`boldNormal ${styles.saffron}`}>Read Our
@@ -177,10 +177,10 @@ export default function Home() {
                     <div className={`${styles.fullFlex}`}>
                         <div className={`colorScheme3 ${styles.textBox}`}>
                             <p className={`${styles.boldMottoText}`}>"A movement to unite India's innovators,
-                                industries, and academia to build a modern, self-reliant India."</p>
+                                industries, and academia to build a modern, self-reliant <span
+                                    className={styles.saffron}>Team India</span> in Industries."</p>
 
-                            <p className={"lightNormal"}>— The Kinesis vision · <span
-                                className={`${styles.saffron}`}>जय हिन्द</span></p>
+                            <p className={"lightNormal"}>— The Kinesis vision </p>
                         </div>
                     </div>
                 </div>
@@ -192,8 +192,8 @@ export default function Home() {
                 <div className={`maxWidthContainer columnFlexContainer gapM`}>
 
                     <div className={`responsiveFlexContainer ${styles.ourSolutions} gapS`}>
-                        <TextCard5Layout smallText={"OUR SOLUTIONS"}
-                                         headingText={"Indigenous technology across sustainability, defence & communication."}
+                        <TextCard5Layout smallText={"PREVIOUS PROJECTS"}
+                                         headingText={"Our range of past technological solutions are broadly categorized as Sustainability, Defence and Communication Solutions that solve real world problems"}
                                          bodyText={""}
                                          colorScheme={"colorScheme2"} version={"green"}/>
 
@@ -254,7 +254,7 @@ export default function Home() {
             {/*GLOBAL REACH*/}
             <div className={`paddedContainer colorScheme1`}>
                 <div className={`maxWidthContainer columnFlexContainer gapS`}>
-                    <TextCard5Layout smallText={"GLOBAL REACH"}
+                    <TextCard5Layout smallText={"REACH"}
                                      headingText={"Export access across three regions.\n"}
                                      bodyText={"Indigenous excellence at home, strategic collaboration abroad — our export network spans Central America, the Middle East, and South East Asia."}
                                      colorScheme={"colorScheme1"} version={"green"}/>
@@ -265,11 +265,11 @@ export default function Home() {
                     <div className={`grid3 gapS`}>
 
                         <RegionCardLayout colorScheme={"colorScheme1"} region={"Middle East"}
-                                          countries={["Guatemala", "El Salvador", "Honduras", "Belize"]}
+                                          countries={["UAE", "Kingdom of Saudi Arabia", "Egypt", "Jordan"]}
                                           version={"saffron"}/>
 
                         <RegionCardLayout colorScheme={"colorScheme1"} region={"Central America"}
-                                          countries={["Guatemala", "El Salvador", "Honduras", "United Arab Emirates", "Somalia"]}
+                                          countries={["Guatemala", "El Salvador", "Belize", "Guyana", "Jamaica"]}
                                           version={"green"}/>
 
                         <RegionCardLayout colorScheme={"colorScheme1"} region={"South East Asia"}
@@ -281,7 +281,7 @@ export default function Home() {
             </div>
 
             <CTA1Layout colorScheme={"colorScheme3"} headingText={"Are you an Indian OEM or entrepreneur?"}
-                        bodyText={"We champion small, talented enterprises. Let's build India's self-reliant supply chain together."}/>
+                        bodyText={"We love interacting with innovators and visionaries, let’s together build the ‘TEAM INDIA- India’s self-reliant supply chain. Let's build India's self-reliant supply chain together."}/>
         </>
     )
 }

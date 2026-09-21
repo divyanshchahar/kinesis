@@ -2,7 +2,7 @@
 
 import styles from "./NavBarLayout.module.css"
 import Image from "next/image";
-import companyLogo from "../../../public/logo/logo.png"
+import companyLogo from "../../../public/logo/logo.svg"
 import Link from "next/link";
 import CTAButton from "@/ui/componenets/CTAButton";
 import {useState} from "react";
@@ -188,7 +188,6 @@ const MenubarPrimitive = () => {
         router.push(internalUrl);
     }
 
-    console.log(pathName);
 
     return (
         <Menubar.Root className={`${styles.Root} colorScheme3`}>
