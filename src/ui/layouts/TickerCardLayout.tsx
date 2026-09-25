@@ -10,7 +10,7 @@ export interface TickerCardLayoutPropTypes {
 export default function TickerCardLayout({colorScheme, addedStyle, clients}: TickerCardLayoutPropTypes) {
     return (
         <div className={`${styles.TickerCardLayout} ${styles.container} ${colorScheme} ${addedStyle}`}>
-            <p className={`${styles.heading}`}>Our Clients</p>
+            <p className={`${styles.heading}`}>Collaborations</p>
 
             <div className={`${styles.animatedRow}`}>
 

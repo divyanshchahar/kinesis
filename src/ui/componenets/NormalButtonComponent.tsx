@@ -2,7 +2,7 @@ import styles from "./NormalButtonComponent.module.css"
 
 export interface NormalButtonPropTypes {
     buttonText: string,
-    addedStyle?: string,
+    addedStyle: string | "",
     colorScheme: string,
 }
 

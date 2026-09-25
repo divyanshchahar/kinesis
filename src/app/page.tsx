@@ -187,14 +187,15 @@ export default function Home() {
 
             </div>
 
-            {/*OUR SOLUTIONS*/}
+            {/*KEY EXPERTISE AREA*/}
             <div className={`paddedContainer colorScheme2`}>
                 <div className={`maxWidthContainer columnFlexContainer gapM`}>
 
                     <div className={`responsiveFlexContainer ${styles.ourSolutions} gapS`}>
-                        <TextCard5Layout smallText={"PREVIOUS PROJECTS"}
-                                         headingText={"Our range of past technological solutions are broadly categorized as Sustainability, Defence and Communication Solutions that solve real world problems"}
-                                         bodyText={""}
+                        <TextCard5Layout smallText={"KEY EXPERTISE AREAS"}
+                            // headingText={"OUR RANGE OF PAST TECHNOLOGICAL SOLUTIONS ARE BROADLY CATEGORIZED AS SUSTAINABILITY, DEFENCE AND COMMUNICATION SOLUTIONS THAT SOLVE REAL WORLD PROBLEMS"}
+                                         headingText={"PROJECTS"}
+                                         bodyText={"Our range of past technological solutions are broadly categorized as sustainability, defence and communication solutions that solve real world problems"}
                                          colorScheme={"colorScheme2"} version={"green"}/>
 
                         <NormalButtonComponent buttonText={"View all products"} colorScheme={"colorScheme2"}
@@ -255,7 +256,8 @@ export default function Home() {
             <div className={`paddedContainer colorScheme1`}>
                 <div className={`maxWidthContainer columnFlexContainer gapS`}>
                     <TextCard5Layout smallText={"REACH"}
-                                     headingText={"Export access across three regions.\n"}
+                        // headingText={"Export access across three regions.\n"}
+                                     headingText={"GLOBAL EXPORT ACCESS \n"}
                                      bodyText={"Indigenous excellence at home, strategic collaboration abroad — our export network spans Central America, the Middle East, and South East Asia."}
                                      colorScheme={"colorScheme1"} version={"green"}/>
 

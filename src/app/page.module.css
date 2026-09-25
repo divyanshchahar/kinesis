@@ -34,8 +34,8 @@
 }
 
 .fitContent {
-    max-width: fit-content;
-    max-height: fit-content;
+    /*justify-self: flex-end;*/
+    /*margin: auto;*/
 }
 
 .translucentButton {
@@ -116,6 +116,7 @@
 
 .ourSolutions {
     align-items: flex-end;
+    /*background-color: red;*/
 }
 
 /*################*/
